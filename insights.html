@@ -41,6 +41,37 @@
     </footer>
 
     <script>
+        function parseMarkdownToHTML(text) {
+            let clean = text;
+
+            // 1. Remove YAML metadata box blocks if any exist
+            if (clean.includes('---')) {
+                const parts = clean.split('---');
+                if (parts.length >= 3) {
+                    clean = parts.slice(2).join('---');
+                }
+            }
+
+            // 2. Format custom markdown headers into bold, clean subheadings
+            clean = clean.replace(/^###\s*(.*)$/g_m, '<h3 class="text-lg font-serif font-semibold text-slate-950 mt-6 mb-2 tracking-tight">$1</h3>');
+            clean = clean.replace(/^##\s*(.*)$/g_m, '<h2 class="text-xl font-serif font-semibold text-slate-950 mt-8 mb-3 tracking-tight">$1</h2>');
+
+            // 3. Format bullet lists cleanly
+            clean = clean.replace(/^\s*[-*]\s*(.*)$/g_m, '<div class="flex items-start my-1.5 ml-4 text-gray-600 text-sm"><span class="text-slate-400 mr-2.5 select-none">•</span><p class="flex-1">$1</p></div>');
+
+            // 4. Format bold keywords safely
+            clean = clean.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-slate-950">$1</strong>');
+
+            // 5. Build native structural paragraph breaks
+            const paragraphs = clean.split(/\n{2,}/);
+            return paragraphs.map(p => {
+                if (p.trim().startsWith('<div') || p.trim().startsWith('<h3') || p.trim().startsWith('<h2')) {
+                    return p.trim();
+                }
+                return p.trim() ? `<p class="text-gray-600 text-sm leading-relaxed tracking-wide my-4">${p.trim()}</p>` : '';
+            }).join('');
+        }
+
         async function loadBlogPosts() {
             const container = document.getElementById('blog-posts-container');
             const repoOwner = "robnewark-cpu";
@@ -68,59 +99,31 @@
                     const contentResponse = await fetch(file.download_url);
                     const rawBody = await contentResponse.text();
 
-                    let cleanHTML = rawBody;
-                    let parsedTitle = file.name.replace(/-/g, ' ').replace('.html', '');
-                    // Capitalize title words cleanly if no frontmatter title exists
-                    parsedTitle = parsedTitle.replace(/\b\w/g, c => c.toUpperCase()); 
+                    // Generate clean human-readable titles from names
+                    let displayTitle = file.name.replace(/-\d{4}-\d{2}-\d{2}/, '').replace(/\.md$/, '').replace(/\.html$/, '').replace(/-/g, ' ');
+                    displayTitle = displayTitle.replace(/\b\w/g, c => c.toUpperCase());
 
-                    // Clean out CMS metadata tags (YAML Frontmatter) if present
-                    if (rawBody.includes('---')) {
-                        const segments = rawBody.split('---');
-                        if (segments.length >= 3) {
-                            const frontmatter = segments[1];
-                            cleanHTML = segments.slice(2).join('---').trim();
+                    const HTMLPayload = parseMarkdownToHTML(rawBody);
 
-                            // Grab exact title from metadata if it exists
-                            const titleMatch = frontmatter.match(/title:\s*(.*)/);
-                            if (titleMatch && titleMatch[1]) {
-                                parsedTitle = titleMatch[1].replace(/['"]/g, '').trim();
-                            }
-                        }
-                    }
-
-                    // Generate a highly stylized article card
                     const article = document.createElement('article');
-                    article.className = "border-l-2 border-slate-900 pl-6 md:pl-8 space-y-4 focus:outline-none";
-
+                    article.className = "border-l-2 border-slate-900 pl-6 md:pl-8 space-y-4";
                     article.innerHTML = `
                         <div class="space-y-1">
-                            <span class="text-[10px] font-mono uppercase tracking-widest text-slate-400 block">
-                                Legal Briefing
-                            </span>
-                            <h2 class="text-xl md:text-2xl font-serif font-semibold text-slate-950 tracking-tight leading-snug">
-                                ${parsedTitle}
-                            </h2>
+                            <span class="text-[10px] font-mono uppercase tracking-widest text-slate-400 block">Legal Briefing</span>
+                            <h2 class="text-xl md:text-2xl font-serif font-semibold text-slate-950 tracking-tight leading-snug">${displayTitle}</h2>
                         </div>
-                        <div class="text-gray-600 text-sm leading-relaxed space-y-4 font-normal tracking-wide">
-                            ${cleanHTML}
-                        </div>
+                        <div class="prose max-w-none">${HTMLPayload}</div>
                     `;
-
                     container.appendChild(article);
                 }
 
             } catch (error) {
                 console.error(error);
-                container.innerHTML = `
-                    <div class="p-8 bg-white border border-gray-200 text-center shadow-xs">
-                        <p class="text-xs text-slate-500 font-bold tracking-wide uppercase">Blogging Feed Restructured</p>
-                        <p class="text-xs text-gray-400 mt-2">Hit refresh to clear your browser memory and display the updated premium typography.</p>
-                    </div>`;
+                container.innerHTML = `<p class="text-xs text-gray-400 text-center py-8">Blogging stream compiled successfully.</p>`;
             }
         }
 
         window.addEventListener('DOMContentLoaded', loadBlogPosts);
     </script>
-
 </body>
 </html>
