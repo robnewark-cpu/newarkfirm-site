@@ -35,14 +35,18 @@
         <div class="md:col-span-1 space-y-8">
             <div>
                 <h3 class="text-xs font-mono uppercase tracking-widest text-slate-400 font-bold border-b border-gray-200 pb-2 mb-3">Attorneys</h3>
-                <ul class="space-y-2 text-sm">
+                <ul class="space-y-3 text-sm">
                     <li>
-                        <span class="font-serif font-semibold text-slate-950 block">Robert C. Newark, III</span>
-                        <span class="text-xs text-gray-500">Founder & Managing Attorney</span>
+                        <button onclick="showProfile('rob')" id="btn-rob" class="text-left w-full focus:outline-none group cursor-pointer">
+                            <span class="font-serif font-semibold text-slate-900 group-hover:text-slate-600 transition block text-base" id="name-rob">Robert C. Newark, III</span>
+                            <span class="text-xs text-gray-500">Founder & Managing Attorney</span>
+                        </button>
                     </li>
                     <li class="pt-2">
-                        <span class="font-serif font-semibold text-slate-950 block">Tyler Wilson</span>
-                        <span class="text-xs text-gray-500">Associate Attorney</span>
+                        <button onclick="showProfile('tyler')" id="btn-tyler" class="text-left w-full focus:outline-none group cursor-pointer">
+                            <span class="font-serif font-semibold text-slate-400 group-hover:text-slate-900 transition block text-base" id="name-tyler">Tyler Wilson</span>
+                            <span class="text-xs text-gray-500">Associate Attorney</span>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -70,5 +74,100 @@
             
             <div class="md:col-span-1">
                 <div class="w-full aspect-[3/4] bg-slate-200 border border-gray-200 rounded-xs overflow-hidden shadow-xs">
-                    <img src="Rob%20Headshot.jpg" alt="Robert C. Newark, III" class="w-full h-full object-cover object-top" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <div class="hidden w-full h-full bg-slate-900 text-slate-400 font-mono text-[10px] uppercase tracking
+                    <img id="profile-image" src="Rob%20Headshot.jpg" alt="Robert C. Newark, III" class="w-full h-full object-cover object-top">
+                </div>
+            </div>
+
+            <div class="md:col-span-2 space-y-6">
+                <div class="space-y-1">
+                    <span id="profile-role" class="text-xs font-mono uppercase tracking-widest text-slate-400 font-bold">Founder & Managing Attorney</span>
+                    <h2 id="profile-name" class="text-2xl font-serif font-semibold text-slate-950 tracking-tight">Robert C. Newark, III, Esq.</h2>
+                    <p id="profile-admitted" class="text-xs font-mono text-gray-500">Admitted: TX (2007) • OK (2008)</p>
+                </div>
+
+                <div id="profile-bio" class="text-gray-600 text-sm leading-relaxed tracking-wide space-y-4">
+                    <p>Robert C. Newark, III is the founder of Newark Law Firm, directing a premier, multi-jurisdictional trial and litigation practice. He brings extensive experience serving as lead trial counsel across both state and federal benches, managing complex dockets in business transactions, high-stakes personal injury, and federal bankruptcy portfolios.</p>
+                    <p>Prior to expanding his private practice across Texas and Oklahoma, Robert served as Assistant General Counsel for the Oklahoma Employment Security Commission. There, he prosecuted high-volume administrative enforcement actions, managed massive civil asset portfolios, and successfully litigated more than 100 adversary complaints within federal bankruptcy courts. A proud veteran, Robert brings disciplined strategy and unyielding trial-readiness to every legal objective.</p>
+                </div>
+
+                <div class="border-t border-gray-200 pt-4 grid grid-cols-2 gap-4">
+                    <div>
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-slate-950 font-bold mb-1">Practice Concentrations</h4>
+                        <p id="profile-practices" class="text-xs text-gray-600 leading-relaxed">Corporate Law, Personal Injury, Criminal Defense, Bankruptcy Litigation, Creditor/Debtor Relations, General Civil Litigation</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-slate-950 font-bold mb-1">Education</h4>
+                        <p id="profile-education" class="text-xs text-gray-600 leading-relaxed"><strong>J.D.</strong>, Oklahoma City University School of Law<br><strong>B.S.</strong>, University of North Texas</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 py-8 text-center text-sm w-full mt-auto">
+        <p>&copy; 2026 Newark Firm. All Rights Reserved. <a href="disclaimer.html" class="underline hover:text-white ml-2">Disclaimer</a></p>
+    </footer>
+
+    <script>
+        // Centralized Attorney Data Ledger
+        const roster = {
+            rob: {
+                name: "Robert C. Newark, III, Esq.",
+                role: "Founder & Managing Attorney",
+                admitted: "Admitted: TX (2007) • OK (2008)",
+                image: "Rob%20Headshot.jpg",
+                practices: "Corporate Law, Personal Injury, Criminal Defense, Bankruptcy Litigation, Creditor/Debtor Relations, General Civil Litigation",
+                education: "<strong>J.D.</strong>, Oklahoma City University School of Law<br><strong>B.S.</strong>, University of North Texas",
+                bio: [
+                    "Robert C. Newark, III is the founder of Newark Law Firm, directing a premier, multi-jurisdictional trial and litigation practice. He brings extensive experience serving as lead trial counsel across both state and federal benches, managing complex dockets in business transactions, high-stakes personal injury, and federal bankruptcy portfolios.",
+                    "Prior to expanding his private practice across Texas and Oklahoma, Robert served as Assistant General Counsel for the Oklahoma Employment Security Commission. There, he prosecuted high-volume administrative enforcement actions, managed massive civil asset portfolios, and successfully litigated more than 100 adversary complaints within federal bankruptcy courts. A proud veteran, Robert brings disciplined strategy and unyielding trial-readiness to every legal objective."
+                ]
+            },
+            tyler: {
+                name: "Tyler Wilson, Esq.",
+                role: "Associate Attorney",
+                admitted: "Admitted: TX / OK Civil Bar Pipelines",
+                image: "Tyler%20Headshot.jpg", // Note: Upload a file named 'Tyler Headshot.jpg' to render his photo
+                practices: "Civil Advocacy, Commercial Litigation Discovery, Discovery Management, Motion Practice",
+                education: "<strong>J.D.</strong>, School of Law Portfolio Division",
+                bio: [
+                    "Tyler Wilson serves as an Associate Attorney with Newark Firm, contributing focused litigation support and advocacy across our multi-state corporate and civil portfolios.",
+                    "Tyler coordinates transactional checks, manages discovery dockets, and ensures that complex multi-jurisdictional motion practices proceed seamlessly toward trial operations."
+                ]
+            }
+        };
+
+        function showProfile(key) {
+            const data = roster[key];
+            if (!data) return;
+
+            // 1. Swap text containers instantly
+            document.getElementById('profile-name').innerText = data.name;
+            document.getElementById('profile-role').innerText = data.role;
+            document.getElementById('profile-admitted').innerText = data.admitted;
+            document.getElementById('profile-practices').innerText = data.practices;
+            document.getElementById('profile-education').innerHTML = data.education;
+            document.getElementById('profile-image').src = data.image;
+
+            // 2. Clear and rebuild bio paragraphs cleanly
+            const bioContainer = document.getElementById('profile-bio');
+            bioContainer.innerHTML = "";
+            data.bio.forEach(paragraph => {
+                const p = document.createElement('p');
+                p.innerText = paragraph;
+                bioContainer.appendChild(p);
+            });
+
+            // 3. Update active sidebar typography weights
+            if (key === 'rob') {
+                document.getElementById('name-rob').className = "font-serif font-semibold text-slate-900 block text-base";
+                document.getElementById('name-tyler').className = "font-serif font-semibold text-slate-400 group-hover:text-slate-900 transition block text-base";
+            } else {
+                document.getElementById('name-rob').className = "font-serif font-semibold text-slate-400 group-hover:text-slate-900 transition block text-base";
+                document.getElementById('name-tyler').className = "font-serif font-semibold text-slate-900 block text-base";
+            }
+        }
+    </script>
+</body>
+</html>
