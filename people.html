@@ -18,7 +18,7 @@
                 <a href="experience.html" class="hover:text-slate-900 transition">Experience</a>
                 <a href="about.html" class="hover:text-slate-900 transition">About Us</a>
                 <a href="insights.html" class="hover:text-slate-900 transition">Insights</a>
-                <a href="contact.html" class="hover:text-slate-900 transition">Contact</a>
+                <a href="contact/index.html" class="hover:text-slate-900 transition">Contact</a>
             </nav>
         </div>
     </header>
@@ -30,70 +30,45 @@
         </div>
     </section>
 
-    <main class="flex-grow max-w-7xl mx-auto px-6 py-16 w-full grid md:grid-cols-3 gap-12">
+    <main class="flex-grow max-w-7xl mx-auto px-6 py-16 w-full grid md:grid-cols-4 gap-12">
         
-        <div class="md:col-span-1 space-y-8 border-r border-gray-100 pr-4">
-            <div class="space-y-3">
-                <h3 class="text-xs font-mono uppercase tracking-widest text-slate-400">Attorneys</h3>
-                <ul class="space-y-2 font-serif text-base font-medium text-slate-950">
+        <div class="md:col-span-1 space-y-8">
+            <div>
+                <h3 class="text-xs font-mono uppercase tracking-widest text-slate-400 font-bold border-b border-gray-200 pb-2 mb-3">Attorneys</h3>
+                <ul class="space-y-2 text-sm">
                     <li>
-                        <button onclick="showProfile('newark')" id="btn-newark" class="text-left w-full text-slate-900 font-semibold border-l-2 border-slate-950 pl-3 focus:outline-none transition-all duration-150">
-                            Robert C. Newark, III, Esq.
-                        </button>
+                        <span class="font-serif font-semibold text-slate-950 block">Robert C. Newark, III</span>
+                        <span class="text-xs text-gray-500">Founder & Managing Attorney</span>
                     </li>
-                    <li>
-                        <button onclick="showProfile('associate')" id="btn-associate" class="text-left w-full text-gray-500 hover:text-slate-950 border-l-2 border-transparent pl-3 focus:outline-none transition-all duration-150">
-                            Associate Attorney
-                        </button>
+                    <li class="pt-2">
+                        <span class="font-serif font-semibold text-slate-950 block">Tyler Wilson</span>
+                        <span class="text-xs text-gray-500">Associate Attorney</span>
                     </li>
                 </ul>
             </div>
-
-            <div class="space-y-3">
-                <h3 class="text-xs font-mono uppercase tracking-widest text-slate-400">Professional Staff</h3>
-                <ul class="space-y-3 text-sm text-gray-600 font-medium">
-                    <li class="pl-3 border-l-2 border-transparent">
-                        <strong class="text-slate-900 block font-semibold">Sarah Jenkins</strong>
-                        <span class="text-xs text-gray-400 font-light">Senior Litigation Paralegal</span>
+            
+            <div>
+                <h3 class="text-xs font-mono uppercase tracking-widest text-slate-400 font-bold border-b border-gray-200 pb-2 mb-3">Professional Staff</h3>
+                <ul class="space-y-3 text-xs text-gray-600">
+                    <li>
+                        <strong class="text-slate-950 block text-sm font-serif font-medium">Kelly Raper</strong>
+                        Office Manager / Paralegal
                     </li>
-                    <li class="pl-3 border-l-2 border-transparent">
-                        <strong class="text-slate-900 block font-semibold">Michael Chang</strong>
-                        <span class="text-xs text-gray-400 font-light">Corporate Legal Assistant</span>
+                    <li>
+                        <strong class="text-slate-950 block text-sm font-serif font-medium">Hayley Thompson</strong>
+                        Legal Secretary
                     </li>
-                    <li class="pl-3 border-l-2 border-transparent">
-                        <strong class="text-slate-900 block font-semibold">Emily Rodriguez</strong>
-                        <span class="text-xs text-gray-400 font-light">Office Administrator</span>
+                    <li>
+                        <strong class="text-slate-950 block text-sm font-serif font-medium">Jenae Judge</strong>
+                        Legal Assistant
                     </li>
                 </ul>
             </div>
         </div>
 
-        <div class="md:col-span-2">
+        <div class="md:col-span-3 grid md:grid-cols-3 gap-8 items-start">
             
-            <div id="profile-newark" class="space-y-6 transition-opacity duration-200">
-                <div class="grid md:grid-cols-4 gap-6 items-start">
-                    <div class="md:col-span-1 bg-slate-200 aspect-[3/4] w-full flex items-center justify-center text-center p-4 border border-gray-300 shadow-xs rounded-xs">
-                        <span class="text-[10px] font-mono tracking-wider text-slate-500 uppercase">Headshot Placeholder</span>
-                    </div>
-                    <div class="md:col-span-3 space-y-1">
-                        <span class="text-xs font-mono uppercase tracking-wider text-slate-400">Founder & Managing Attorney</span>
-                        <h2 class="text-2xl font-serif font-semibold text-slate-950 tracking-tight">Robert C. Newark, III, Esq.</h2>
-                        <p class="text-xs text-gray-500 pt-1 font-medium">Admitted: TX (2007) • OK (2008)</p>
-                    </div>
-                </div>
-
-                <div class="border-t border-gray-200 pt-6 space-y-4 text-sm text-gray-600 leading-relaxed font-normal tracking-wide">
-                    <p>Robert C. Newark, III is the founder of Newark Law Firm, directing a premier, multi-jurisdictional trial and litigation practice. He brings extensive experience serving as lead trial counsel across both state and federal benches, managing complex dockets in business transactions, high-stakes personal injury, and federal bankruptcy portfolios.</p>
-                    <p>Prior to expanding his private practice across Texas and Oklahoma, Robert served as Assistant General Counsel for the Oklahoma Employment Security Commission. There, he prosecuted high-volume administrative enforcement actions, managed massive civil asset portfolios, and successfully litigated more than 100 adversary complaints within federal bankruptcy courts. A proud veteran, Robert brings disciplined strategy and unyielding trial-readiness to every legal objective.</p>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-6 pt-4 border-t border-gray-100">
-                    <div class="space-y-1.5">
-                        <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-bold">Practice Concentrations</h4>
-                        <p class="text-xs text-gray-600 leading-relaxed">Corporate Law, Personal Injury, Criminal Defense, Bankruptcy Litigation, Creditor/Debtor Relations, General Civil Litigation</p>
-                    </div>
-                    <div class="space-y-1.5">
-                        <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-bold">Education</h4>
-                        <p class="text-xs text-gray-600 leading-relaxed">J.D., Oklahoma City University School of Law<br>B.S., University of North Texas</p>
-                    </div>
-                </div>
+            <div class="md:col-span-1">
+                <div class="w-full aspect-[3/4] bg-slate-200 border border-gray-200 rounded-xs overflow-hidden shadow-xs">
+                    <img src="Rob%20Headshot.jpg" alt="Robert C. Newark, III" class="w-full h-full object-cover object-top" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="hidden w-full h-full bg-slate-900 text-slate-400 font-mono text-[10px] uppercase tracking
