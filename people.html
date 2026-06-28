@@ -92,18 +92,16 @@
                 </div>
 
                 <div id="profile-bio" class="text-gray-600 text-sm leading-relaxed tracking-wide space-y-4">
-                    <p>Robert C. Newark, III is the founder of Newark Law Firm, directing a premier, multi-jurisdictional trial and litigation practice. He brings extensive experience serving as lead trial counsel across both state and federal benches, managing complex dockets in business transactions, high-stakes personal injury, and federal bankruptcy portfolios.</p>
-                    <p>A proud veteran, Robert brings disciplined strategy and unyielding trial-readiness to every legal objective.</p>
-                </div>
+                    </div>
 
                 <div id="profile-details-row" class="border-t border-gray-200 pt-5 grid grid-cols-2 gap-6">
                     <div>
                         <h4 class="text-[10px] font-mono uppercase tracking-wider text-slate-950 font-bold mb-1.5">Capabilities / Focus Areas</h4>
-                        <p id="profile-practices" class="text-xs text-gray-600 leading-relaxed">Corporate Law, Personal Injury, Criminal Defense, Bankruptcy Litigation, Creditor/Debtor Relations, General Civil Litigation</p>
+                        <p id="profile-practices" class="text-xs text-gray-600 leading-relaxed"></p>
                     </div>
                     <div>
                         <h4 class="text-[10px] font-mono uppercase tracking-wider text-slate-950 font-bold mb-1.5">Education & Credentials</h4>
-                        <p id="profile-education" class="text-xs text-gray-600 leading-relaxed"><strong>Oklahoma City University School of Law</strong>, J.D.<br><strong>University of North Texas</strong>, B.S.</p>
+                        <p id="profile-education" class="text-xs text-gray-600 leading-relaxed"></p>
                     </div>
                 </div>
             </div>
@@ -185,4 +183,15 @@
                 bio: [
                     "Jenae Judge is a Legal Assistant for Newark Firm, LLC, bringing over 20 years of extensive operational experience inside the business industry. Prior to entering legal advocacy support, she managed complex administration and corporate structures for multiple major energy organizations.",
                     "Her prior career path includes detailed technical positions with PostRock Energy Corporation, American Energy Partners LP, and Permian Resources LLC.",
-                    "In addition to her legal workspace tasks, Jenae is the owner and head coach of 822 Athletics, where she actively mentors
+                    "In addition to her legal workspace tasks, Jenae is the owner and head coach of 822 Athletics, where she actively mentors clients and guides them toward achieving overall health and structural fitness goals. She is a dedicated supporter of the Oklahoma Sooners and the Philadelphia Eagles, and enjoys puzzles and cross-fit."
+                ]
+            }
+        };
+
+        function showProfile(key) {
+            const data = roster[key];
+            if (!data) return;
+
+            // 1. Update basic information elements
+            document.getElementById('profile-name').innerText = data.name;
+            document.getElementById('profile-
