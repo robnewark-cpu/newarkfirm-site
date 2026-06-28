@@ -1,0 +1,15 @@
+# .pages.yml
+media:
+  input: public/media
+  output: /media
+
+content:
+  - name: insights
+    label: Daily Insights Blog
+    type: collection
+    path: insights/
+    format: html
+    fields:
+      - { name: title, label: Article Title, type: string }
+      - { name: date, label: Publication Date, type: date }
+      - { name: body, label: Blog Content (Paste Gemini Text Here), type: rich-text }
