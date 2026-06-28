@@ -103,7 +103,7 @@
                     </div>
                     <div>
                         <h4 class="text-[10px] font-mono uppercase tracking-wider text-slate-950 font-bold mb-1.5">Education & Credentials</h4>
-                        <p id="profile-education" class="text-xs text-gray-600 leading-relaxed">University of North Texas</p>
+                        <p id="profile-education" class="text-xs text-gray-600 leading-relaxed"><strong>Oklahoma City University School of Law</strong>, J.D.<br><strong>University of North Texas</strong>, B.S.</p>
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@
                 image: "Rob%20Headshot.jpg",
                 isAttorney: true,
                 practices: "Corporate Law, Personal Injury, Criminal Defense, Bankruptcy Litigation, Creditor/Debtor Relations, General Civil Litigation",
-                education: "University of North Texas",
+                education: "<strong>Oklahoma City University School of Law</strong>, J.D.<br><strong>University of North Texas</strong>, B.S.",
                 bio: [
                     "Robert C. Newark, III is the founder of Newark Law Firm, directing a premier, multi-jurisdictional trial and litigation practice. He brings extensive experience serving as lead trial counsel across both state and federal benches, managing complex dockets in business transactions, high-stakes personal injury, and federal bankruptcy portfolios.",
                     "Prior to expanding his private practice across Texas and Oklahoma, Robert served as Assistant General Counsel for the Oklahoma Employment Security Commission. There, he prosecuted high-volume administrative enforcement actions, managed massive civil asset portfolios, and successfully litigated more than 100 adversary complaints within federal bankruptcy courts. A proud veteran, Robert brings disciplined strategy and unyielding trial-readiness to every legal objective.",
@@ -185,37 +185,4 @@
                 bio: [
                     "Jenae Judge is a Legal Assistant for Newark Firm, LLC, bringing over 20 years of extensive operational experience inside the business industry. Prior to entering legal advocacy support, she managed complex administration and corporate structures for multiple major energy organizations.",
                     "Her prior career path includes detailed technical positions with PostRock Energy Corporation, American Energy Partners LP, and Permian Resources LLC.",
-                    "In addition to her legal workspace tasks, Jenae is the owner and head coach of 822 Athletics, where she actively mentors clients and guides them toward achieving overall health and structural fitness goals. She is a dedicated supporter of the Oklahoma Sooners and the Philadelphia Eagles, and enjoys puzzles and cross-fit."
-                ]
-            }
-        };
-
-        function showProfile(key) {
-            const data = roster[key];
-            if (!data) return;
-
-            // 1. Update primary textual and graphical headers
-            document.getElementById('profile-name').innerText = data.name;
-            document.getElementById('profile-role').innerText = data.role;
-            document.getElementById('profile-image').src = data.image;
-
-            // 2. Control bar admission line visibility
-            const admittedEl = document.getElementById('profile-admitted');
-            if (data.admitted) {
-                admittedEl.innerText = data.admitted;
-                admittedEl.style.display = 'block';
-            } else {
-                admittedEl.style.display = 'none';
-            }
-
-            // 3. Dynamically hide or reveal bottom meta details row
-            const detailsRow = document.getElementById('profile-details-row');
-            if (data.isAttorney) {
-                document.getElementById('profile-practices').innerText = data.practices;
-                document.getElementById('profile-education').innerHTML = data.education;
-                detailsRow.style.display = 'grid'; // Turn metadata grid panels on
-            } else {
-                detailsRow.style.display = 'none'; // Completely drop bottom blocks for staff
-            }
-
-            // 4. Clean out and append biography content paragraphs
+                    "In addition to her legal workspace tasks, Jenae is the owner and head coach of 822 Athletics, where she actively mentors
