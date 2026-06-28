@@ -13,3 +13,8 @@ content:
       - { name: title, label: Article Title, type: string }
       - { name: date, label: Publication Date, type: date }
       - { name: body, label: Blog Content, type: rich-text }
+- name: people
+    label: Firm Personnel Roster
+    type: file
+    path: people.html
+    format: html
