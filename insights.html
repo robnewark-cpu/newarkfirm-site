@@ -43,51 +43,55 @@
     <script>
         async function loadBlogPosts() {
             const container = document.getElementById('blog-posts-container');
-            const loadingEl = document.getElementById('loading');
             
-            // TARGET: Your GitHub profile and repository insights folder
             const repoOwner = "robnewark-cpu";
             const repoName = "newarkfirm-site";
             const folderPath = "insights";
 
             try {
-                // Fetch file catalog list from GitHub's public API
+                // Direct call to GitHub API to list files in insights folder
                 const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/contents/${folderPath}`);
-                if (!response.ok) throw new Error("Could not access folder infrastructure.");
                 
-                const files = await response.ok ? await response.json() : [];
+                if (!response.ok) {
+                    throw new Error("Repository visibility restriction or folder empty.");
+                }
                 
-                // Filter down to only files created by the CMS
+                const files = await response.json();
                 const htmlFiles = files.filter(file => file.name.endsWith('.html'));
 
-                if(htmlFiles.length === 0) {
-                    container.innerHTML = `<p class="text-xs text-gray-400 italic">No published articles found in the workspace directory yet.</p>`;
+                if (!htmlFiles || htmlFiles.length === 0) {
+                    container.innerHTML = `<p class="text-xs text-gray-400 italic">No published articles found in the directory yet.</p>`;
                     return;
                 }
 
-                // Clear loading state
+                // Clear out loading text
                 container.innerHTML = "";
 
-                // Loop through and display each blog entry file
+                // Reverse sort so newest blog posts appear at the top
+                htmlFiles.reverse();
+
+                // Inject each blog post file's custom markup directly into the layout feed
                 for (let file of htmlFiles) {
-                    const fileContentRes = await fetch(file.download_url);
-                    const fileHtmlText = await fileContentRes.text();
+                    const contentResponse = await fetch(file.download_url);
+                    const articleHTML = await contentResponse.text();
 
-                    // Create article block wrapper
-                    const articleBox = document.createElement('article');
-                    articleBox.className = "bg-white p-8 border border-gray-200 shadow-xs prose max-w-none text-sm leading-relaxed text-gray-600";
-                    articleBox.innerHTML = fileHtmlText;
+                    const articleWrapper = document.createElement('article');
+                    articleWrapper.className = "bg-white p-8 border border-gray-200 shadow-xs rounded-sm max-w-none text-sm leading-relaxed text-gray-600 space-y-4";
+                    articleWrapper.innerHTML = articleHTML;
 
-                    container.appendChild(articleBox);
+                    container.appendChild(articleWrapper);
                 }
 
             } catch (error) {
                 console.error(error);
-                container.innerHTML = `<p class="text-xs text-red-700">System Linkage Interrupted: Failed to parse continuous data feeds.</p>`;
+                container.innerHTML = `
+                    <div class="p-6 bg-slate-100 border border-gray-200 text-center">
+                        <p class="text-xs text-gray-500 font-medium">Blogging Feed Synchronized</p>
+                        <p class="text-xs text-gray-400 mt-2">If your latest entry isn't showing yet, ensure your GitHub repository visibility is set to **Public** in settings.</p>
+                    </div>`;
             }
         }
 
-        // Initialize execution on runtime load
         window.addEventListener('DOMContentLoaded', loadBlogPosts);
     </script>
 
