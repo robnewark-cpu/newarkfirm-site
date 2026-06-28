@@ -12,4 +12,4 @@ content:
     fields:
       - { name: title, label: Article Title, type: string }
       - { name: date, label: Publication Date, type: date }
-      - { name: body, label: Blog Content, type: rich-text, options: { format: html } }
+      - { name: body, label: Blog Content, type: rich-text }
