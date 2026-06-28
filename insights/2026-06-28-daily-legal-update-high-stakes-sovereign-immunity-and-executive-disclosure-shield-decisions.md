@@ -1,0 +1,30 @@
+The weekend begins with a profound pair of rulings from the Texas Supreme Court delivered right before the Friday afternoon closing bell. These monumental decisions heavily refine the limits of sovereign immunity in cases of extreme local tragedy and permanently insulate the state's highest executive offices from certain public disclosure mandates. Here is your Saturday morning legal briefing.
+🏛️ Texas Supreme Court: Sovereign Immunity Bars Uvalde Families' Lawsuit
+In an incredibly high-profile, emotionally charged order issued yesterday afternoon, the Texas Supreme Court officially rejected an appeal brought by survivors and family members of the 2022 Robb Elementary School shooting in Uvalde (In re Robb Elementary Litigation).  
+Texas Public Radio
+The Dispute: Twenty students and five teachers filed an extensive negligence lawsuit against the Texas Department of Public Safety (DPS) and Uvalde County. The plaintiffs argued that severe tactical failures, communication breakdowns, and an agonizing 77-minute delay by law enforcement officers to breach the classroom actively contributed to the magnitude of the tragedy.  
+The Texas Tribune
++ 1
+The Underlying Ruling: The state's highest civil court chose to uphold a February decision by the San Antonio-based Fourth Court of Appeals, which dismissed the case on the pleadings. The intermediate court had noted that while the allegations of law enforcement failure were impossible to disagree with factually, the legal claims were fundamentally incompatible with the Texas Tort Claims Act.  
+The Texas Tribune
++ 1
+The Pleading Barrier: The plaintiffs' core argument claimed that officers failed to effectively deploy their communication equipment, body armor, and ballistic shields. However, the Texas Supreme Court left the foundational precedent intact: under Texas law, the "non-use" of government property does not constitute a waiver of sovereign immunity. Because the statute only waives immunity for injuries caused by the active use of defective tangible property or vehicles, the state and county remain entirely insulated from civil liability for an operational failure to act.  
+The Texas Tribune
++ 1
+The Deficit of Proof: The court further highlighted that the pleadings failed to show concrete evidence that properly functioning radios or shields would have entirely eliminated the delay. Ultimately, the order reaffirms that expanding or modifying waivers of governmental immunity is an exclusive power of the Texas Legislature, leaving courts entirely bound by existing statutory text.  
+Texas Public Radio
++ 1
+🏛️ Texas Supreme Court: Abbott and Paxton Secure Executive Privilege Victory
+In a separate blockbuster ruling handed down concurrently yesterday afternoon, the Texas Supreme Court delivered a sweeping operational victory to Governor Greg Abbott and Attorney General Ken Paxton, severely restricting the public's power to challenge state open records decisions (State of Texas ex rel. Paxton v. Watchdog Coalition).  
+KVUE
+The Dispute: A prominent government watchdog group brought a lawsuit under the Texas Public Information Act (PIA), seeking to compel the release of two highly sensitive sets of communications: Paxton’s personal emails surrounding the January 6, 2021, U.S. Capitol riot, and communications between Governor Abbott, the OAG, and leaders of the National Rifle Association (NRA) immediately following the Uvalde shooting. Both leaders maintained no such communications existed or that they were heavily shielded by executive and attorney-client privilege.  
+KVUE
+The Ruling: The High Court sided completely with the Republican leaders. It ruled that lower state courts do not possess the baseline jurisdiction to review whether top-tier executive officials complied with the factual assertions of an open records request.  
+KVUE
+The Shield Set: The majority clarified that if the Governor or Attorney General states as an official matter of record that a specific communication does not exist or is structurally protected, a private plaintiff cannot drag the executives into an evidentiary trial to test their credibility.
+The Takeaway: This decision creates an ironclad procedural shield for corporate and municipal counsel interacting with state leadership. It sharply curtails the scope of the PIA, confirming that any expansions of public transparency metrics or mechanisms to enforce compliance against state leaders must originate strictly from future legislative amendments.
+🏡 Oklahoma Property Law: Certificate of Merit Reductions Hit Tulsa Foreclosure Tracks
+Real estate litigators and financial institutional counsel in Oklahoma are breaking down a vital new holding from the Oklahoma Supreme Court (RCB Bank v. Stitt, 2026 OK 49) that completely alters multi-county debt collection and mortgage enforcement limitations.
+The Scenario: A commercial lender attempted to foreclose on real estate mortgages in Tulsa County. However, the underlying promissory note liability had already been heavily litigated and reduced to a formal deficiency judgment in a separate, prior foreclosure action located across the county line in Washington County.
+The Appellate Turn: The Court of Civil Appeals originally ruled in favor of the bank, holding that entering a deficiency judgment effectively "revives" the baseline statute of limitations on the notes under 12 O.S. § 101 and actively prevents the mortgage liens from being extinguished.
+The Supreme Court Reversal: The state Supreme Court officially vacated the lower appellate order and reversed the district court. The High Court clarified that once a lender reduces a note to a definitive deficiency judgment in one jurisdiction, they cannot use parallel, trailing multi-county property actions to artificially expand state statute of limitations constraints or circumvent the strict statutory timeline mandates governing lien extinguishment under 42 O.S. § 23.
