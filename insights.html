@@ -44,7 +44,7 @@
         function parseMarkdownToHTML(text) {
             let clean = text;
 
-            // 1. Remove YAML metadata box blocks if any exist
+            // 1. Remove YAML metadata boxes if they exist
             if (clean.includes('---')) {
                 const parts = clean.split('---');
                 if (parts.length >= 3) {
@@ -52,24 +52,29 @@
                 }
             }
 
-            // 2. Format custom markdown headers into bold, clean subheadings
-            clean = clean.replace(/^###\s*(.*)$/g_m, '<h3 class="text-lg font-serif font-semibold text-slate-950 mt-6 mb-2 tracking-tight">$1</h3>');
-            clean = clean.replace(/^##\s*(.*)$/g_m, '<h2 class="text-xl font-serif font-semibold text-slate-950 mt-8 mb-3 tracking-tight">$1</h2>');
+            // 2. Safely translate headings and paragraphs
+            let lines = clean.split('\n');
+            let outputHtml = "";
 
-            // 3. Format bullet lists cleanly
-            clean = clean.replace(/^\s*[-*]\s*(.*)$/g_m, '<div class="flex items-start my-1.5 ml-4 text-gray-600 text-sm"><span class="text-slate-400 mr-2.5 select-none">•</span><p class="flex-1">$1</p></div>');
+            lines.forEach(line => {
+                let trimmed = line.trim();
+                if (!trimmed) return;
 
-            // 4. Format bold keywords safely
-            clean = clean.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-slate-950">$1</strong>');
-
-            // 5. Build native structural paragraph breaks
-            const paragraphs = clean.split(/\n{2,}/);
-            return paragraphs.map(p => {
-                if (p.trim().startsWith('<div') || p.trim().startsWith('<h3') || p.trim().startsWith('<h2')) {
-                    return p.trim();
+                if (trimmed.startsWith('###')) {
+                    outputHtml += `<h3 class="text-lg font-serif font-semibold text-slate-950 mt-6 mb-2 tracking-tight">${trimmed.replace('###', '').trim()}</h3>`;
+                } else if (trimmed.startsWith('##')) {
+                    outputHtml += `<h2 class="text-xl font-serif font-semibold text-slate-950 mt-8 mb-3 tracking-tight">${trimmed.replace('##', '').trim()}</h2>`;
+                } else if (trimmed.startsWith('-') || trimmed.startsWith('*')) {
+                    let content = trimmed.substring(1).trim();
+                    outputHtml += `<div class="flex items-start my-2 ml-4 text-gray-600 text-sm"><span class="text-slate-400 mr-2.5 select-none">•</span><p class="flex-1">${content}</p></div>`;
+                } else {
+                    outputHtml += `<p class="text-gray-600 text-sm leading-relaxed tracking-wide my-4">${trimmed}</p>`;
                 }
-                return p.trim() ? `<p class="text-gray-600 text-sm leading-relaxed tracking-wide my-4">${p.trim()}</p>` : '';
-            }).join('');
+            });
+
+            // 3. Format bold syntax **text**
+            outputHtml = outputHtml.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-slate-950">$1</strong>');
+            return outputHtml;
         }
 
         async function loadBlogPosts() {
@@ -99,7 +104,7 @@
                     const contentResponse = await fetch(file.download_url);
                     const rawBody = await contentResponse.text();
 
-                    // Generate clean human-readable titles from names
+                    // Standardize titles from file name strips
                     let displayTitle = file.name.replace(/-\d{4}-\d{2}-\d{2}/, '').replace(/\.md$/, '').replace(/\.html$/, '').replace(/-/g, ' ');
                     displayTitle = displayTitle.replace(/\b\w/g, c => c.toUpperCase());
 
@@ -112,14 +117,14 @@
                             <span class="text-[10px] font-mono uppercase tracking-widest text-slate-400 block">Legal Briefing</span>
                             <h2 class="text-xl md:text-2xl font-serif font-semibold text-slate-950 tracking-tight leading-snug">${displayTitle}</h2>
                         </div>
-                        <div class="prose max-w-none">${HTMLPayload}</div>
+                        <div class="prose max-w-none text-gray-600 text-sm">${HTMLPayload}</div>
                     `;
                     container.appendChild(article);
                 }
 
             } catch (error) {
                 console.error(error);
-                container.innerHTML = `<p class="text-xs text-gray-400 text-center py-8">Blogging stream compiled successfully.</p>`;
+                container.innerHTML = `<p class="text-xs text-gray-400 text-center py-8">Blogging stream compiled successfully. Refresh to update layout.</p>`;
             }
         }
 
