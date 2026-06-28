@@ -1,105 +1,99 @@
-<main class="flex-grow max-w-7xl mx-auto px-6 py-16 w-full space-y-16">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our People | Newark Firm</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans flex flex-col min-h-screen">
+
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tight text-slate-900">
+                <a href="index.html">NEWARK<span class="text-slate-500 font-light">FIRM</span></a>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-sm tracking-wide text-gray-600 uppercase">
+                <a href="people.html" class="text-slate-900 font-bold border-b-2 border-slate-900 pb-1">People</a>
+                <a href="experience.html" class="hover:text-slate-900 transition">Experience</a>
+                <a href="about.html" class="hover:text-slate-900 transition">About Us</a>
+                <a href="insights.html" class="hover:text-slate-900 transition">Insights</a>
+                <a href="contact.html" class="hover:text-slate-900 transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-slate-100 py-12 px-6 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-3xl md:text-4xl font-serif font-semibold text-slate-950">Our People</h1>
+            <p class="text-gray-600 mt-2 text-sm max-w-xl">Multi-jurisdictional trial attorneys and litigation professionals dedicated to strategic corporate and civil advocacy.</p>
+        </div>
+    </section>
+
+    <main class="flex-grow max-w-7xl mx-auto px-6 py-16 w-full grid md:grid-cols-3 gap-12">
         
-        <div>
-            <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 border-b border-gray-200 pb-3 mb-8">Attorneys</h2>
-            <div class="space-y-12">
-                
-                <div class="bg-white border border-gray-200 shadow-xs grid md:grid-cols-4 gap-8 p-6 items-start">
-                    <div class="md:col-span-1 h-72 bg-slate-200 flex items-center justify-center text-slate-400 font-mono text-xs uppercase tracking-wider">
-                        [ Headshot Placeholder ]
-                    </div>
-                    <div class="md:col-span-3 space-y-4">
-                        <div>
-                            <h3 class="text-2xl font-serif font-semibold text-slate-950">Robert C. Newark, III, Esq.</h3>
-                            <p class="text-sm font-medium uppercase tracking-wider text-slate-500 mt-0.5">Founder & Managing Attorney</p>
-                        </div>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            Robert C. Newark, III is the founder of Newark Law Firm, directing a premier, multi-jurisdictional trial and litigation practice. He brings extensive experience serving as lead trial counsel across both state and federal benches, managing complex dockets in business transactions, high-stakes personal injury, and federal bankruptcy portfolios[cite: 29, 30, 35]. 
-                        </p>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            Prior to expanding his private practice across Texas and Oklahoma, Robert served as Assistant General Counsel for the Oklahoma Employment Security Commission[cite: 28, 31]. There, he prosecuted high-volume administrative enforcement actions, managed massive civil asset portfolios, and successfully litigated more than 100 adversary complaints within federal bankruptcy courts[cite: 31, 33, 35]. A proud veteran, Robert brings disciplined strategy and unyielding trial-readiness to every legal objective[cite: 20, 30].
-                        </p>
-                        <div class="grid sm:grid-cols-2 gap-4 pt-4 border-t border-gray-100 text-xs">
-                            <div>
-                                <h4 class="font-bold text-slate-900 uppercase tracking-wide">Practice Concentrations</h4>
-                                <p class="text-gray-600 mt-1">Corporate Law, Personal Injury, Criminal Defense, Bankruptcy Litigation, Creditor/Debtor Relations, General Civil Litigation</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 uppercase tracking-wide">Admissions & Education</h4>
-                                <p class="text-gray-600 mt-1">
-                                    State Bar of Texas (Admitted 2007) [cite: 23]<br>
-                                    State Bar of Oklahoma (Admitted 2008) [cite: 24]<br>
-                                    J.D., Oklahoma City University School of Law [cite: 25]<br>
-                                    B.S., University of North Texas [cite: 26]
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="md:col-span-1 space-y-8 border-r border-gray-100 pr-4">
+            <div class="space-y-3">
+                <h3 class="text-xs font-mono uppercase tracking-widest text-slate-400">Attorneys</h3>
+                <ul class="space-y-2 font-serif text-base font-medium text-slate-950">
+                    <li>
+                        <button onclick="showProfile('newark')" id="btn-newark" class="text-left w-full text-slate-900 font-semibold border-l-2 border-slate-950 pl-3 focus:outline-none transition-all duration-150">
+                            Robert C. Newark, III, Esq.
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="showProfile('associate')" id="btn-associate" class="text-left w-full text-gray-500 hover:text-slate-950 border-l-2 border-transparent pl-3 focus:outline-none transition-all duration-150">
+                            Associate Attorney
+                        </button>
+                    </li>
+                </ul>
+            </div>
 
-                <div class="bg-white border border-gray-200 shadow-xs grid md:grid-cols-4 gap-8 p-6 items-start">
-                    <div class="md:col-span-1 h-72 bg-slate-200 flex items-center justify-center text-slate-400 font-mono text-xs uppercase tracking-wider">
-                        [ Headshot Placeholder ]
-                    </div>
-                    <div class="md:col-span-3 space-y-4">
-                        <div>
-                            <h3 class="text-2xl font-serif font-semibold text-slate-950">[ Second Attorney Name ], Esq.</h3>
-                            <p class="text-sm font-medium uppercase tracking-wider text-slate-500 mt-0.5">Associate Attorney</p>
-                        </div>
-                        <p class="text-gray-600 text-sm leading-relaxed">
-                            [ Type secondary attorney narrative bio here, describing their focus areas and contributions to the firm's civil litigation dockets. ]
-                        </p>
-                        <div class="grid sm:grid-cols-2 gap-4 pt-4 border-t border-gray-100 text-xs">
-                            <div>
-                                <h4 class="font-bold text-slate-900 uppercase tracking-wide">Practice Concentrations</h4>
-                                <p class="text-gray-600 mt-1">Family Law, General Civil Litigation, Creditor/Debtor Relations</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-slate-900 uppercase tracking-wide">Admissions & Education</h4>
-                                <p class="text-gray-600 mt-1">State Bar of Texas • State Bar of Oklahoma<br>J.D., [ Law School Name Here ]</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="space-y-3">
+                <h3 class="text-xs font-mono uppercase tracking-widest text-slate-400">Professional Staff</h3>
+                <ul class="space-y-3 text-sm text-gray-600 font-medium">
+                    <li class="pl-3 border-l-2 border-transparent">
+                        <strong class="text-slate-900 block font-semibold">Sarah Jenkins</strong>
+                        <span class="text-xs text-gray-400 font-light">Senior Litigation Paralegal</span>
+                    </li>
+                    <li class="pl-3 border-l-2 border-transparent">
+                        <strong class="text-slate-900 block font-semibold">Michael Chang</strong>
+                        <span class="text-xs text-gray-400 font-light">Corporate Legal Assistant</span>
+                    </li>
+                    <li class="pl-3 border-l-2 border-transparent">
+                        <strong class="text-slate-900 block font-semibold">Emily Rodriguez</strong>
+                        <span class="text-xs text-gray-400 font-light">Office Administrator</span>
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <div>
-            <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 border-b border-gray-200 pb-3 mb-8">Professional Staff</h2>
-            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-                
-                <div class="bg-white border border-gray-200 shadow-xs p-5 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-lg font-serif font-semibold text-slate-950">Sarah Jenkins</h3>
-                        <p class="text-xs font-medium uppercase tracking-wider text-slate-500 mt-0.5">Senior Litigation Paralegal</p>
-                        <p class="text-gray-600 text-xs mt-3 leading-relaxed">
-                            Manages multi-state litigation timelines, coordinates document production during case discovery, and structures court filing matrices.
-                        </p>
+        <div class="md:col-span-2">
+            
+            <div id="profile-newark" class="space-y-6 transition-opacity duration-200">
+                <div class="grid md:grid-cols-4 gap-6 items-start">
+                    <div class="md:col-span-1 bg-slate-200 aspect-[3/4] w-full flex items-center justify-center text-center p-4 border border-gray-300 shadow-xs rounded-xs">
+                        <span class="text-[10px] font-mono tracking-wider text-slate-500 uppercase">Headshot Placeholder</span>
+                    </div>
+                    <div class="md:col-span-3 space-y-1">
+                        <span class="text-xs font-mono uppercase tracking-wider text-slate-400">Founder & Managing Attorney</span>
+                        <h2 class="text-2xl font-serif font-semibold text-slate-950 tracking-tight">Robert C. Newark, III, Esq.</h2>
+                        <p class="text-xs text-gray-500 pt-1 font-medium">Admitted: TX (2007) • OK (2008)</p>
                     </div>
                 </div>
 
-                <div class="bg-white border border-gray-200 shadow-xs p-5 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-lg font-serif font-semibold text-slate-950">Michael Chang</h3>
-                        <p class="text-xs font-medium uppercase tracking-wider text-slate-500 mt-0.5">Corporate Legal Assistant</p>
-                        <p class="text-gray-600 text-xs mt-3 leading-relaxed">
-                            Assists with business organization framework assets, contract proof formatting, and corporate client transaction materials.
-                        </p>
-                    </div>
+                <div class="border-t border-gray-200 pt-6 space-y-4 text-sm text-gray-600 leading-relaxed font-normal tracking-wide">
+                    <p>Robert C. Newark, III is the founder of Newark Law Firm, directing a premier, multi-jurisdictional trial and litigation practice. He brings extensive experience serving as lead trial counsel across both state and federal benches, managing complex dockets in business transactions, high-stakes personal injury, and federal bankruptcy portfolios.</p>
+                    <p>Prior to expanding his private practice across Texas and Oklahoma, Robert served as Assistant General Counsel for the Oklahoma Employment Security Commission. There, he prosecuted high-volume administrative enforcement actions, managed massive civil asset portfolios, and successfully litigated more than 100 adversary complaints within federal bankruptcy courts. A proud veteran, Robert brings disciplined strategy and unyielding trial-readiness to every legal objective.</p>
                 </div>
 
-                <div class="bg-white border border-gray-200 shadow-xs p-5 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-lg font-serif font-semibold text-slate-950">Emily Rodriguez</h3>
-                        <p class="text-xs font-medium uppercase tracking-wider text-slate-500 mt-0.5">Office Administrator</p>
-                        <p class="text-gray-600 text-xs mt-3 leading-relaxed">
-                            Directs dual-state administrative infrastructures, monitors incoming intake channels, and organizes meeting pathways.
-                        </p>
+                <div class="grid md:grid-cols-2 gap-6 pt-4 border-t border-gray-100">
+                    <div class="space-y-1.5">
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-bold">Practice Concentrations</h4>
+                        <p class="text-xs text-gray-600 leading-relaxed">Corporate Law, Personal Injury, Criminal Defense, Bankruptcy Litigation, Creditor/Debtor Relations, General Civil Litigation</p>
+                    </div>
+                    <div class="space-y-1.5">
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 font-bold">Education</h4>
+                        <p class="text-xs text-gray-600 leading-relaxed">J.D., Oklahoma City University School of Law<br>B.S., University of North Texas</p>
                     </div>
                 </div>
-
-            </div>
-        </div>
-
-    </main>
