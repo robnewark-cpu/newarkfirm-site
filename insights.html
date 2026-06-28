@@ -46,20 +46,17 @@
             let extractedTitle = "";
             let extractedDate = "";
 
-            // 1. Isolate Frontmatter Metadata Box
             if (clean.includes('---')) {
                 const parts = clean.split('---');
                 if (parts.length >= 3) {
                     const frontmatter = parts[1];
                     clean = parts.slice(2).join('---');
 
-                    // Pull explicit text Title
                     const titleMatch = frontmatter.match(/title:\s*(.*)/);
                     if (titleMatch && titleMatch[1]) {
                         extractedTitle = titleMatch[1].replace(/['"]/g, '').trim();
                     }
 
-                    // Pull explicit Publication Date metadata
                     const dateMatch = frontmatter.match(/date:\s*(.*)/);
                     if (dateMatch && dateMatch[1]) {
                         extractedDate = dateMatch[1].replace(/['"]/g, '').trim();
@@ -67,7 +64,6 @@
                 }
             }
 
-            // 2. Format Core Typographic Blocks Safely
             let lines = clean.split('\n');
             let outputHtml = "";
 
@@ -118,41 +114,39 @@
                     const contentResponse = await fetch(file.download_url);
                     const rawBody = await contentResponse.text();
 
-                    // Fallback configuration parameters if metadata fields are blank
-                    let fallbackTitle = file.name.replace(/-\d{4}-\d{2}-\d{2}/, '').replace(/\.md$/, '').replace(/\.html$/, '').replace(/-/g, ' ');
-                    fallbackTitle = fallbackTitle.replace(/\b\w/g, c => c.toUpperCase());
-
                     const parsed = parseMarkdownToHTML(rawBody);
                     
-                    const displayTitle = parsed.title || fallbackTitle;
-                    // Format date elegantly. If metadata is missing, fallback to current brief marker
-                    const displayDate = parsed.date ? new Date(parsed.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : "June 2026 Legal Briefing";
+                    // Headline Sanitizer Rule:
+                    let rawTitle = parsed.title || file.name;
+                    
+                    // 1. Remove date structures like "2026-06-28-" or "2026 06 28 " from the front
+                    let cleanTitle = rawTitle.replace(/^\d{4}[\s-]\d{2}[\s-]\d{2}[\s-]*/, '');
+                    
+                    // 2. Clear out any trailing extensions (.md or .html)
+                    cleanTitle = cleanTitle.replace(/\.md$/, '').replace(/\.html$/, '').replace(/-/g, ' ');
+                    
+                    // 3. Balance the headline casing cleanly
+                    cleanTitle = cleanTitle.replace(/\b\w/g, c => c.toUpperCase());
+                    
+                    // 4. Inject structural colon punctuation: Change "Daily Legal Update Strategic Jurisdictional Briefing" -> "Daily Legal Update: Strategic Jurisdictional Briefing"
+                    if (cleanTitle.toLowerCase().startsWith("daily legal update")) {
+                        cleanTitle = cleanTitle.replace(/Daily Legal Update/i, "Daily Legal Update: ");
+                    }
+                    
+                    // 5. Shorten "Briefing" to "Brief" if requested
+                    if (cleanTitle.endsWith("Briefing")) {
+                        cleanTitle = cleanTitle.slice(0, -3);
+                    }
+
+                    // Date stamp configuration
+                    const displayDate = parsed.date ? new Date(parsed.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : "June 28, 2026";
 
                     const article = document.createElement('article');
                     article.className = "border-l-2 border-slate-900 pl-6 md:pl-8 space-y-4";
                     
-                    // UPDATED PRESENTATION STRUCTURE: Headline at the top, clear date directly underneath
                     article.innerHTML = `
                         <div class="space-y-1">
                             <h2 class="text-xl md:text-2xl font-serif font-semibold text-slate-950 tracking-tight leading-snug">
-                                ${displayTitle}
+                                ${cleanTitle}
                             </h2>
-                            <span class="text-[10px] font-mono uppercase tracking-widest text-slate-400 block pt-0.5">
-                                Published: ${displayDate}
-                            </span>
-                        </div>
-                        <div class="prose max-w-none text-gray-600 text-sm mt-4">${parsed.html}</div>
-                    `;
-                    container.appendChild(article);
-                }
-
-            } catch (error) {
-                console.error(error);
-                container.innerHTML = `<p class="text-xs text-gray-400 text-center py-8">Blogging feed refreshed successfully.</p>`;
-            }
-        }
-
-        window.addEventListener('DOMContentLoaded', loadBlogPosts);
-    </script>
-</body>
-</html>
+                            <span class
