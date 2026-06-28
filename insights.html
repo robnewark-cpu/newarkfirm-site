@@ -43,16 +43,24 @@
     <script>
         function parseMarkdownToHTML(text) {
             let clean = text;
+            let extractedTitle = "";
 
-            // 1. Remove YAML metadata boxes if they exist
+            // 1. Process and remove metadata frontmatter block
             if (clean.includes('---')) {
                 const parts = clean.split('---');
                 if (parts.length >= 3) {
+                    const frontmatter = parts[1];
                     clean = parts.slice(2).join('---');
+
+                    // Extract the exact title string saved by Pages CMS
+                    const titleMatch = frontmatter.match(/title:\s*(.*)/);
+                    if (titleMatch && titleMatch[1]) {
+                        extractedTitle = titleMatch[1].replace(/['"]/g, '').trim();
+                    }
                 }
             }
 
-            // 2. Safely translate headings and paragraphs
+            // 2. Safely convert headings, lists, and spacing
             let lines = clean.split('\n');
             let outputHtml = "";
 
@@ -72,9 +80,10 @@
                 }
             });
 
-            // 3. Format bold syntax **text**
+            // 3. Format bold text markers
             outputHtml = outputHtml.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-slate-950">$1</strong>');
-            return outputHtml;
+            
+            return { html: outputHtml, title: extractedTitle };
         }
 
         async function loadBlogPosts() {
@@ -104,20 +113,22 @@
                     const contentResponse = await fetch(file.download_url);
                     const rawBody = await contentResponse.text();
 
-                    // Standardize titles from file name strips
-                    let displayTitle = file.name.replace(/-\d{4}-\d{2}-\d{2}/, '').replace(/\.md$/, '').replace(/\.html$/, '').replace(/-/g, ' ');
-                    displayTitle = displayTitle.replace(/\b\w/g, c => c.toUpperCase());
+                    // 1. Build an automatic backup title from the file name
+                    let fallbackTitle = file.name.replace(/-\d{4}-\d{2}-\d{2}/, '').replace(/\.md$/, '').replace(/\.html$/, '').replace(/-/g, ' ');
+                    fallbackTitle = fallbackTitle.replace(/\b\w/g, c => c.toUpperCase());
 
-                    const HTMLPayload = parseMarkdownToHTML(rawBody);
+                    // 2. Parse the text block and pull the real frontmatter title
+                    const parsedData = parseMarkdownToHTML(rawBody);
+                    const finalTitle = parsedData.title || fallbackTitle;
 
                     const article = document.createElement('article');
                     article.className = "border-l-2 border-slate-900 pl-6 md:pl-8 space-y-4";
                     article.innerHTML = `
                         <div class="space-y-1">
                             <span class="text-[10px] font-mono uppercase tracking-widest text-slate-400 block">Legal Briefing</span>
-                            <h2 class="text-xl md:text-2xl font-serif font-semibold text-slate-950 tracking-tight leading-snug">${displayTitle}</h2>
+                            <h2 class="text-xl md:text-2xl font-serif font-semibold text-slate-950 tracking-tight leading-snug">${finalTitle}</h2>
                         </div>
-                        <div class="prose max-w-none text-gray-600 text-sm">${HTMLPayload}</div>
+                        <div class="prose max-w-none text-gray-600 text-sm">${parsedData.html}</div>
                     `;
                     container.appendChild(article);
                 }
