@@ -3,93 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Experience | Newark Firm</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-gray-50 text-gray-900 font-sans flex flex-col min-h-screen">
+    <title>Our Experience | Practice Sectors & Case Portfolio | Newark Firm</title>
+    <meta name="description" content="Explore the diverse legal experience and representative practice areas handled by the litigation and advisory teams at Newark Firm.">
+    <link rel="canonical" href="https://newarkfirm.com/experience.html">
 
-    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tight text-slate-900">
-                <a href="index.html">NEWARK<span class="text-slate-500 font-light">FIRM</span></a>
-            </div>
-            <nav class="hidden md:flex space-x-8 font-medium text-sm tracking-wide text-gray-600 uppercase">
-                <a href="people.html" class="hover:text-slate-900 transition">People</a>
-                <a href="experience.html" class="text-slate-900 font-bold border-b-2 border-slate-900 pb-1">Experience</a>
-                <a href="about.html" class="hover:text-slate-900 transition">About Us</a>
-                <a href="insights.html" class="hover:text-slate-900 transition">Insights</a>
-                <a href="https://modmediations.com/" target="_blank" class="hover:text-slate-900 transition text-slate-500 font-semibold flex items-center">Mediation ↗</a>
-                <a href="contact/index.html" class="hover:text-slate-900 transition">Contact</a>
-            </nav>
-        </div>
+    <style>
+        :root {
+            --primary: #1e293b; 
+            --accent: #b45309;  
+            --bg: #f8fafc;      
+            --text: #334155;    
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; margin: 0; padding: 0; }
+        header { background-color: var(--primary); color: white; text-align: center; padding: 4rem 2rem; border-bottom: 4px solid var(--accent); }
+        header h1 { font-size: 2.75rem; margin: 0; }
+        header p { font-size: 1.2rem; color: #94a3b8; margin-top: 0.5rem; }
+        nav { background-color: #0f172a; padding: 1rem; text-align: center; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+        nav a { color: white; text-decoration: none; font-weight: 500; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.2s; }
+        nav a:hover { color: var(--accent); }
+        
+        main { max-width: 900px; margin: 3rem auto; padding: 0 1.5rem; }
+        
+        .content-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 2.5rem;
+            border-top: 4px solid var(--primary);
+        }
+        
+        .content-card h2 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .sector-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sector-list li {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            border-left: 3px solid var(--accent);
+        }
+
+        .sector-list strong {
+            display: block;
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+        
+        footer { background-color: var(--primary); color: #94a3b8; text-align: center; padding: 2rem; margin-top: 6rem; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Experience</h1>
+        <p>Proven Track Record in High-Stakes Litigation & Financial Defense</p>
     </header>
 
-    <section class="bg-slate-100 py-12 px-6 border-b border-gray-200">
-        <div class="max-w-7xl mx-auto">
-            <span class="text-xs font-mono uppercase tracking-widest text-slate-400 font-bold">Proven Track Record</span>
-            <h1 class="text-3xl md:text-4xl font-serif font-semibold text-slate-950 mt-1">Our Experience</h1>
-            <p class="text-gray-600 mt-2 text-sm max-w-xl">Decades of combined trial practice, rigorous advocacy, and millions of dollars resolved across state, federal, and neutral panel dockets.</p>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/people.html">Our People</a></li>
+            <li><a href="/insights.html">Insights</a></li>
+            <li><a href="https://modmediations.com/" target="_blank" rel="noopener">Mediation</a></li>
+            <li><a href="/texas">Texas Branch</a></li>
+            <li><a href="/oklahoma">Oklahoma Branch</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="content-card">
+            <h2>Core Practice Sectors</h2>
+            <ul class="sector-list">
+                <li>
+                    <strong>Financial & Debt Defense</strong>
+                    Foreclosure defense, consumer and commercial debt defense, creditor rights management, and complex collections litigation.
+                </li>
+                <li>
+                    <strong>Commercial & Civil Litigation</strong>
+                    Breach of contract, business partnership disputes, corporate governance challenges, landlord-tenant conflicts, and general multi-jurisdictional trial dockets.
+                </li>
+                <li>
+                    <strong>Corporate & Transactional Advisory</strong>
+                    Risk assessment structures, asset protection frameworks, regulatory cross-border compliance audits, and contract construction pipelines.
+                </li>
+                <li>
+                    <strong>Specialized Jurisdictions</strong>
+                    Administrative enforcement actions, high-level immigration law (including executive and specialized visa processing), tribal law, and criminal defense dockets. For alternative dispute resolution frameworks, neutral third-party resolutions, or case evaluations, please access our dedicated external <a href="https://modmediations.com/" target="_blank" rel="noopener" style="color: var(--accent); font-weight: bold; text-decoration: underline;">Mediation Division</a>.
+                </li>
+            </ul>
         </div>
-    </section>
 
-    <main class="flex-grow max-w-5xl mx-auto px-6 py-16 w-full space-y-16">
-        
-        <section class="space-y-6">
-            <h2 class="text-xs font-mono uppercase tracking-widest text-slate-400 font-bold border-b border-gray-200 pb-2">01 / Litigation & High-Volume Docket Resolution</h2>
-            <div class="grid md:grid-cols-3 gap-8 items-start">
-                <div class="md:col-span-1">
-                    <h3 class="text-xl font-serif font-semibold text-slate-950 leading-tight">Aggressive Civil & Debt Defense Lifecycle</h3>
-                    <p class="text-xs text-gray-400 font-mono mt-2">Core Resolution Department</p>
-                </div>
-                <div class="md:col-span-2 text-sm text-gray-600 font-light leading-relaxed space-y-4">
-                    <p>Our team has directly managed the complete lifecycle of heavy civil litigation dockets across diverse state court lines. We handle and coordinate every phase of adversarial proceedings, including meticulous pleading generation, extensive motion practice, targeted discovery, and persuasive, aggressive courtroom appearances.</p>
-                    <p>Members of our firm bring unmatched experience in institutional and high-volume asset navigation, having successfully resolved more than 7,500 consumer debt cases and structured complex settlements handling over $42 million in outstanding claims. This extensive background provides us with unparalleled strategic negotiation capabilities to achieve optimal outcomes for our defense clients.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="space-y-6">
-            <h2 class="text-xs font-mono uppercase tracking-widest text-slate-400 font-bold border-b border-gray-200 pb-2">02 / Financial Defense & Specialized Practice Profiles</h2>
-            <div class="grid md:grid-cols-3 gap-8 items-start">
-                <div class="md:col-span-1">
-                    <h3 class="text-xl font-serif font-semibold text-slate-950 leading-tight">Multi-Jurisdictional Advocacy Framework</h3>
-                    <p class="text-xs text-gray-400 font-mono mt-2">Adversarial & Transactional Vectors</p>
-                </div>
-                <div class="md:col-span-2 text-sm text-gray-600 font-light leading-relaxed space-y-4">
-                    <p>We direct full-scale financial defense operations spanning foreclosure defense, consumer and commercial debt collections defense, and creditor/debtor rights litigation. Our comprehensive civil trial experience extends seamlessly into general corporate transactions, commercial real estate disputes, family law dynamics, landlord-tenant disputes, and criminal defense work.</p>
-                    <p>Additionally, our attorneys navigate unique regulatory landscapes, including complex corporate immigration matters, tribal courts, federal administrative enforcement systems, and high-volume adversary proceedings inside the federal bankruptcy court grids.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="space-y-6">
-            <h2 class="text-xs font-mono uppercase tracking-widest text-slate-400 font-bold border-b border-gray-200 pb-2">03 / Elite Corporate & Regulatory Tenures</h2>
-            <div class="grid md:grid-cols-3 gap-8 items-start">
-                <div class="md:col-span-1">
-                    <h3 class="text-xl font-serif font-semibold text-slate-950 leading-tight">Advanced Legal & Corporate Pedigree</h3>
-                    <p class="text-xs text-gray-400 font-mono mt-2">Strategic Portfolio Mastery</p>
-                </div>
-                <div class="md:col-span-2 text-sm text-gray-600 font-light leading-relaxed space-y-4">
-                    <p>Our background includes serving as critical administrative enforcement counsel for state agencies, steering operations for major energy sector corporations, and managing high-level global visa portfolios. We have been instrumental in guiding world-class collegiate athletes, renowned international scientists, and executive global business leaders safely through the strict administrative demands of the federal visa framework.</p>
-                    <p>This deep balance of regulatory insight, corporate operational exposure, and extensive real-world trial dockets allows our legal staff to identify structural litigation risks long before they surface in the courtroom.</p>
-                </div>
-            </div>
-        </section>
-
-        <div class="p-6 bg-slate-100 border-l-4 border-slate-950 rounded-xs mt-8">
-            <h4 class="text-xs font-mono uppercase tracking-wider text-slate-950 font-bold mb-2">Neutral Alternative Dispute Resolution (ADR) panels</h4>
-            <p class="text-xs text-gray-600 leading-relaxed font-light mb-4">
-                Leveraging this comprehensive corporate, bankruptcy, and multi-jurisdictional civil litigation experience, our senior trial counsel also serves as neutral third-party mediators across Texas and Oklahoma. We specialize in mapping objective financial grids and breaking down deadlocked panel dockets.
-            </p>
-            <a href="https://modmediations.com/" target="_blank" class="text-xs font-mono uppercase tracking-widest text-white bg-slate-950 py-2.5 px-5 font-bold hover:bg-slate-800 transition inline-block">
-                Access MOD Mediation Portal ↗
-            </a>
+        <div class="content-card">
+            <h2>Representative Institutional Impact</h2>
+            <ul class="sector-list">
+                <li>
+                    <strong>High-Volume Case Management</strong>
+                    Proven capability managing and resolving extensive civil dockets across state and federal tiers, including a track record of thousands of consumer debt resolutions and multi-million dollar asset protections.
+                </li>
+                <li>
+                    <strong>Appellate & Federal Trial Success</strong>
+                    Direct management of evidentiary proceedings and oral arguments before federal district benches, state courts, and successful granted outcomes before the U.S. Courts of Appeals.
+                </li>
+            </ul>
         </div>
 
     </main>
 
-    <footer class="bg-slate-950 text-slate-400 py-8 text-center text-sm w-full mt-auto">
-        <p>&copy; 2026 Newark Firm. All Rights Reserved. <a href="disclaimer.html" class="underline hover:text-white ml-2">Disclaimer</a></p>
+    <footer>
+        <p>&copy; 2026 Newark Firm. All Rights Reserved. | <a href="/disclaimer.html" style="color: #94a3b8;">Disclaimer</a></p>
     </footer>
 
 </body>
