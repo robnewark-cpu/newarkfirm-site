@@ -25,9 +25,14 @@
         main { max-width: 1000px; margin: 3rem auto; padding: 0 1.5rem; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 1.5rem; }
         .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); }
+        .card p { margin: 0.5rem 0; }
+        .card a.branch-link { display: inline-block; margin-top: 1rem; color: var(--accent); font-weight: bold; text-decoration: none; }
         .team-grid { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 2rem; }
-        .avatar { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary); }
         .member { text-align: center; width: 150px; }
+        .member a { color: var(--primary); text-decoration: none; font-weight: bold; transition: color 0.2s; }
+        .member a:hover { color: var(--accent); }
+        .member-circle { background: #cbd5e1; width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 0.5rem; line-height: 100px; font-weight: bold; color: #475569; transition: transform 0.2s; }
+        .member:hover .member-circle { transform: scale(1.05); }
         footer { background-color: var(--primary); color: #94a3b8; text-align: center; padding: 2rem; margin-top: 5rem; font-size: 0.9rem; }
     </style>
 
@@ -40,6 +45,7 @@
       "@id": "https://newarkfirm.com/#legal-firm",
       "url": "https://newarkfirm.com",
       "telephone": "+1-866-230-7236", 
+      "faxNumber": "+1-888-316-3398",
       "priceRange": "$$$",
       "address": [
         {
@@ -96,33 +102,50 @@
         <div class="grid">
             <div class="card">
                 <h3>Texas Division</h3>
-                <p>1341 W. Mockingbird Ln, Ste 600W<br>Dallas, TX 75243</p>
-                <a href="/texas" style="color: var(--accent); font-weight: bold; text-decoration: none;">View Texas Profile →</a>
+                <p><strong>Address:</strong><br>1341 W. Mockingbird Ln, Ste 600W<br>Dallas, TX 75243</p>
+                <p style="margin-top: 1rem;"><strong>Phone:</strong> 972-332-5733</p>
+                <p><strong>Toll-Free:</strong> 866-230-7236</p>
+                <p><strong>Fax:</strong> 888-316-3398</p>
+                <p><strong>Email:</strong> <a href="mailto:texas@newarkfirm.com" style="color: var(--primary);">texas@newarkfirm.com</a></p>
+                <a href="/texas" class="branch-link">View Texas Profile →</a>
             </div>
+
             <div class="card">
                 <h3>Oklahoma Division</h3>
-                <p>1019 Waterwood Pkwy, Ste C<br>Edmond, OK 73034</p>
-                <a href="/oklahoma" style="color: var(--accent); font-weight: bold; text-decoration: none;">View Oklahoma Profile →</a>
+                <p><strong>Address:</strong><br>1019 Waterwood Pkwy, Ste C<br>Edmond, OK 73034</p>
+                <p style="margin-top: 1rem;"><strong>Phone:</strong> 405-727-0269</p>
+                <p><strong>Toll-Free:</strong> 866-230-7236</p>
+                <p><strong>Fax:</strong> 888-316-3398</p>
+                <p><strong>Email:</strong> <a href="mailto:oklahoma@newarkfirm.com" style="color: var(--primary);">oklahoma@newarkfirm.com</a></p>
+                <a href="/oklahoma" class="branch-link">View Oklahoma Profile →</a>
             </div>
         </div>
 
-        <h2 style="margin-top: 4rem;">Our Firm Leadership</h2>
+        <h2 style="margin-top: 4rem;">Our Firm Staff</h2>
         <div class="team-grid">
             <div class="member">
-                <div style="background: #cbd5e1; width:100px; height:100px; border-radius:50%; margin:0 auto 0.5rem; line-height:100px; font-weight:bold; color:#475569;">Rob</div>
-                <strong>Rob</strong>
+                <a href="/people.html#rob">
+                    <div class="member-circle">Rob</div>
+                    <span>Rob</span>
+                </a>
             </div>
             <div class="member">
-                <div style="background: #cbd5e1; width:100px; height:100px; border-radius:50%; margin:0 auto 0.5rem; line-height:100px; font-weight:bold; color:#475569;">Tyler</div>
-                <strong>Tyler</strong>
+                <a href="/people.html#tyler">
+                    <div class="member-circle">Tyler</div>
+                    <span>Tyler</span>
+                </a>
             </div>
             <div class="member">
-                <div style="background: #cbd5e1; width:100px; height:100px; border-radius:50%; margin:0 auto 0.5rem; line-height:100px; font-weight:bold; color:#475569;">Hayley</div>
-                <strong>Hayley</strong>
+                <a href="/people.html#hayley">
+                    <div class="member-circle">Hayley</div>
+                    <span>Hayley</span>
+                </a>
             </div>
             <div class="member">
-                <div style="background: #cbd5e1; width:100px; height:100px; border-radius:50%; margin:0 auto 0.5rem; line-height:100px; font-weight:bold; color:#475569;">Kelly</div>
-                <strong>Kelly</strong>
+                <a href="/people.html#kelly">
+                    <div class="member-circle">Kelly</div>
+                    <span>Kelly</span>
+                </a>
             </div>
         </div>
     </main>
