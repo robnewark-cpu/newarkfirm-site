@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our People | Professional Legal Team | Newark Firm</title>
-    <meta name="description" content="Meet the dedicated legal staff and advocates of Newark Firm serving clients throughout Texas and Oklahoma.">
+    <title>Our People | Attorneys & Staff | Newark Firm</title>
+    <meta name="description" content="Meet the attorneys and professional staff of Newark Firm serving clients throughout Texas and Oklahoma.">
     <link rel="canonical" href="https://newarkfirm.com/people.html">
 
     <style>
@@ -25,13 +25,22 @@
         
         main { max-width: 900px; margin: 3rem auto; padding: 0 1.5rem; }
         
-        /* 👤 BIO CARD STYLING */
+        .category-heading {
+            color: var(--primary);
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin: 4rem 0 2rem 0;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
         .profile-section { 
             background: white; 
             padding: 2.5rem; 
             border-radius: 8px; 
             box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
-            margin-bottom: 3rem; 
+            margin-bottom: 2.5rem; 
             display: flex; 
             gap: 2rem; 
             align-items: flex-start;
@@ -68,6 +77,10 @@
         .profile-info h2 { color: var(--primary); margin: 0 0 0.25rem 0; font-size: 1.8rem; }
         .profile-info .title { color: var(--accent); font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem; }
         
+        .meta-list { list-style: none; padding: 0; margin: 0; }
+        .meta-list li { margin-bottom: 0.5rem; font-size: 1rem; }
+        .meta-list strong { color: var(--primary); }
+        
         @media (max-width: 650px) {
             .profile-section { flex-direction: column; align-items: center; text-align: center; }
         }
@@ -96,14 +109,21 @@
 
     <main>
 
+        <h2 class="category-heading">Attorneys</h2>
+
         <section class="profile-section" id="rob">
             <div class="profile-image-box">
                 <img src="Rob Headshot.jpg" alt="Rob" class="profile-img">
             </div>
             <div class="profile-info">
-                <h2>Rob</h2>
-                <div class="title">Managing Partner / Attorney at Law</div>
-                <p>Robert Newark is the founder and managing attorney of the Newark Firm, with over twenty years of experience in consumer and business law. Licensed in both Texas and Oklahoma, Robert has successfully handled hundreds of civil litigation matters, from individual disputes to complex corporate trials. He is dedicated to providing strategic, result-oriented advocacy tailored to each client's unique needs.</p>
+                <h2>Robert Newark</h2>
+                <div class="title">Managing Partner / Attorney / Owner</div>
+                <ul class="meta-list">
+                    <li><strong>State Bar Admissions:</strong> State Bar of Texas (Nov 2007), Oklahoma Bar Association (Apr 2008)</li>
+                    <li><strong>Federal Courts & Appellate Admissions:</strong> Admitted to practice before Federal District Courts and the U.S. Courts of Appeals</li>
+                    <li><strong>Education:</strong> J.D., Oklahoma City University School of Law (Dec 2006); B.S. in Political Science, University of North Texas (Aug 2003)</li>
+                    <li><strong>Practice Experience:</strong> Multi-jurisdictional trial and evidentiary litigation across federal and state dockets</li>
+                </ul>
             </div>
         </section>
 
@@ -112,20 +132,30 @@
                 <img src="Tyler Headshot.jpg" alt="Tyler" class="profile-img">
             </div>
             <div class="profile-info">
-                <h2>Tyler</h2>
-                <div class="title">Partner / Senior Counsel</div>
-                <p>Tyler focuses his practice on commercial litigation, asset protection, and transactional counsel. Drawing on his extensive knowledge of local regulatory compliance frameworks, Tyler ensures that corporate entities and business partnerships navigate cross-border jurisdictions smoothly. His precise analytical approach ensures meticulous care in both litigation risk planning and contract construction.</p>
+                <h2>Tyler Wilson</h2>
+                <div class="title">Attorney at Law</div>
+                <ul class="meta-list">
+                    <li><strong>Bar Admissions:</strong> Licensed to practice in Alaska, Oklahoma, Wisconsin, and South Dakota</li>
+                    <li><strong>Core Expertise:</strong> Litigation lifecycle management, high-stakes settlements, financial defense, civil law, and specialized litigation</li>
+                    <li><strong>Education:</strong> J.D., University of Oklahoma College of Law; M.P.H. in Healthcare Administration & Policy, University of Oklahoma College of Public Health; B.S. in Biology, University of the Ozarks</li>
+                </ul>
             </div>
         </section>
+
+
+        <h2 class="category-heading">Firm Staff</h2>
 
         <section class="profile-section" id="kelly">
             <div class="profile-image-box">
                 <img src="Kelly Headshot.jpg" alt="Kelly" class="profile-img">
             </div>
             <div class="profile-info">
-                <h2>Kelly</h2>
-                <div class="title">Associate Attorney</div>
-                <p>Kelly focuses on commercial contract designs, localized transactional advocacy, and corporate regulatory compliance. Her practice involves advising emerging regional brands and individual clients on asset protection and corporate operations within both state divisions, delivering highly effective and detailed legal strategy workflows.</p>
+                <h2>Kelly Raper</h2>
+                <div class="title">Office Manager / Paralegal</div>
+                <ul class="meta-list">
+                    <li><strong>Experience:</strong> Over 20 years of legal field experience assisting multiple attorneys in litigation dockets, foreclosure, and collections</li>
+                    <li><strong>Education:</strong> Midwest City High School; St. Gregory's University</li>
+                </ul>
             </div>
         </section>
 
@@ -134,9 +164,12 @@
                 <img src="Hayley Headshot.jpg" alt="Hayley" class="profile-img">
             </div>
             <div class="profile-info">
-                <h2>Hayley</h2>
-                <div class="title">Legal Counsel / Business Advisor</div>
-                <p>Hayley applies sharp strategic advisory oversight to multi-office transactional auditing, corporate structuring mechanics, operational safety protocols, and mediation setups. Her comprehensive discovery practices identify hidden risk channels and ensure stable growth paths across our corporate networks.</p>
+                <h2>Hayley Thompson</h2>
+                <div class="title">Legal Assistant</div>
+                <ul class="meta-list">
+                    <li><strong>Experience:</strong> Active legal field experience since 2019 navigating high-volume institutional file documentation workflows</li>
+                    <li><strong>Education:</strong> Midwest City High School; Rose State College</li>
+                </ul>
             </div>
         </section>
 
@@ -145,9 +178,12 @@
                 <div class="profile-placeholder">J</div>
             </div>
             <div class="profile-info">
-                <h2>Jenae</h2>
-                <div class="title">Firm Administration / Client Operations</div>
-                <p>Jenae directs the centralized administrative workflows, operational logistics, and multi-office scheduling arrays across our state divisions. As the principal structural coordinator for firm outreach and case ingestion, she maintains client integration standards across all branch offices.</p>
+                <h2>Jenae Judge</h2>
+                <div class="title">Legal Assistant</div>
+                <ul class="meta-list">
+                    <li><strong>Experience:</strong> Over 20 years of industry experience managing operational coordination pipelines and logistics</li>
+                    <li><strong>Education:</strong> University of Oklahoma</li>
+                </ul>
             </div>
         </section>
 
