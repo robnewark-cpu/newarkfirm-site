@@ -3,281 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our People | Newark Firm</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-gray-50 text-gray-900 font-sans flex flex-col min-h-screen">
+    <title>Our People | Professional Legal Team | Newark Firm</title>
+    <meta name="description" content="Meet the dedicated legal staff and advocates of Newark Firm serving clients throughout Texas and Oklahoma.">
+    <link rel="canonical" href="https://newarkfirm.com/people.html">
 
-    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tight text-slate-900">
-                <a href="index.html">NEWARK<span class="text-slate-500 font-light">FIRM</span></a>
-            </div>
-            <nav class="hidden md:flex space-x-8 font-medium text-sm tracking-wide text-gray-600 uppercase">
-                <a href="people.html" class="text-slate-900 font-bold border-b-2 border-slate-900 pb-1">People</a>
-                <a href="experience.html" class="hover:text-slate-900 transition">Experience</a>
-                <a href="about.html" class="hover:text-slate-900 transition">About Us</a>
-                <a href="insights.html" class="hover:text-slate-900 transition">Insights</a>
-                <a href="https://modmediations.com/" target="_blank" class="hover:text-slate-900 transition text-slate-500 font-semibold flex items-center">Mediation ↗</a>
-                <a href="contact/index.html" class="hover:text-slate-900 transition">Contact</a>
-            </nav>
-        </div>
+    <style>
+        :root {
+            --primary: #1e293b; 
+            --accent: #b45309;  
+            --bg: #f8fafc;      
+            --text: #334155;    
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; margin: 0; padding: 0; }
+        header { background-color: var(--primary); color: white; text-align: center; padding: 4rem 2rem; border-bottom: 4px solid var(--accent); }
+        header h1 { font-size: 2.75rem; margin: 0; }
+        header p { font-size: 1.2rem; color: #94a3b8; margin-top: 0.5rem; }
+        nav { background-color: #0f172a; padding: 1rem; text-align: center; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+        nav a { color: white; text-decoration: none; font-weight: 500; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.2s; }
+        nav a:hover { color: var(--accent); }
+        
+        main { max-width: 900px; margin: 3rem auto; padding: 0 1.5rem; }
+        
+        /* 👤 BIO ROW STYLING */
+        .profile-section { 
+            background: white; 
+            padding: 2.5rem; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+            margin-bottom: 3rem; 
+            display: flex; 
+            gap: 2rem; 
+            align-items: flex-start;
+            border-left: 5px solid var(--primary);
+            scroll-margin-top: 2rem; /* Smooth offset spacing when jumping from homepage anchor */
+        }
+        
+        .profile-image-box { text-align: center; flex-shrink: 0; }
+        
+        .profile-img { 
+            width: 150px; 
+            height: 150px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 3px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .profile-placeholder {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #cbd5e1;
+            color: #475569;
+            line-height: 150px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            border: 3px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .profile-info { flex-grow: 1; }
+        .profile-info h2 { color: var(--primary); margin: 0 0 0.25rem 0; font-size: 1.8rem; }
+        .profile-info .title { color: var(--accent); font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem; }
+        
+        /* Mobile layout adjustment */
+        @media (max-width: 650px) {
+            .profile-section { flex-direction: column; align-items: center; text-align: center; }
+        }
+        
+        footer { background-color: var(--primary); color: #94a3b8; text-align: center; padding: 2rem; margin-top: 6rem; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our People</h1>
+        <p>Experienced Leadership & Dedicated Advocacy</p>
     </header>
 
-    <section class="bg-slate-100 py-12 px-6 border-b border-gray-200">
-        <div class="max-w-7xl mx-auto">
-            <h1 class="text-3xl md:text-4xl font-serif font-semibold text-slate-950">Our People</h1>
-            <p class="text-gray-600 mt-2 text-sm max-w-xl">Multi-jurisdictional trial attorneys and professional staff dedicated to strategic advocacy.</p>
-        </div>
-    </section>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/experience.html">Experience</a></li>
+            <li><a href="/insights.html">Insights</a></li>
+            <li><a href="/texas">Texas Branch</a></li>
+            <li><a href="/oklahoma">Oklahoma Branch</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <main class="flex-grow max-w-7xl mx-auto px-6 py-16 w-full grid md:grid-cols-4 gap-12">
-        
-        <div class="md:col-span-1 space-y-8">
-            <div>
-                <h3 class="text-xs font-mono uppercase tracking-widest text-slate-400 font-bold border-b border-gray-200 pb-2 mb-3">Attorneys</h3>
-                <ul class="space-y-4 text-sm">
-                    <li>
-                        <button onclick="showProfile('rob')" class="text-left w-full group cursor-pointer focus:outline-none">
-                            <span id="nav-rob" class="font-serif font-semibold text-slate-950 block text-base transition">Robert C. Newark, III</span>
-                            <span class="text-[10px] uppercase tracking-wide text-gray-500">Founder & Managing Attorney</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button onclick="showProfile('tyler')" class="text-left w-full group cursor-pointer focus:outline-none">
-                            <span id="nav-tyler" class="font-serif font-semibold text-slate-400 group-hover:text-slate-950 block text-base transition">Tyler Wilson</span>
-                            <span class="text-[10px] uppercase tracking-wide text-gray-500">Associate Attorney</span>
-                        </button>
-                    </li>
-                </ul>
+    <main>
+
+        <section class="profile-section" id="rob">
+            <div class="profile-image-box">
+                <img src="Rob Headshot.jpg" alt="Rob" class="profile-img">
             </div>
-            
-            <div>
-                <h3 class="text-xs font-mono uppercase tracking-widest text-slate-400 font-bold border-b border-gray-200 pb-2 mb-3">Professional Staff</h3>
-                <ul class="space-y-4 text-sm">
-                    <li>
-                        <button onclick="showProfile('kelly')" class="text-left w-full group cursor-pointer focus:outline-none">
-                            <span id="nav-kelly" class="font-serif font-semibold text-slate-400 group-hover:text-slate-950 block text-base transition">Kelly Raper</span>
-                            <span class="text-[10px] uppercase tracking-wide text-gray-500">Office Manager / Paralegal</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button onclick="showProfile('hayley')" class="text-left w-full group cursor-pointer focus:outline-none">
-                            <span id="nav-hayley" class="font-serif font-semibold text-slate-400 group-hover:text-slate-950 block text-base transition">Hayley Thompson</span>
-                            <span class="text-[10px] uppercase tracking-wide text-gray-500">Legal Secretary</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button onclick="showProfile('jenae')" class="text-left w-full group cursor-pointer focus:outline-none">
-                            <span id="nav-jenae" class="font-serif font-semibold text-slate-400 group-hover:text-slate-950 block text-base transition">Jenae Judge</span>
-                            <span class="text-[10px] uppercase tracking-wide text-gray-500">Legal Assistant</span>
-                        </button>
-                    </li>
-                </ul>
+            <div class="profile-info">
+                <h2>Rob</h2>
+                <div class="title">Managing Partner / Attorney at Law</div>
+                <p>Rob guides the strategic vision of Newark Firm, specializing in high-stakes corporate advocacy, transactional structures, and multi-jurisdictional legal operations across Texas and Oklahoma.</p>
             </div>
-        </div>
+        </section>
 
-        <div id="profile-grid" class="md:col-span-3 grid md:grid-cols-3 gap-10 items-start">
-            
-            <div id="profile-image-block" class="md:col-span-1">
-                <div class="w-full aspect-[3/4] bg-slate-200 border border-gray-200 rounded-xs overflow-hidden shadow-xs">
-                    <img id="profile-image" src="Rob%20Headshot.jpg" alt="Profile Photo" class="w-full h-full object-cover object-top" onerror="handleImageError(this);">
-                </div>
+        <section class="profile-section" id="tyler">
+            <div class="profile-image-box">
+                <img src="Tyler Headshot.jpg" alt="Tyler" class="profile-img">
             </div>
-
-            <div id="profile-content-block" class="md:col-span-2 space-y-6">
-                <div class="space-y-1">
-                    <span id="profile-role" class="text-xs font-mono uppercase tracking-widest text-slate-400 font-bold">Founder & Managing Attorney</span>
-                    <h2 id="profile-name" class="text-2xl font-serif font-semibold text-slate-950 tracking-tight">Robert C. Newark, III, Esq.</h2>
-                    <p id="profile-admitted" class="text-xs font-mono text-gray-500">Admitted: TX • OK</p>
-                </div>
-
-                <div id="profile-bio" class="text-gray-600 text-sm leading-relaxed tracking-wide space-y-4 font-light">
-                    <p>Robert C. Newark, III is the founder of Newark Law Firm, directing a premier, multi-jurisdictional trial and litigation practice. He brings extensive experience serving as lead trial counsel across both state and federal benches, managing complex dockets in business transactions, high-stakes personal injury, and federal bankruptcy portfolios.</p>
-                    <p>Prior to expanding his private practice across Texas and Oklahoma, Robert served as Assistant General Counsel for the Oklahoma Employment Security Commission. There, he prosecuted high-volume administrative enforcement actions, managed massive civil asset portfolios, and successfully litigated more than 100 adversary complaints within federal bankruptcy courts. A proud veteran, Robert brings disciplined strategy and unyielding trial-readiness to every legal objective.</p>
-                    <p>In addition to trial operations, Robert serves as a neutral third-party mediator across Texas and Oklahoma dockets. To evaluate current dispute panel availability or schedule an ADR session, connect directly via the MOD Mediation Portal (link in main navigation menu above).</p>
-                </div>
-
-                <div id="profile-details-row" class="border-t border-gray-200 pt-5 grid grid-cols-2 gap-6" style="display: grid;">
-                    <div>
-                        <h4 class="text-[10px] font-mono uppercase tracking-wider text-slate-950 font-bold mb-1.5">Capabilities / Focus Areas</h4>
-                        <p id="profile-practices" class="text-xs text-gray-600 leading-relaxed font-light">Corporate Law, Personal Injury, Criminal Defense, Bankruptcy Litigation, Creditor/Debtor Relations, General Civil Litigation</p>
-                    </div>
-                    <div>
-                        <h4 class="text-[10px] font-mono uppercase tracking-wider text-slate-950 font-bold mb-1.5">Education & Credentials</h4>
-                        <p id="profile-education" class="text-xs text-gray-600 leading-relaxed font-light"><strong>Oklahoma City University School of Law</strong>, J.D.<br><strong>University of North Texas</strong>, B.S.</p>
-                    </div>
-                </div>
+            <div class="profile-info">
+                <h2>Tyler</h2>
+                <div class="title">Partner / Senior Counsel</div>
+                <p>Tyler leads complex commercial litigation portfolios, delivering rigorous case management, analytical statutory defense strategies, and comprehensive representation for partnership entities.</p>
             </div>
-        </div>
+        </section>
+
+        <section class="profile-section" id="kelly">
+            <div class="profile-image-box">
+                <img src="Kelly Headshot.jpg" alt="Kelly" class="profile-img">
+            </div>
+            <div class="profile-info">
+                <h2>Kelly</h2>
+                <div class="title">Associate Attorney</div>
+                <p>Kelly counsels corporate and individual clients on regulatory compliance, asset protections, risk mitigation frameworks, and contract structural execution within regional jurisdictions.</p>
+            </div>
+        </section>
+
+        <section class="profile-section" id="hayley">
+            <div class="profile-image-box">
+                <img src="Hayley Headshot.jpg" alt="Hayley" class="profile-img">
+            </div>
+            <div class="profile-info">
+                <h2>Hayley</h2>
+                <div class="title">Legal Counsel / Business Advisor</div>
+                <p>Hayley brings extensive advisory expertise to operational planning, transactional compliance audits, corporate structuring mechanics, and tailored dispute resolutions.</p>
+            </div>
+        </section>
+
+        <section class="profile-section" id="jenae">
+            <div class="profile-image-box">
+                <div class="profile-placeholder">J</div>
+            </div>
+            <div class="profile-info">
+                <h2>Jenae</h2>
+                <div class="title">Firm Administration / Client Operations</div>
+                <p>Jenae manages centralized client coordination, scheduling architecture, operational logistics, and multi-office support streams for our regional network branches.</p>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="bg-slate-950 text-slate-400 py-8 text-center text-sm w-full mt-auto">
-        <p>&copy; 2026 Newark Firm. All Rights Reserved. <a href="disclaimer.html" class="underline hover:text-white ml-2">Disclaimer</a></p>
+    <footer>
+        <p>&copy; 2026 Newark Firm. All Rights Reserved. | <a href="/disclaimer.html" style="color: #94a3b8;">Disclaimer</a></p>
     </footer>
 
-    <script>
-        const roster = {
-            rob: {
-                name: "Robert C. Newark, III, Esq.",
-                role: "Founder & Managing Attorney",
-                admitted: "Admitted: TX • OK",
-                image: "Rob%20Headshot.jpg",
-                hasPhoto: true,
-                isAttorney: true,
-                practices: "Corporate Law, Personal Injury, Criminal Defense, Bankruptcy Litigation, Creditor/Debtor Relations, General Civil Litigation",
-                education: "<strong>Oklahoma City University School of Law</strong>, J.D.<br><strong>University of North Texas</strong>, B.S.",
-                bio: [
-                    "Robert C. Newark, III is the founder of Newark Law Firm, directing a premier, multi-jurisdictional trial and litigation practice. He brings extensive experience serving as lead trial counsel across both state and federal benches, managing complex dockets in business transactions, high-stakes personal injury, and federal bankruptcy portfolios.",
-                    "Prior to expanding his private practice across Texas and Oklahoma, Robert served as Assistant General Counsel for the Oklahoma Employment Security Commission. There, he prosecuted high-volume administrative enforcement actions, managed massive civil asset portfolios, and successfully litigated more than 100 adversary complaints within federal bankruptcy courts. A proud veteran, Robert brings disciplined strategy and unyielding trial-readiness to every legal objective.",
-                    "In addition to trial operations, Robert serves as a neutral third-party mediator across Texas and Oklahoma dockets. To evaluate current dispute panel availability or schedule an ADR session, connect directly via the MOD Mediation Portal (link in main navigation menu above)."
-                ]
-            },
-            tyler: {
-                name: "Tyler Wilson, Esq.",
-                role: "Associate Attorney",
-                admitted: "Admitted: OK • SD • WI • AK",
-                image: "Tyler%20Headshot.jpg",
-                hasPhoto: true,
-                isAttorney: true,
-                practices: "Financial Defense (Foreclosure, Debt Defense, Collections), Civil & Family Law (Landlord-Tenant, General Counsel), Specialized Litigation (Immigration, Tribal Law, Criminal Defense, Juvenile Deprived)",
-                education: "<strong>University of Oklahoma College of Law</strong>, J.D.<br><strong>University of Oklahoma College of Public Health</strong>, M.P.H.<br><strong>University of the Ozarks</strong>, B.S. (Biology)",
-                bio: [
-                    "With over a decade of dedicated legal practice, Tyler Wilson brings a powerhouse combination of strategic negotiation skills and broad multi-jurisdictional expertise to Newark Law Firm. Licensed to serve clients across multiple state jurisdictions, Tyler is a versatile advocate who excels in navigating complex litigation and high-stakes settlements.",
-                    "At the firm, Tyler oversees the complete lifecycle of litigation—from drafting meticulous court pleadings to making persuasive courtroom appearances. He stands as a cornerstone of the firm’s settlement department, where he handles and coordinates intensive negotiations to ensure optimal resolutions for his clients.",
-                    "Before joining Newark Law Firm, Tyler served as an attorney at the National Litigation Law Group, where he achieved staggering results: resolving more than 7,500 consumer debt cases and settling over $42 million in debt. His background also includes a tenure at the Velie Law Firm specializing in high-level immigration law, where he was instrumental in helping world-class athletes, renowned scientists, and global business leaders navigate complex U.S. visa processes.",
-                    "Outside of the office, Tyler is a former four-year starter on the University of the Ozarks collegiate tennis team and remains deeply connected to the sport, serving as a certified official for both the United States Tennis Association (USTA) and the Intercollegiate Tennis Association (ITA). He also believes in giving back to his alma mater, having served as a member and Treasurer of the University of the Ozarks Alumni Board.",
-                    "In addition to trial and counseling operations, Tyler serves as a neutral third-party panel mediator across regional alternative dispute frames. To evaluate active file coordinates or schedule a session, connect directly via the MOD Mediation Portal (link in main navigation menu above)."
-                ]
-            },
-            kelly: {
-                name: "Kelly Raper",
-                role: "Office Manager / Paralegal",
-                admitted: "",
-                image: "Kelly%20Headshot.jpg",
-                hasPhoto: true,
-                isAttorney: false,
-                practices: "",
-                education: "",
-                bio: [
-                    "Kelly Raper serves as the Office Manager and Senior Paralegal for Newark Firm, LLC. She has over 20 years of experience in the legal field assisting multiple attorneys across complex areas including Foreclosures, Foreclosure Defense, Bankruptcy, Collections, and high-volume Litigation dockets.",
-                    "Kelly brings an immense passion for working in the legal framework, focusing heavily on assisting clients through complex operational hurdles and establishing long-term, supportive connections with professional colleagues.",
-                    "Her professional tenure includes vital legal support positions with prior organizations including Baer & Timberlake PC, Shapiro & Cejda LLP, Kozeny & McCubbin LC, and the National Litigation Law Group.",
-                    "Outside of her administrative leadership at the firm, Kelly is a proud graduate of St. Gregory University and Midwest City High School. She is a dedicated community volunteer, an avid cross-fit and kickball enthusiast, a passionate Cincinnati Bengals fan, and a proud mother to her four-legged Dachshund named Rocky."
-                ]
-            },
-            hayley: {
-                name: "Hayley Thompson",
-                role: "Legal Secretary",
-                admitted: "",
-                image: "Hayley%20Headshot.jpg",
-                hasPhoto: true,
-                isAttorney: false,
-                practices: "",
-                education: "",
-                bio: [
-                    "Hayley Thompson manages administrative workflows and critical document coordination coordinates at Newark Firm. Immersed in the legal field since 2019, she focuses continuously on expanding her procedural capabilities with long-term goals toward pursuing formal paralegal certifications.",
-                    "Her prior professional background includes foundational legal office support tenures with Midland Mortgage and the National Litigation Law Group.",
-                    "Hayley is a graduate of Midwest City High School and attended Rose State College. She places a supreme priority on navigating a healthy work-life balance, keeping her family at the center of everything she does. Outside of her office support contributions, she stays consistently active through fitness and is a lifelong Disney fan."
-                ]
-            },
-            jenae: {
-                name: "Jenae Judge",
-                role: "Legal Assistant",
-                admitted: "",
-                image: "", // Empty to disable placeholder frame completely
-                hasPhoto: false, // Explicit hook to alter structural columns
-                isAttorney: false,
-                practices: "",
-                education: "",
-                bio: [
-                    "Jenae Judge is a Legal Assistant for Newark Firm, LLC, bringing over 20 years of extensive operational experience inside the corporate business industry. Prior to entering legal advocacy support, she managed complex administration frameworks for multiple energy organizations, including PostRock Energy Corporation, American Energy Partners LP, and Permian Resources LLC.",
-                    "Jenae attended the University of Oklahoma to build her baseline educational background.",
-                    "In addition to her legal workspace tasks, Jenae is the owner and head coach of 822 Athletics, where she actively mentors clients and guides them toward achieving overall health and structural fitness goals. She is a dedicated supporter of the Oklahoma Sooners and the Philadelphia Eagles, enjoys puzzles, cross-fit, and is a mother to her four-legged dog named Annie."
-                ]
-            }
-        };
-
-        function showProfile(key) {
-            const data = roster[key];
-            if (!data) return;
-
-            currentKeyActive = key;
-
-            // 1. Text & Dynamic Content Update
-            document.getElementById('profile-name').innerText = data.name;
-            document.getElementById('profile-role').innerText = data.role;
-
-            // 2. Control Dynamic Column Width Spanning based on Photo Status
-            const imageBlock = document.getElementById('profile-image-block');
-            const contentBlock = document.getElementById('profile-content-block');
-            
-            if (data.hasPhoto) {
-                document.getElementById('profile-image').src = data.image;
-                imageBlock.style.display = 'block'; // Make photo box visible
-                contentBlock.className = "md:col-span-2 space-y-6"; // Push bio to standard 2-column track
-            } else {
-                imageBlock.style.display = 'none'; // Completely hide left column photo slot
-                contentBlock.className = "md:col-span-3 space-y-6"; // Stretch text panel full width
-            }
-
-            // 3. Bar Admissions Configuration
-            const admittedEl = document.getElementById('profile-admitted');
-            if (data.admitted) {
-                admittedEl.innerText = data.admitted;
-                admittedEl.style.display = 'block';
-            } else {
-                admittedEl.style.display = 'none';
-            }
-
-            // 4. Metadata Grid Router (Attorney details visibility)
-            const detailsRow = document.getElementById('profile-details-row');
-            if (data.isAttorney) {
-                document.getElementById('profile-practices').innerText = data.practices;
-                document.getElementById('profile-education').innerHTML = data.education;
-                detailsRow.style.display = 'grid';
-            } else {
-                detailsRow.style.display = 'none';
-            }
-
-            // 5. Bio Build loop
-            const bioContainer = document.getElementById('profile-bio');
-            bioContainer.innerHTML = "";
-            data.bio.forEach(pText => {
-                const p = document.createElement('p');
-                p.innerHTML = pText;
-                bioContainer.appendChild(p);
-            });
-
-            // 6. Active Sidebar Selection Highlighting Weight Synchronizer
-            const keys = Object.keys(roster);
-            keys.forEach(k => {
-                const navItem = document.getElementById('nav-' + k);
-                if (navItem) {
-                    if (k === key) {
-                        navItem.classList.remove('text-slate-400');
-                        navItem.classList.add('text-slate-950');
-                    } else {
-                        navItem.classList.remove('text-slate-950');
-                        navItem.classList.add('text-slate-400');
-                    }
-                }
-            });
-        }
-
-        // Failsafe Asset Engine
-        let currentKeyActive = 'rob';
-        function handleImageError(imgElement) {
-            if (currentKeyActive === 'tyler') {
-                imgElement.src = "Tyler%20Headshot.jpg";
-            } else {
-                imgElement.src = 'https://via.placeholder.com/600x800/cbd5e1/475569?text=Photo+Pending';
-            }
-        }
-
-        window.addEventListener('DOMContentLoaded', () => {
-            showProfile('rob');
-        });
-    </script>
 </body>
 </html>
