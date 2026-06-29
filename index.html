@@ -27,12 +27,28 @@
         .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); }
         .card p { margin: 0.5rem 0; }
         .card a.branch-link { display: inline-block; margin-top: 1rem; color: var(--accent); font-weight: bold; text-decoration: none; }
-        .team-grid { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 2rem; }
-        .member { text-align: center; width: 150px; }
-        .member a { color: var(--primary); text-decoration: none; font-weight: bold; transition: color 0.2s; }
+        
+        /* 📸 STAFF PORTRAIT MODULE STYLING */
+        .team-grid { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; margin-top: 2rem; }
+        .member { text-align: center; width: 160px; }
+        .member a { color: var(--primary); text-decoration: none; font-weight: 600; display: block; }
         .member a:hover { color: var(--accent); }
-        .member-circle { background: #cbd5e1; width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 0.5rem; line-height: 100px; font-weight: bold; color: #475569; transition: transform 0.2s; }
-        .member:hover .member-circle { transform: scale(1.05); }
+        .avatar { 
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 3px solid var(--primary); 
+            margin: 0 auto 0.75rem; 
+            display: block;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, border-color 0.2s ease; 
+        }
+        .member a:hover .avatar { 
+            transform: scale(1.05); 
+            border-color: var(--accent); 
+        }
+        
         footer { background-color: var(--primary); color: #94a3b8; text-align: center; padding: 2rem; margin-top: 5rem; font-size: 0.9rem; }
     </style>
 
@@ -125,25 +141,25 @@
         <div class="team-grid">
             <div class="member">
                 <a href="/people.html#rob">
-                    <div class="member-circle">Rob</div>
+                    <img src="Rob Headshot.jpg" alt="Rob" class="avatar">
                     <span>Rob</span>
                 </a>
             </div>
             <div class="member">
                 <a href="/people.html#tyler">
-                    <div class="member-circle">Tyler</div>
+                    <img src="Tyler Headshot.jpg" alt="Tyler" class="avatar">
                     <span>Tyler</span>
                 </a>
             </div>
             <div class="member">
                 <a href="/people.html#hayley">
-                    <div class="member-circle">Hayley</div>
+                    <img src="Hayley Headshot.jpg" alt="Hayley" class="avatar">
                     <span>Hayley</span>
                 </a>
             </div>
             <div class="member">
                 <a href="/people.html#kelly">
-                    <div class="member-circle">Kelly</div>
+                    <img src="Kelly Headshot.jpg" alt="Kelly" class="avatar">
                     <span>Kelly</span>
                 </a>
             </div>
