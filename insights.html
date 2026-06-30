@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firm Insights & Legal Updates | Newark Firm</title>
-    <meta name="description" content="Stay informed with corporate legal insights, multi-jurisdictional compliance updates, and commercial advisory pieces from Newark Firm.">
+    <title>Firm Insights & Legal Updates | Newark Law Offices</title>
+    <meta name="description" content="Stay informed with corporate legal insights, multi-jurisdictional compliance updates, and commercial advisory pieces from Newark Law Offices.">
     <link rel="canonical" href="https://newarkfirm.com/insights.html">
 
     <style>
@@ -19,13 +19,12 @@
         header h1 { font-size: 2.75rem; margin: 0; }
         header p { font-size: 1.2rem; color: #94a3b8; margin-top: 0.5rem; }
         nav { background-color: #0f172a; padding: 1rem; text-align: center; }
-        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; align-items: center; }
         nav a { color: white; text-decoration: none; font-weight: 500; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.2s; }
         nav a:hover { color: var(--accent); }
         
         main { max-width: 900px; margin: 3rem auto; padding: 0 1.5rem; }
         
-        /* 📰 INSIGHTS ARTICLE CARD STYLING */
         .article-card {
             background: white;
             padding: 2.5rem;
@@ -35,49 +34,14 @@
             border-top: 4px solid var(--primary);
             transition: transform 0.2s ease;
         }
-        .article-card:hover {
-            transform: translateY(-2px);
-        }
-        
-        .article-meta {
-            font-size: 0.9rem;
-            color: #64748b;
-            margin-bottom: 0.5rem;
-            display: block;
-        }
-        
-        .article-card h2 {
-            color: var(--primary);
-            margin: 0 0 1rem 0;
-            font-size: 1.6rem;
-        }
-        
-        .article-card h3 {
-            color: var(--primary);
-            font-size: 1.2rem;
-            margin: 1.5rem 0 0.5rem 0;
-            border-left: 3px solid var(--accent);
-            padding-left: 0.75rem;
-        }
-
-        .briefing-item {
-            margin-bottom: 1.25rem;
-        }
-
-        .briefing-item strong {
-            color: var(--primary);
-        }
-
-        .read-more {
-            display: inline-block;
-            margin-top: 1.25rem;
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .read-more:hover {
-            text-decoration: underline;
-        }
+        .article-card:hover { transform: translateY(-2px); }
+        .article-meta { font-size: 0.9rem; color: #64748b; margin-bottom: 0.5rem; display: block; }
+        .article-card h2 { color: var(--primary); margin: 0 0 1rem 0; font-size: 1.6rem; }
+        .article-card h3 { color: var(--primary); font-size: 1.2rem; margin: 1.5rem 0 0.5rem 0; border-left: 3px solid var(--accent); padding-left: 0.75rem; }
+        .briefing-item { margin-bottom: 1.25rem; }
+        .briefing-item strong { color: var(--primary); }
+        .read-more { display: inline-block; margin-top: 1.25rem; color: var(--accent); text-decoration: none; font-weight: 600; }
+        .read-more:hover { text-decoration: underline; }
         
         footer { background-color: var(--primary); color: #94a3b8; text-align: center; padding: 2rem; margin-top: 6rem; font-size: 0.9rem; }
     </style>
@@ -96,13 +60,26 @@
             <li><a href="/experience.html">Experience</a></li>
             <li><a href="/people.html">Our People</a></li>
             <li><a href="https://modmediations.com/" target="_blank" rel="noopener">Mediation</a></li>
-            <li><a href="/texas">Texas Branch</a></li>
-            <li><a href="/oklahoma">Oklahoma Branch</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/texas.html">Texas Branch</a></li>
+            <li><a href="/oklahoma.html">Oklahoma Branch</a></li>
+            <li><a href="/contact.html">Contact Hub</a></li>
+            <li class="irs-conditional"><a href="/contact.html" style="color: #f59e0b; font-weight: bold; border: 1px solid var(--accent); background: rgba(180,83,9,0.1); padding: 0.4rem 0.75rem;">Pandemic Tax Relief</a></li>
         </ul>
     </nav>
 
     <main>
+
+        <article class="article-card irs-conditional" style="border-top-color: var(--accent); background-color: #fffbeb;">
+            <span class="article-meta" style="color: var(--accent); font-weight:bold;">⚠️ Practice Briefing • June 30, 2026</span>
+            <h2>Preserving Corporate Recovery Actions in Response to Kwong v. United States</h2>
+            <p>Mid-market S-Corporations, limited partnerships, and domestic business entities face a critical timeline intersection regarding IRS penalties assessed during the pandemic relief window. Our regulatory advisory team breaks down the filing protocols required to stall the statutory waiver limits.</p>
+            
+            <h3>The Legal Precedent</h3>
+            <div class="briefing-item"><strong>The Postponement Window:</strong> The Federal Court of Claims ruled that under IRC Section 7508A, the statutory timeline limits should have been calculated with adjustments reflecting the continuous federal disaster period running from January 20, 2020, through July 10, 2023.</div>
+            <div class="briefing-item"><strong>The Omission:</strong> The IRS failed to universally credit business accounts with these mandatory administrative delays, generating automated failure-to-file and late-deposit penalties against operating entities that were legally sheltered.</div>
+            <div class="briefing-item"><strong>The Countermeasure:</strong> Because the federal government has advanced an appeal to overturn the taxpayer victory, the IRS will not automatically distribute refunds. Operating entities must lodge a physical paper <strong>Form 843 Protective Claim</strong> to block the statute of limitations from locking permanently on <strong>July 10, 2026</strong>.</div>
+            <a href="/contact.html" class="read-more">Request Transcript Compliance Audit Now →</a>
+        </article>
 
         <article class="article-card">
             <span class="article-meta">Strategic Jurisdictional Briefing &bull; June 28, 2026</span>
@@ -112,32 +89,24 @@
             <h3>Supreme Court of Texas: Harris County Deportation Defense Funding Ordered Frozen</h3>
             <div class="briefing-item"><strong>The Dispute:</strong> Attorney General Paxton initiated a lawsuit against Harris County, alleging the municipality acted unlawfully by directing over 1.3 million dollars in local taxpayer funds to establish a public program explicitly designed to provide legal representation to undocumented individuals facing federal deportation proceedings.</div>
             <div class="briefing-item"><strong>The Mandate:</strong> The court granted the state's request, entering a formal order that explicitly bars Harris County from continuing to disburse or allocate public funds into the program while the underlying constitutional litigation proceeds.</div>
-            <div class="briefing-item"><strong>The Legal Principle:</strong> The state successfully argued that local county governments lack the foundational statutory authority to divert taxpayer resources to actively interfere with or defend against federal immigration enforcement dockets.</div>
-            <div class="briefing-item"><strong>The Practice Takeaway:</strong> Corporate, administrative, and municipal practitioners must note this zero-tolerance stance toward local government entities attempting to create independent immigration policy. Corporate counsel should advise municipal clients that the high court is strictly enforcing statutory limits on public fund distribution as this case continues to be litigated.</div>
-
-            <h3>Supreme Court of Texas: Sovereign Immunity Bars Uvalde Negligence Claims</h3>
-            <div class="briefing-item"><strong>The Core Pleading:</strong> Families of survivors sued the Texas Department of Public Safety and Uvalde County, arguing severe tactical delays and operational communication breakdowns contributed directly to the scale of the tragedy. Plaintiffs alleged law enforcement officers' failure to use available ballistics shields, armor, and communication gear directly aggravated the situation.</div>
-            <div class="briefing-item"><strong>The Holding:</strong> The High Court let a lower court dismissal stand, reinforcing the ironclad scope of governmental sovereign immunity.</div>
-            <div class="briefing-item"><strong>The Structural Barrier:</strong> The court affirmed the long-standing Texas rule that under the Texas Tort Claims Act, the non-use of government property does not constitute a waiver of immunity. Because the statute strictly requires an injury to be directly caused by a defect or the active, negligent use of state property, tactical omissions and operational delays do not unlock a path to sue state entities. The court reiterated that expanding waivers of immunity is a policy matter belonging strictly to the Texas Legislature, not the judiciary.</div>
-
-            <h3>Environmental Law: Multi-Decade Illinois River Watershed Litigation Hits Stalemate</h3>
-            <div class="briefing-item"><strong>The Historical Context:</strong> Initiated over 20 years ago by former Oklahoma Attorney General Drew Edmondson, the state sued 14 major poultry companies, including Tyson Foods, alleging that bird waste runoff heavily contaminated the scenic Illinois River Watershed with high levels of phosphorus.</div>
-            <div class="briefing-item"><strong>The Current Battle:</strong> While a 2023 ruling found the poultry companies responsible, recent efforts by select companies to execute a less expensive, negotiated cleanup plan with state officials have completely broken down. Judge Frizzell formally rejected the proposed settlements, leaving both environmental advocates and agricultural producers in a prolonged state of legal limbo.</div>
-            <div class="briefing-item"><strong>The Corporate Impact:</strong> Tyson Foods has indicated it will not renew grower contracts in the watershed unless the settlements go through, signaling extreme economic pressure on local agricultural operations as multiple appeals remain pending.</div>
-        </article>
-
-        <article class="article-card">
-            <span class="article-meta">Corporate Advisory &bull; Texas & Oklahoma</span>
-            <h2>Navigating Cross-Border Corporate Compliance in the South Central Region</h2>
-            <p>Operating a corporate partnership or mid-sized commercial entity across the state lines of Texas and Oklahoma introduces distinct multi-jurisdictional statutory demands. From localized tax structuring considerations to disparate employment security commission guidelines, businesses must employ preventative risk screening frameworks to avoid complex civil litigation dockets.</p>
-            <a href="#" class="read-more">Read Full Article &rarr;</a>
         </article>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Newark Firmcopy; 2026 Newark Law Offices. All Rights Reserved. | <a href="/disclaimer.html" style="color: #94a3b8;">Disclaimer</a></p>
+        <p>&copy; 2026 Newark Law Offices. All Rights Reserved. | <a href="/disclaimer.html" style="color: #94a3b8;">Disclaimer</a></p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const expirationDate = new Date("2026-07-11T00:00:00");
+            const currentDate = new Date();
+            if (currentDate >= expirationDate) {
+                const taxElements = document.querySelectorAll(".irs-conditional");
+                taxElements.forEach(element => element.remove());
+            }
+        });
+    </script>
 
 </body>
 </html>

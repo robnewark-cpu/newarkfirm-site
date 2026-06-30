@@ -3,96 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Our Offices | Newark Firm</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-gray-50 text-gray-900 font-sans flex flex-col min-h-screen">
+    <title>Contact Our Offices & Secure Portal | Newark Law Offices</title>
+    <meta name="description" content="Connect securely with Newark Law Offices for confidential corporate litigation, financial defense, and time-sensitive pandemic tax relief audits.">
+    <link rel="canonical" href="https://newarkfirm.com/contact.html">
 
-    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="text-2xl font-bold tracking-tight text-slate-900">
-                <a href="../index.html">NEWARK<span class="text-slate-500 font-light">FIRM</span></a>
-            </div>
-            <nav class="hidden md:flex space-x-8 font-medium text-sm tracking-wide text-gray-600 uppercase">
-                <a href="../people.html" class="hover:text-slate-900 transition">People</a>
-                <a href="../experience.html" class="hover:text-slate-900 transition">Experience</a>
-                <a href="../about.html" class="hover:text-slate-900 transition">About Us</a>
-                <a href="../insights.html" class="hover:text-slate-900 transition">Insights</a>
-                <a href="index.html" class="text-slate-900 font-bold border-b-2 border-slate-900 pb-1">Contact</a>
-            </nav>
-        </div>
+    <style>
+        :root {
+            --primary: #1e293b; 
+            --accent: #b45309;  
+            --bg: #f8fafc;      
+            --text: #334155;    
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; margin: 0; padding: 0; }
+        header { background-color: var(--primary); color: white; text-align: center; padding: 4rem 2rem; border-bottom: 4px solid var(--accent); }
+        header h1 { font-size: 2.75rem; margin: 0; }
+        header p { font-size: 1.2rem; color: #94a3b8; margin-top: 0.5rem; }
+        nav { background-color: #0f172a; padding: 1rem; text-align: center; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; align-items: center; }
+        nav a { color: white; text-decoration: none; font-weight: 500; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.2s; }
+        nav a:hover { color: var(--accent); }
+        
+        main { max-width: 1000px; margin: 3rem auto; padding: 0 1.5rem; }
+        
+        .flex-container { display: flex; gap: 2.5rem; flex-wrap: wrap; }
+        .sidebar-info { flex: 1; min-width: 320px; }
+        .portal-box { flex: 1.5; min-width: 350px; background: white; padding: 2.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); }
+        
+        .contact-card { background: white; padding: 1.75rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 1.5rem; border-left: 4px solid var(--primary); }
+        .tax-alert-box { background-color: #fffbeb; border: 1px solid #f59e0b; border-left: 4px solid var(--accent); padding: 1.5rem; border-radius: 6px; margin-bottom: 1.5rem; font-size: 0.95rem; }
+        
+        .contact-card h3 { margin: 0 0 0.5rem 0; color: var(--primary); font-size: 1.2rem; }
+        .contact-card p { margin: 0; font-size: 0.95rem; color: var(--text); }
+        .contact-card a { color: var(--accent); text-decoration: none; font-weight: 600; }
+        .contact-card a:hover { text-decoration: underline; }
+        
+        .iframe-container { width: 100%; height: 850px; border: none; margin-top: 1rem; }
+        footer { background-color: var(--primary); color: #94a3b8; text-align: center; padding: 2rem; margin-top: 6rem; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Our Legal Teams</h1>
+        <p>Confidential Consultation & Intake Operations</p>
     </header>
 
-    <section class="bg-slate-100 py-12 px-6 border-b border-gray-200">
-        <div class="max-w-7xl mx-auto">
-            <h1 class="text-3xl md:text-4xl font-serif font-semibold text-slate-950">Contact Our Offices</h1>
-            <p class="text-gray-600 mt-2 text-sm max-w-xl">Connect with our legal teams to map out solutions for your litigation or transactional goals. Initial consultations are strictly confidential.</p>
-        </div>
-    </section>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/experience.html">Experience</a></li>
+            <li><a href="/people.html">Our People</a></li>
+            <li><a href="/insights.html">Insights</a></li>
+            <li><a href="https://modmediations.com/" target="_blank" rel="noopener">Mediation</a></li>
+            <li><a href="/texas.html">Texas Branch</a></li>
+            <li><a href="/oklahoma.html">Oklahoma Branch</a></li>
+            <li><a href="/contact.html">Contact Hub</a></li>
+            <li class="irs-conditional"><a href="/contact.html" style="color: #f59e0b; font-weight: bold; border: 1px solid var(--accent); background: rgba(180,83,9,0.1); padding: 0.4rem 0.75rem;">Pandemic Tax Relief</a></li>
+        </ul>
+    </nav>
 
-    <main class="flex-grow max-w-7xl mx-auto px-6 py-16 w-full grid md:grid-cols-5 gap-12">
-        
-        <div class="md:col-span-2 space-y-8">
-            <div class="grid grid-cols-2 gap-4 border-b border-gray-200 pb-6">
-                <div>
-                    <h3 class="text-xs font-mono uppercase tracking-widest text-slate-400 font-bold">Toll-Free Phone</h3>
-                    <p class="text-base font-serif font-semibold text-slate-950 mt-1">
-                        <a href="tel:8662307236" class="hover:underline">866-230-7236</a>
-                    </p>
-                </div>
-                <div>
-                    <h3 class="text-xs font-mono uppercase tracking-widest text-slate-400 font-bold">Central Fax</h3>
-                    <p class="text-sm font-mono font-medium text-slate-950 mt-1">888-316-3398</p>
-                </div>
-            </div>
-
-            <div class="p-4 bg-slate-100 border-l-2 border-slate-950">
-                <p class="text-xs text-gray-600 leading-relaxed font-normal">
-                    To preserve absolute legal confidentiality, physical office visits are coordinated <strong>by appointment only</strong>. Please submit our form or call directly to anchor your session timeline.
-                </p>
-            </div>
-
-            <div class="space-y-4 pt-2">
-                
-                <div class="p-5 border border-gray-200 bg-white rounded-xs space-y-2 shadow-2xs">
-                    <h4 class="text-xs font-mono uppercase tracking-wider text-slate-950 font-bold">Dallas, Texas Office</h4>
-                    <p class="text-xs text-gray-600 leading-relaxed">1341 W Mockingbird Ln, Suite 600W<br>Dallas, TX 75247</p>
-                    <div class="pt-1">
-                        <a href="https://www.google.com/maps/search/?api=1&query=1341+W+Mockingbird+Ln+Suite+600W+Dallas+TX+75247" target="_blank" class="inline-block text-[11px] font-mono uppercase tracking-wider text-slate-950 hover:underline font-bold">
-                            Launch GPS Directions →
-                        </a>
-                    </div>
-                </div>
-
-                <div class="p-5 border border-gray-200 bg-white rounded-xs space-y-2 shadow-2xs">
-                    <h4 class="text-xs font-mono uppercase tracking-wider text-slate-950 font-bold">Edmond, Oklahoma Office</h4>
-                    <p class="text-xs text-gray-600 leading-relaxed">1019 Waterwood Pkwy, Suite C<br>Edmond, OK 73034</p>
-                    <div class="pt-1">
-                        <a href="https://www.google.com/maps/search/?api=1&query=1019+Waterwood+Pkwy+Suite+C+Edmond+OK+73034" target="_blank" class="inline-block text-[11px] font-mono uppercase tracking-wider text-slate-950 hover:underline font-bold">
-                            Launch GPS Directions →
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="md:col-span-3 bg-white p-4 md:p-6 border border-gray-200 shadow-xs rounded-xs h-auto min-h-[850px]">
-            <h3 class="text-xs font-mono uppercase tracking-wider text-gray-400 mb-4 font-bold border-b border-gray-100 pb-2">Secure Intake Portal</h3>
+    <main>
+        <div class="flex-container">
             
-            <iframe 
-                src="https://a-newark-firm-llc.mycase.com/contact_us/k3thcaHkGAjzYxsoAu6k4swB" 
-                title="Contact Us Form" 
-                class="w-full h-[800px] border-0"
-                scrolling="no">
-            </iframe>
-        </div>
+            <div class="sidebar-info">
+                <div class="tax-alert-box irs-conditional">
+                    <strong style="color: var(--primary); display:block; margin-bottom: 0.25rem;">📊 Transcript Audit Submissions:</strong>
+                    If you are utilizing our firm to audit your pandemic-era IRS accounts under the <em>Kwong</em> ruling, please state <strong>"IRS Transcript Review"</strong> in the description field on the portal form, and attach your downloaded IRS Account Transcripts (Form 1040, 1120S, or 941). Urgent filings must clear before July 10, 2026.
+                </div>
 
+                <div class="contact-card">
+                    <h3>Communications Hub</h3>
+                    <p><strong>Toll-Free Voice:</strong> <a href="tel:8662307236">866-230-7236</a></p>
+                    <p><strong>Central Secure Fax:</strong> 888-316-3398</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Texas Regional Hub</h3>
+                    <p>1341 W Mockingbird Ln, Suite 600W<br>Dallas, TX 75247</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Oklahoma Regional Hub</h3>
+                    <p>1019 Waterwood Pkwy, Suite C<br>Edmond, OK 73034</p>
+                </div>
+            </div>
+
+            <div class="portal-box">
+                <h2 style="margin-top:0; color: var(--primary); font-size:1.5rem; border-bottom:2px solid #e2e8f0; padding-bottom:0.5rem;">Secure Encryption Intake Portal</h2>
+                <iframe 
+                    src="https://a-newark-firm-llc.mycase.com/contact_us/k3thcaHkGAjzYxsoAu6k4swB" 
+                    title="MyCase Client Entry Point" 
+                    class="iframe-container"
+                    scrolling="auto">
+                </iframe>
+            </div>
+
+        </div>
     </main>
 
-    <footer class="bg-slate-950 text-slate-400 py-8 text-center text-sm w-full mt-auto">
-        <p>© 2026 Newark Firm. All Rights Reserved. <a href="../disclaimer.html" class="underline hover:text-white ml-2">Disclaimer</a></p>
+    <footer>
+        <p>&copy; 2026 Newark Law Offices. All Rights Reserved. | <a href="/disclaimer.html" style="color: #94a3b8;">Disclaimer</a></p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const expirationDate = new Date("2026-07-11T00:00:00");
+            const currentDate = new Date();
+            if (currentDate >= expirationDate) {
+                const taxElements = document.querySelectorAll(".irs-conditional");
+                taxElements.forEach(element => element.remove());
+            }
+        });
+    </script>
 
 </body>
 </html>

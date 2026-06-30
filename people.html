@@ -19,72 +19,23 @@
         header h1 { font-size: 2.75rem; margin: 0; }
         header p { font-size: 1.2rem; color: #94a3b8; margin-top: 0.5rem; }
         nav { background-color: #0f172a; padding: 1rem; text-align: center; }
-        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; align-items: center; }
         nav a { color: white; text-decoration: none; font-weight: 500; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.2s; }
         nav a:hover { color: var(--accent); }
         
         main { max-width: 900px; margin: 3rem auto; padding: 0 1.5rem; }
-        
-        .category-heading {
-            color: var(--primary);
-            border-bottom: 3px solid var(--accent);
-            padding-bottom: 0.5rem;
-            margin: 4rem 0 2rem 0;
-            font-size: 2rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .profile-section { 
-            background: white; 
-            padding: 2.5rem; 
-            border-radius: 8px; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
-            margin-bottom: 2.5rem; 
-            display: flex; 
-            gap: 2rem; 
-            align-items: flex-start;
-            border-left: 5px solid var(--primary);
-            scroll-margin-top: 2rem;
-        }
-        
+        .category-heading { color: var(--primary); border-bottom: 3px solid var(--accent); padding-bottom: 0.5rem; margin: 4rem 0 2rem 0; font-size: 1.8rem; uppercase; }
+        .profile-section { background: white; padding: 2.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 2.5rem; display: flex; gap: 2rem; align-items: flex-start; border-left: 5px solid var(--primary); scroll-margin-top: 2rem; }
         .profile-image-box { text-align: center; flex-shrink: 0; }
-        
-        .profile-img { 
-            width: 150px; 
-            height: 150px; 
-            border-radius: 50%; 
-            object-fit: cover; 
-            border: 3px solid var(--primary);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        .profile-placeholder {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background-color: #cbd5e1;
-            color: #475569;
-            line-height: 150px;
-            font-size: 2.5rem;
-            font-weight: bold;
-            text-align: center;
-            border: 3px solid var(--primary);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .profile-placeholder { width: 150px; height: 150px; border-radius: 50%; background-color: #cbd5e1; color: #475569; line-height: 150px; font-size: 2.5rem; font-weight: bold; text-align: center; border: 3px solid var(--primary); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .profile-info { flex-grow: 1; }
         .profile-info h2 { color: var(--primary); margin: 0 0 0.25rem 0; font-size: 1.8rem; }
         .profile-info .title { color: var(--accent); font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem; }
-        
         .meta-list { list-style: none; padding: 0; margin: 0; }
         .meta-list li { margin-bottom: 0.5rem; font-size: 1rem; }
         .meta-list strong { color: var(--primary); }
-        
-        @media (max-width: 650px) {
-            .profile-section { flex-direction: column; align-items: center; text-align: center; }
-        }
-        
+        @media (max-width: 650px) { .profile-section { flex-direction: column; align-items: center; text-align: center; } }
         footer { background-color: var(--primary); color: #94a3b8; text-align: center; padding: 2rem; margin-top: 6rem; font-size: 0.9rem; }
     </style>
 </head>
@@ -100,11 +51,13 @@
             <li><a href="/">Home</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="/experience.html">Experience</a></li>
+            <li><a href="/people.html">Our People</a></li>
             <li><a href="/insights.html">Insights</a></li>
             <li><a href="https://modmediations.com/" target="_blank" rel="noopener">Mediation</a></li>
-            <li><a href="/texas">Texas Branch</a></li>
-            <li><a href="/oklahoma">Oklahoma Branch</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/texas.html">Texas Branch</a></li>
+            <li><a href="/oklahoma.html">Oklahoma Branch</a></li>
+            <li><a href="/contact.html">Contact Hub</a></li>
+            <li class="irs-conditional"><a href="/contact.html" style="color: #f59e0b; font-weight: bold; border: 1px solid var(--accent); background: rgba(180,83,9,0.1); padding: 0.4rem 0.75rem;">Pandemic Tax Relief</a></li>
         </ul>
     </nav>
 
@@ -114,16 +67,13 @@
 
         <section class="profile-section" id="rob">
             <div class="profile-image-box">
-                <img src="Rob Headshot.jpg" alt="Rob" class="profile-img">
+                <img src="Rob Headshot.jpg" alt="Robert Newark" class="profile-img">
             </div>
             <div class="profile-info">
                 <h2>Robert Newark</h2>
                 <div class="title">Managing Partner / Attorney / Owner</div>
                 <ul class="meta-list">
                     <li><strong>States Licensed:</strong> Texas, Oklahoma</li>
-                    <li><strong>Federal District Courts:</strong> Admitted to practice before the United States District Courts for the Western, Northern, Southern, and Eastern Districts of Texas; the Eastern, Western, and Northern Districts of Oklahoma; the Western and Eastern Districts of Arkansas; and the Districts of Colorado and New Mexico</li>
-                    <li><strong>Federal Appellate Admissions:</strong> Admitted to practice before the United States Courts of Appeals for the Fifth and Tenth Circuits</li>
-                    <li><strong>Education:</strong> J.D., Oklahoma City University School of Law; B.S. in Political Science, University of North Texas</li>
                     <li><strong>Core Expertise:</strong> Multi-jurisdictional trial and evidentiary litigation across federal and state court dockets. Offers professional alternative dispute resolution services directly through the <a href="https://modmediations.com/" target="_blank" rel="noopener" style="color: var(--accent); font-weight: bold; text-decoration: underline;">Newark Mediation Portal</a>.</li>
                 </ul>
             </div>
@@ -131,25 +81,23 @@
 
         <section class="profile-section" id="tyler">
             <div class="profile-image-box">
-                <img src="Tyler Headshot.jpg" alt="Tyler" class="profile-img">
+                <img src="Tyler Headshot.jpg" alt="Tyler Wilson" class="profile-img">
             </div>
             <div class="profile-info">
                 <h2>Tyler Wilson</h2>
                 <div class="title">Attorney at Law</div>
                 <ul class="meta-list">
                     <li><strong>States Licensed:</strong> Alaska, Oklahoma, Wisconsin, South Dakota</li>
-                    <li><strong>Education:</strong> J.D., University of Oklahoma College of Law; M.P.H. in Healthcare Administration & Policy, University of Oklahoma College of Public Health; B.S. in Biology, University of the Ozarks</li>
                     <li><strong>Core Expertise:</strong> Litigation lifecycle management, high-stakes settlements, financial defense, civil law, and specialized litigation</li>
                 </ul>
             </div>
         </section>
 
-
         <h2 class="category-heading">Firm Staff</h2>
 
         <section class="profile-section" id="kelly">
             <div class="profile-image-box">
-                <img src="Kelly Headshot.jpg" alt="Kelly" class="profile-img">
+                <img src="Kelly Headshot.jpg" alt="Kelly Raper" class="profile-img">
             </div>
             <div class="profile-info">
                 <h2>Kelly Raper</h2>
@@ -162,7 +110,7 @@
 
         <section class="profile-section" id="hayley">
             <div class="profile-image-box">
-                <img src="Hayley Headshot.jpg" alt="Hayley" class="profile-img">
+                <img src="Hayley Headshot.jpg" alt="Hayley Thompson" class="profile-img">
             </div>
             <div class="profile-info">
                 <h2>Hayley Thompson</h2>
@@ -192,6 +140,16 @@
         <p>&copy; 2026 Newark Law Offices. All Rights Reserved. | <a href="/disclaimer.html" style="color: #94a3b8;">Disclaimer</a></p>
     </footer>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const expirationDate = new Date("2026-07-11T00:00:00");
+            const currentDate = new Date();
+            if (currentDate >= expirationDate) {
+                const taxElements = document.querySelectorAll(".irs-conditional");
+                taxElements.forEach(element => element.remove());
+            }
+        });
+    </script>
+
 </body>
 </html>
-

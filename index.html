@@ -22,7 +22,7 @@
           "streetAddress": "1341 W. Mockingbird Ln, Ste 600W",
           "addressLocality": "Dallas",
           "addressRegion": "TX",
-          "postalCode": "75243",
+          "postalCode": "75247",
           "addressCountry": "US"
         },
         {
@@ -49,10 +49,25 @@
         header h1 { font-size: 2.75rem; margin: 0; }
         header h2 { font-size: 1.4rem; color: #94a3b8; font-weight: 300; margin: 0.5rem 0 1.5rem 0; }
         nav { background-color: #0f172a; padding: 1rem; text-align: center; }
-        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; align-items: center; }
         nav a { color: white; text-decoration: none; font-weight: 500; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.2s; }
         nav a:hover { color: var(--accent); }
         main { max-width: 1000px; margin: 3rem auto; padding: 0 1.5rem; }
+        
+        .urgency-banner {
+            background-color: #fffbeb;
+            border: 2px solid #f59e0b;
+            border-left: 6px solid var(--accent);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .urgency-banner h3 { color: var(--primary); margin: 0 0 0.5rem 0; font-size: 1.4rem; }
+        .urgency-banner p { margin: 0 0 1.25rem 0; color: var(--text); font-size: 1rem; }
+        .urgency-btn { display: inline-block; background-color: var(--accent); color: white; text-decoration: none; font-weight: 600; padding: 0.6rem 1.25rem; border-radius: 4px; transition: background 0.2s; }
+        .urgency-btn:hover { background-color: #9a4004; }
+
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 1.5rem; }
         .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); }
         .card p { margin: 0.5rem 0; }
@@ -74,23 +89,9 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease; 
         }
-        
-        .placeholder-circle {
-            background-color: #cbd5e1;
-            color: #475569;
-            line-height: 120px;
-            font-size: 2.2rem;
-            font-weight: bold;
-        }
-        
-        .member a:hover .avatar, .member a:hover .placeholder-circle { 
-            transform: scale(1.05); 
-            border-color: var(--accent); 
-        }
-        .member a:hover .placeholder-circle {
-            background-color: #e2e8f0;
-            color: var(--accent);
-        }
+        .placeholder-circle { background-color: #cbd5e1; color: #475569; line-height: 120px; font-size: 2.2rem; font-weight: bold; }
+        .member a:hover .avatar, .member a:hover .placeholder-circle { transform: scale(1.05); border-color: var(--accent); }
+        .member a:hover .placeholder-circle { background-color: #e2e8f0; color: var(--accent); }
         
         footer { background-color: var(--primary); color: #94a3b8; text-align: center; padding: 2rem; margin-top: 5rem; font-size: 0.9rem; }
     </style>
@@ -105,18 +106,26 @@
 
     <nav>
         <ul>
+            <li><a href="/">Home</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="/experience.html">Experience</a></li>
             <li><a href="/people.html">Our People</a></li>
             <li><a href="/insights.html">Insights</a></li>
             <li><a href="https://modmediations.com/" target="_blank" rel="noopener">Mediation</a></li>
-            <li><a href="/texas">Texas Branch</a></li>
-            <li><a href="/oklahoma">Oklahoma Branch</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/texas.html">Texas Branch</a></li>
+            <li><a href="/oklahoma.html">Oklahoma Branch</a></li>
+            <li><a href="/contact.html">Contact Hub</a></li>
+            <li class="irs-conditional"><a href="/contact.html" style="color: #f59e0b; font-weight: bold; border: 1px solid var(--accent); background: rgba(180,83,9,0.1); padding: 0.4rem 0.75rem;">Pandemic Tax Relief</a></li>
         </ul>
     </nav>
 
     <main>
+        <section class="urgency-banner irs-conditional">
+            <h3>⚠️ Time-Sensitive Legal Notice: COVID-19 Penalty Recovery</h3>
+            <p>Pursuant to the landmark federal ruling in <strong>Kwong v. United States</strong>, businesses and individuals who paid IRS late-filing fees, underpayment penalties, or interest between 2020 and 2023 may be entitled to a full financial recovery. The absolute deadline to preserve your rights via a formal Protective Claim is <strong>July 10, 2026</strong>. Request a transcript compliance audit before the window permanently expires.</p>
+            <a href="/contact.html" class="urgency-btn">Request Transcript Compliance Audit →</a>
+        </section>
+
         <section style="text-align:center; margin-bottom: 4rem;">
             <h2>Dedicated Advocacy & Corporate Counsel</h2>
             <p style="max-width: 700px; margin: 0 auto; font-size: 1.1rem;">Newark Law Offices represents national corporations, localized partnerships, and prominent individuals across state lines, bringing elite legal focus to high-stakes litigation and advisory portfolios.</p>
@@ -126,12 +135,12 @@
         <div class="grid">
             <div class="card">
                 <h3>Texas Division</h3>
-                <p><strong>Address:</strong><br>1341 W. Mockingbird Ln, Ste 600W<br>Dallas, TX 75243</p>
+                <p><strong>Address:</strong><br>1341 W. Mockingbird Ln, Ste 600W<br>Dallas, TX 75247</p>
                 <p style="margin-top: 1rem;"><strong>Phone:</strong> 972-332-5733</p>
                 <p><strong>Toll-Free:</strong> 866-230-7236</p>
                 <p><strong>Fax:</strong> 888-316-3398</p>
                 <p><strong>Email:</strong> <a href="mailto:texas@newarkfirm.com" style="color: var(--primary);">texas@newarkfirm.com</a></p>
-                <a href="/texas" class="branch-link">View Texas Profile →</a>
+                <a href="/texas.html" class="branch-link">View Texas Profile →</a>
             </div>
 
             <div class="card">
@@ -141,7 +150,7 @@
                 <p><strong>Toll-Free:</strong> 866-230-7236</p>
                 <p><strong>Fax:</strong> 888-316-3398</p>
                 <p><strong>Email:</strong> <a href="mailto:oklahoma@newarkfirm.com" style="color: var(--primary);">oklahoma@newarkfirm.com</a></p>
-                <a href="/oklahoma" class="branch-link">View Oklahoma Profile →</a>
+                <a href="/oklahoma.html" class="branch-link">View Oklahoma Profile →</a>
             </div>
         </div>
 
@@ -149,32 +158,32 @@
         <div class="team-grid">
             <div class="member">
                 <a href="/people.html#rob">
-                    <img src="Rob Headshot.jpg" alt="Rob" class="avatar">
-                    <span>Rob</span>
+                    <img src="Rob Headshot.jpg" alt="Robert Newark" class="avatar">
+                    <span>Robert Newark</span>
                 </a>
             </div>
             <div class="member">
                 <a href="/people.html#tyler">
-                    <img src="Tyler Headshot.jpg" alt="Tyler" class="avatar">
-                    <span>Tyler</span>
+                    <img src="Tyler Headshot.jpg" alt="Tyler Wilson" class="avatar">
+                    <span>Tyler Wilson</span>
                 </a>
             </div>
             <div class="member">
                 <a href="/people.html#kelly">
-                    <img src="Kelly Headshot.jpg" alt="Kelly" class="avatar">
-                    <span>Kelly</span>
+                    <img src="Kelly Headshot.jpg" alt="Kelly Raper" class="avatar">
+                    <span>Kelly Raper</span>
                 </a>
             </div>
             <div class="member">
                 <a href="/people.html#hayley">
-                    <img src="Hayley Headshot.jpg" alt="Hayley" class="avatar">
-                    <span>Hayley</span>
+                    <img src="Hayley Thompson" alt="Hayley Thompson" class="avatar">
+                    <span>Hayley Thompson</span>
                 </a>
             </div>
             <div class="member">
                 <a href="/people.html#jenae">
                     <div class="placeholder-circle">J</div>
-                    <span>Jenae</span>
+                    <span>Jenae Judge</span>
                 </a>
             </div>
         </div>
@@ -183,6 +192,17 @@
     <footer>
         <p>&copy; 2026 Newark Law Offices. All Rights Reserved. | <a href="/disclaimer.html" style="color: #94a3b8;">Disclaimer</a></p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const expirationDate = new Date("2026-07-11T00:00:00");
+            const currentDate = new Date();
+            if (currentDate >= expirationDate) {
+                const taxElements = document.querySelectorAll(".irs-conditional");
+                taxElements.forEach(element => element.remove());
+            }
+        });
+    </script>
 
 </body>
 </html>
