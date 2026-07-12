@@ -50,7 +50,6 @@
             <li><a href="/texas.html">Texas Branch</a></li>
             <li><a href="/oklahoma.html">Oklahoma Branch</a></li>
             <li><a href="/contact.html">Contact Hub</a></li>
-            <li class="irs-conditional"><a href="/contact.html" style="color: #f59e0b; font-weight: bold; border: 1px solid var(--accent); background: rgba(180,83,9,0.1); padding: 0.4rem 0.75rem;">Pandemic Tax Relief</a></li>
         </ul>
     </nav>
 
@@ -66,17 +65,6 @@
     <footer>
         <p>© 2026 Newark Law Offices. All Rights Reserved. | <a href="/disclaimer.html" style="color: #94a3b8;">Disclaimer</a></p>
     </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const expirationDate = new Date("2026-07-11T00:00:00");
-            const currentDate = new Date();
-            if (currentDate >= expirationDate) {
-                const taxElements = document.querySelectorAll(".irs-conditional");
-                taxElements.forEach(element => element.remove());
-            }
-        });
-    </script>
 
 </body>
 </html>

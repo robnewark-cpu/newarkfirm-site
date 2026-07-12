@@ -59,7 +59,6 @@
             <li><a href="/texas.html">Texas Branch</a></li>
             <li><a href="/oklahoma.html">Oklahoma Branch</a></li>
             <li><a href="/contact.html">Contact Hub</a></li>
-            <li class="irs-conditional"><a href="/contact.html" style="color: #f59e0b; font-weight: bold; border: 1px solid var(--accent); background: rgba(180,83,9,0.1); padding: 0.4rem 0.75rem;">Pandemic Tax Relief</a></li>
         </ul>
     </nav>
 
@@ -67,10 +66,6 @@
         <div class="flex-container">
             
             <div class="sidebar-info">
-                <div class="tax-alert-box irs-conditional">
-                    <strong style="color: var(--primary); display:block; margin-bottom: 0.25rem;">📊 Transcript Audit Submissions:</strong>
-                    If you are utilizing our firm to audit your pandemic-era IRS accounts under the <em>Kwong</em> ruling, please state <strong>"IRS Transcript Review"</strong> in the description field on the portal form, and attach your downloaded IRS Account Transcripts (Form 1040, 1120S, or 941). Urgent filings must clear before July 10, 2026.
-                </div>
 
                 <div class="contact-card">
                     <h3>Communications Hub</h3>
@@ -105,17 +100,6 @@
     <footer>
         <p>&copy; 2026 Newark Law Offices. All Rights Reserved. | <a href="/disclaimer.html" style="color: #94a3b8;">Disclaimer</a></p>
     </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const expirationDate = new Date("2026-07-11T00:00:00");
-            const currentDate = new Date();
-            if (currentDate >= expirationDate) {
-                const taxElements = document.querySelectorAll(".irs-conditional");
-                taxElements.forEach(element => element.remove());
-            }
-        });
-    </script>
 
 </body>
 </html>
