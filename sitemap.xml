@@ -20,4 +20,20 @@
     <loc>https://newarkfirm.com/insights.html</loc>
     <priority>0.80</priority>
   </url>
+  <url>
+    <loc>https://newarkfirm.com/texas.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://newarkfirm.com/oklahoma.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://newarkfirm.com/contact.html</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://newarkfirm.com/disclaimer.html</loc>
+    <priority>0.30</priority>
+  </url>
 </urlset>
