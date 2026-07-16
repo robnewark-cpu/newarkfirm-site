@@ -15,7 +15,15 @@
             --text: #334155;    
         }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; margin: 0; padding: 0; }
-        header { background-color: var(--primary); color: white; text-align: center; padding: 4rem 2rem; border-bottom: 4px solid var(--accent); }
+        header {
+            background:
+              linear-gradient(135deg, rgba(30, 41, 59, 0.92) 0%, rgba(15, 23, 42, 0.92) 100%),
+              url('https://images.unsplash.com/photo-1519876217051-4449feb0b589?fm=jpg&q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            border-bottom: 4px solid var(--accent);
+        }
         header h1 { font-size: 2.75rem; margin: 0; }
         header h2 { font-size: 1.4rem; color: #94a3b8; font-weight: 300; margin: 0.5rem 0 1.5rem 0; }
         nav { background-color: #0f172a; padding: 1rem; text-align: center; }
@@ -24,18 +32,8 @@
         nav a:hover { color: var(--accent); }
         
         main { max-width: 800px; margin: 3rem auto; padding: 0 1.5rem; }
-        
-        .tax-alert-card {
-            background-color: #fffbeb;
-            border: 2px solid #f59e0b;
-            border-left: 6px solid var(--accent);
-            padding: 2rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-        }
-        .tax-alert-card h3 { color: var(--primary); margin: 0 0 0.5rem 0; font-size: 1.3rem; }
-        .tax-alert-card p { margin: 0 0 1.25rem 0; color: var(--text); font-size: 0.95rem; }
+
+
         .tax-btn { display: inline-block; background-color: var(--accent); color: white; text-decoration: none; font-weight: 600; padding: 0.5rem 1.25rem; border-radius: 4px; transition: background 0.2s; font-size: 0.9rem; }
         .tax-btn:hover { background-color: #9a4004; }
 
@@ -94,16 +92,10 @@
             <li><a href="/texas.html">Texas Branch</a></li>
             <li><a href="/oklahoma.html">Oklahoma Branch</a></li>
             <li><a href="/contact.html">Contact Hub</a></li>
-            <li class="irs-conditional"><a href="/contact.html" style="color: #f59e0b; font-weight: bold; border: 1px solid var(--accent); background: rgba(180,83,9,0.1); padding: 0.4rem 0.75rem;">Pandemic Tax Relief</a></li>
         </ul>
     </nav>
 
     <main>
-        <section class="tax-alert-card irs-conditional">
-            <h3>⚠️ Oklahoma Business Alert: IRS Penalty Clawbacks</h3>
-            <p>Under the federal ruling in <em>Kwong v. United States</em>, Oklahoma corporations, S-Corps, LLCs, and employers who were assessed late-filing fees or payroll deposit penalties between 2020 and 2023 may be eligible for total financial abatement or refund. Action must be taken before the strict <strong>July 10, 2026</strong> deadline to lock in your claim.</p>
-            <a href="/contact.html" class="tax-btn">Request Transcript Compliance Audit →</a>
-        </section>
 
         <div class="card">
             <h3>Our Oklahoma Jurisdiction Services</h3>
@@ -120,17 +112,6 @@
     <footer>
         <p>&copy; 2026 Newark Law Offices. All Rights Reserved. | <a href="/disclaimer.html" style="color: #94a3b8;">Disclaimer</a></p>
     </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const expirationDate = new Date("2026-07-11T00:00:00");
-            const currentDate = new Date();
-            if (currentDate >= expirationDate) {
-                const taxElements = document.querySelectorAll(".irs-conditional");
-                taxElements.forEach(element => element.remove());
-            }
-        });
-    </script>
 
     <script
       src="https://site-chatbot-assets.pages.dev/widget.js"
