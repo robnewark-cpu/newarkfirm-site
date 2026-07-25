@@ -6,14 +6,13 @@
     <title>About Us | Regional Boutique Corporate Counsel | Newark Law Offices</title>
     <meta name="description" content="Learn about the history, core values, and dedicated legal approach of Newark Law Offices serving Texas and Oklahoma corporate communities.">
     <link rel="canonical" href="https://newarkfirm.com/about.html">
-
     <style>
         :root {
-            --primary: #1e293b; 
-            --accent: #b45309;  
-            --bg: #f8fafc;      
-            --text: #334155;    
-        }
+            --primary: #1e293b;
+            --accent: #b45309;
+            --bg: #f8fafc;
+            --text: #334155;
+}
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; margin: 0; padding: 0; }
         header {
             background:
@@ -23,20 +22,32 @@
             text-align: center;
             padding: 4rem 2rem;
             border-bottom: 4px solid var(--accent);
-        }
+}
         header h1 { font-size: 2.75rem; margin: 0; }
         header p { font-size: 1.2rem; color: #94a3b8; margin-top: 0.5rem; }
         nav { background-color: #0f172a; padding: 1rem; text-align: center; }
         nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; align-items: center; }
         nav a { color: white; text-decoration: none; font-weight: 500; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.2s; }
         nav a:hover { color: var(--accent); }
-        
+        nav a.btn-nav {
+            background-color: var(--accent);
+            color: #ffffff !important;
+            font-weight: 600;
+            padding: 0.55rem 1.25rem;
+            border-radius: 4px;
+            transition: background 0.2s, transform 0.1s;
+            display: inline-block;
+}
+        nav a.btn-nav:hover {
+            background-color: #9a4004;
+            color: #ffffff !important;
+}
         main { max-width: 900px; margin: 3rem auto; padding: 0 1.5rem; }
-        .content-card { background: white; padding: 3rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 2.5rem; border-top: 4px solid var(--primary); }
-        .content-card h2 { color: var(--primary); margin-top: 0; font-size: 1.8rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
-        .pillar { background: #f8fafc; padding: 1.5rem; border-left: 4px solid var(--accent); border-radius: 0 4px 4px 0; }
-        .pillar h3 { margin: 0 0 0.5rem 0; color: var(--primary); }
+.content-card { background: white; padding: 3rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 2.5rem; border-top: 4px solid var(--primary); }
+.content-card h2 { color: var(--primary); margin-top: 0; font-size: 1.8rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.pillar { background: #f8fafc; padding: 1.5rem; border-left: 4px solid var(--accent); border-radius: 0 4px 4px 0; }
+.pillar h3 { margin: 0 0 0.5rem 0; color: var(--primary); }
         footer { background-color: var(--primary); color: #94a3b8; text-align: center; padding: 2rem; margin-top: 6rem; font-size: 0.9rem; }
     </style>
     <script type="application/ld+json">
@@ -70,12 +81,10 @@
     </script>
 </head>
 <body>
-
     <header>
         <h1>About Our Firm</h1>
         <p>Strategic Advocacy Across State Lines</p>
     </header>
-
   <nav>
     <ul>
         <li><a href="/">Home</a></li>
@@ -90,8 +99,6 @@
         <li><a href="/case-eligibility.html" class="btn-nav">Check Eligibility →</a></li>
     </ul>
 </nav>
-    </nav>
-
     <main>
         <div class="content-card">
             <h2>Our Practice Philosophy</h2>
@@ -111,11 +118,9 @@
             </div>
         </div>
     </main>
-
     <footer>
         <p>&copy; 2026 Newark Law Offices. All Rights Reserved. | <a href="/disclaimer.html" style="color: #94a3b8;">Disclaimer</a></p>
     </footer>
-
     <script
       src="https://site-chatbot-assets.pages.dev/widget.js"
       data-worker-url="https://site-chatbots.robert-bb6.workers.dev"
@@ -124,6 +129,5 @@
       data-accent="#14213d"
       data-greeting="Hi, I'm here to help point you to the right person at the firm. What brings you by today?"
     ></script>
-
 </body>
 </html>
