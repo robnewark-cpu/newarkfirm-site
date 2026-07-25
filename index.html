@@ -35,212 +35,80 @@
           "addressRegion": "TX",
           "postalCode": "75247",
           "addressCountry": "US"
-        },
-        {
-          "@type": "PostalAddress",
-          "streetAddress": "1019 Waterwood Pkwy, Ste C",
-          "addressLocality": "Edmond",
-          "addressRegion": "OK",
-          "postalCode": "73034",
-          "addressCountry": "US"
         }
       ]
     }
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What areas of law does Newark Law Offices practice?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Newark Law Offices handles financial and debt defense, commercial and civil litigation, corporate and transactional advisory, family law, bankruptcy and reorganization, insurance and injury claims, and local counsel/expert witness services." }
-        },
-        {
-          "@type": "Question",
-          "name": "Where are Newark Law Offices located?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Newark Law Offices has two locations: Dallas, Texas (1341 W. Mockingbird Ln, Ste 600W) and Edmond, Oklahoma (1019 Waterwood Pkwy, Ste C)." }
-        },
-        {
-          "@type": "Question",
-          "name": "Does Newark Law Offices serve as local counsel for out-of-state attorneys?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Newark Law Offices provides local counsel support for out-of-state attorneys handling matters in Texas or Oklahoma, and offers expert witness services available nationwide." }
-        }
-      ]
-    }
-    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
         :root {
-            --primary: #1e293b; 
-            --accent: #b45309;  
-            --bg: #f8fafc;      
-            --text: #334155;    
+            --primary: #0F172A;
+            --accent: #2563EB;
+            --accent-hover: #1D4ED8;
+            --text: #F8FAFC;
+            --text-muted: #94A3B8;
+            --border: #1E293B;
+            --card-bg: #151B26;
         }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; margin: 0; padding: 0; }
-        header {
-            background:
-              linear-gradient(135deg, rgba(30, 41, 59, 0.92) 0%, rgba(15, 23, 42, 0.92) 100%),
-              url('/assets/images/dallas-skyline.jpg') center/cover no-repeat;
-            color: white;
-            text-align: center;
-            padding: 5rem 2rem;
-            border-bottom: 4px solid var(--accent);
-        }
-        header h1 { font-size: 2.75rem; margin: 0; }
-        header h2 { font-size: 1.4rem; color: #94a3b8; font-weight: 300; margin: 0.5rem 0 1.5rem 0; }
-        nav { background-color: #0f172a; padding: 1rem; text-align: center; }
-        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; align-items: center; }
-        nav a { color: white; text-decoration: none; font-weight: 500; padding: 0.5rem 1rem; border-radius: 4px; transition: all 0.2s; }
-        nav a:hover { color: var(--accent); }
-        main { max-width: 1000px; margin: 3rem auto; padding: 0 1.5rem; }
-        
-        .urgency-btn { display: inline-block; background-color: var(--accent); color: white; text-decoration: none; font-weight: 600; padding: 0.6rem 1.25rem; border-radius: 4px; transition: background 0.2s; }
-        .urgency-btn:hover { background-color: #9a4004; }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 1.5rem; }
-        .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); }
-        .card p { margin: 0.5rem 0; }
-        .card a.branch-link { display: inline-block; margin-top: 1rem; color: var(--accent); font-weight: bold; text-decoration: none; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: var(--primary); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
         
-        .team-grid { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; margin-top: 2rem; }
-        .member { text-align: center; width: 160px; }
-        .member a { color: var(--primary); text-decoration: none; font-weight: 600; display: block; }
-        .member a:hover { color: var(--accent); }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; border-bottom: 1px solid var(--border); background: rgba(15, 23, 42, 0.95); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(8px); }
+        .logo { font-family: 'Cinzel', serif; font-size: 1.5rem; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: 1px; }
         
-        .avatar, .placeholder-circle { 
-            width: 120px; 
-            height: 120px; 
-            border-radius: 50%; 
-            object-fit: cover; 
-            border: 3px solid var(--primary); 
-            margin: 0 auto 0.75rem; 
-            display: block;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease; 
+        nav { display: flex; align-items: center; gap: 24px; }
+        nav a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+        nav a:hover { color: #fff; }
+        
+        .btn-nav { background-color: var(--accent); color: #fff !important; padding: 10px 18px; border-radius: 6px; font-weight: 600 !important; transition: background 0.2s; }
+        .btn-nav:hover { background-color: var(--accent-hover); }
+
+        .hero { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 100px 20px 80px; max-width: 900px; margin: 0 auto; }
+        .hero h1 { font-family: 'Cinzel', serif; font-size: 3rem; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 1.25rem; color: var(--text-muted); margin-bottom: 36px; max-width: 700px; }
+        
+        .hero-btns { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+        .btn-primary { background-color: var(--accent); color: #fff; padding: 14px 28px; border-radius: 6px; font-weight: 700; text-decoration: none; font-size: 1rem; transition: background 0.2s; }
+        .btn-primary:hover { background-color: var(--accent-hover); }
+        .btn-secondary { border: 1px solid var(--border); color: var(--text); padding: 14px 28px; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 1rem; background: var(--card-bg); transition: border 0.2s; }
+        .btn-secondary:hover { border-color: var(--text-muted); }
+
+        @media (max-width: 768px) {
+            header { padding: 16px 20px; flex-direction: column; gap: 16px; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1.05rem; }
         }
-        .placeholder-circle { background-color: #cbd5e1; color: #475569; line-height: 120px; font-size: 2.2rem; font-weight: bold; }
-        .member a:hover .avatar, .member a:hover .placeholder-circle { transform: scale(1.05); border-color: var(--accent); }
-        .member a:hover .placeholder-circle { background-color: #e2e8f0; color: var(--accent); }
-        
-        footer { background-color: var(--primary); color: #94a3b8; text-align: center; padding: 2rem; margin-top: 5rem; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Newark Law Offices</h1>
-        <h2>Boutique Legal Representation</h2>
-        <p>Premium litigation, corporate advocacy, and strategic counsel tailored across the South Central region.</p>
+        <a href="/" class="logo">NEWARK LAW OFFICES</a>
+        <nav>
+            <a href="/about.html">About</a>
+            <a href="/experience.html">Experience</a>
+            <a href="/texas.html">Texas</a>
+            <a href="/oklahoma.html">Oklahoma</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/case-eligibility.html" class="btn-nav">Check Case Eligibility →</a>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/experience.html">Experience</a></li>
-            <li><a href="/people.html">Our People</a></li>
-            <li><a href="/insights.html">Insights</a></li>
-            <li><a href="https://modmediations.com/" target="_blank" rel="noopener">Mediation</a></li>
-            <li><a href="/texas.html">Texas Branch</a></li>
-            <li><a href="/oklahoma.html">Oklahoma Branch</a></li>
-            <li><a href="/contact.html">Contact Hub</a></li>
-        </ul>
-    </nav>
-
     <main>
-
-        <section style="text-align:center; margin-bottom: 4rem;">
-            <h2>Dedicated Advocacy & Corporate Counsel</h2>
-            <p style="max-width: 700px; margin: 0 auto; font-size: 1.1rem;">Newark Law Offices represents national corporations, localized partnerships, and prominent individuals across state lines, bringing elite legal focus to high-stakes litigation and advisory portfolios.</p>
+        <section class="hero">
+            <h1>Boutique Legal Representation Across Texas & Oklahoma</h1>
+            <p>Strategic advocacy and legal counsel tailored for corporate clients, financial institutions, and complex civil matters.</p>
+            <div class="hero-btns">
+                <a href="/case-eligibility.html" class="btn-primary">Check Case Eligibility Online →</a>
+                <a href="/contact.html" class="btn-secondary">Contact Us</a>
+            </div>
         </section>
-
-        <h2>Regional Office Hubs</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Texas Division</h3>
-                <p><strong>Address:</strong><br>1341 W. Mockingbird Ln, Ste 600W<br>Dallas, TX 75247</p>
-                <p style="margin-top: 1rem;"><strong>Phone:</strong> 972-332-5733</p>
-                <p><strong>Toll-Free:</strong> 866-230-7236</p>
-                <p><strong>Fax:</strong> 888-316-3398</p>
-                <p><strong>Email:</strong> <a href="mailto:texas@newarkfirm.com" style="color: var(--primary);">texas@newarkfirm.com</a></p>
-                <a href="/texas.html" class="branch-link">View Texas Profile →</a>
-            </div>
-
-            <div class="card">
-                <h3>Oklahoma Division</h3>
-                <p><strong>Address:</strong><br>1019 Waterwood Pkwy, Ste C<br>Edmond, OK 73034</p>
-                <p style="margin-top: 1rem;"><strong>Phone:</strong> 405-727-0269</p>
-                <p><strong>Toll-Free:</strong> 866-230-7236</p>
-                <p><strong>Fax:</strong> 888-316-3398</p>
-                <p><strong>Email:</strong> <a href="mailto:oklahoma@newarkfirm.com" style="color: var(--primary);">oklahoma@newarkfirm.com</a></p>
-                <a href="/oklahoma.html" class="branch-link">View Oklahoma Profile →</a>
-            </div>
-        </div>
-
-        <h2 style="margin-top: 4rem;">Our Firm Staff</h2>
-        <div class="team-grid">
-            <div class="member">
-                <a href="/people.html#rob">
-                    <img src="Rob Headshot.jpg" alt="Robert Newark" class="avatar" width="420" height="418">
-                    <span>Robert Newark</span>
-                </a>
-            </div>
-            <div class="member">
-                <a href="/people.html#tyler">
-                    <img src="Tyler Headshot.jpg" alt="Tyler Wilson" class="avatar" width="1000" height="1000">
-                    <span>Tyler Wilson</span>
-                </a>
-            </div>
-            <div class="member">
-                <a href="/people.html#kelly">
-                    <img src="Kelly Headshot.jpg" alt="Kelly Raper" class="avatar" width="412" height="420">
-                    <span>Kelly Raper</span>
-                </a>
-            </div>
-            <div class="member">
-                <a href="/people.html#hayley">
-                    <img src="Hayley Headshot.jpg" alt="Hayley Thompson" class="avatar" width="411" height="420">
-                    <span>Hayley Thompson</span>
-                </a>
-            </div>
-            <div class="member">
-                <a href="/people.html#jenae">
-                    <div class="placeholder-circle">J</div>
-                    <span>Jenae Judge</span>
-                </a>
-            </div>
-        </div>
-        <h2 style="margin-top: 4rem;">Frequently Asked Questions</h2>
-        <div class="card" style="max-width: 800px; margin-top: 1.5rem;">
-            <details style="margin-bottom: 1.25rem;">
-                <summary style="font-weight: 600; cursor: pointer; color: var(--primary);">What areas of law does Newark Law Offices practice?</summary>
-                <p style="margin-top: 0.75rem; color: var(--text, #334155);">Newark Law Offices handles financial and debt defense, commercial and civil litigation, corporate and transactional advisory, family law, bankruptcy and reorganization, insurance and injury claims, and local counsel/expert witness services.</p>
-            </details>
-            <details style="margin-bottom: 1.25rem;">
-                <summary style="font-weight: 600; cursor: pointer; color: var(--primary);">Where are Newark Law Offices located?</summary>
-                <p style="margin-top: 0.75rem; color: var(--text, #334155);">Newark Law Offices has two locations: Dallas, Texas (1341 W. Mockingbird Ln, Ste 600W) and Edmond, Oklahoma (1019 Waterwood Pkwy, Ste C).</p>
-            </details>
-            <details style="margin-bottom: 1.25rem;">
-                <summary style="font-weight: 600; cursor: pointer; color: var(--primary);">Does Newark Law Offices serve as local counsel for out-of-state attorneys?</summary>
-                <p style="margin-top: 0.75rem; color: var(--text, #334155);">Yes. Newark Law Offices provides local counsel support for out-of-state attorneys handling matters in Texas or Oklahoma, and offers expert witness services available nationwide.</p>
-            </details>
-        </div>
     </main>
-
-    <footer>
-        <p>&copy; 2026 Newark Law Offices. All Rights Reserved. | <a href="/disclaimer.html" style="color: #94a3b8;">Disclaimer</a></p>
-    </footer>
-
-    <script
-      src="https://site-chatbot-assets.pages.dev/widget.js"
-      data-worker-url="https://site-chatbots.robert-bb6.workers.dev"
-      data-site="newarkfirm"
-      data-name="Newark Law Offices"
-      data-accent="#14213d"
-      data-greeting="Hi, I'm here to help point you to the right person at the firm. What brings you by today?"
-    ></script>
 
 </body>
 </html>
