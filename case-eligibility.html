@@ -1,94 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free Legal Case Audit | Newark Firm</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #0B0E14;
-    --card: #151B26;
-    --accent: #2563EB;
-    --accent-hover: #1D4ED8;
-    --text: #F8FAFC;
-    --muted: #94A3B8;
-    --border: #1E293B;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; padding: 20px; }
-  .wrap { max-width: 640px; margin: 40px auto; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 32px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5); }
-  h1 { font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; margin-bottom: 8px; }
-  p.sub { color: var(--muted); font-size: 0.95rem; margin-bottom: 24px; }
-  .field { margin-bottom: 20px; }
-  label { display: block; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; color: var(--muted); }
-  input, select, textarea { width: 100%; padding: 12px 16px; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-family: inherit; font-size: 0.95rem; }
-  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--accent); }
-  .btn { width: 100%; padding: 14px; background: var(--accent); color: white; border: none; border-radius: 6px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1rem; cursor: pointer; transition: background 0.2s; }
-  .btn:hover { background: var(--accent-hover); }
-  footer { text-align: center; margin-top: 24px; font-size: 0.8rem; color: var(--muted); }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Case Eligibility | Newark Law Offices</title>
+    <meta name="description" content="Submit your legal matter directly to Attorney Robert Newark for a confidential case evaluation.">
+    <link rel="canonical" href="https://newarkfirm.com/case-eligibility.html">
+
+    <!-- Fonts matching about.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0F172A;
+            --accent: #2563EB;
+            --accent-hover: #1D4ED8;
+            --text: #F8FAFC;
+            --text-muted: #94A3B8;
+            --border: #1E293B;
+            --card-bg: #151B26;
+            --input-bg: #0B0E14;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            background-color: var(--primary); 
+            color: var(--text); 
+            font-family: 'Inter', sans-serif; 
+            line-height: 1.6; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Site Header & Navigation matching about.html */
+        header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 20px 40px; 
+            border-bottom: 1px solid var(--border); 
+            background: rgba(15, 23, 42, 0.95); 
+            position: sticky; 
+            top: 0; 
+            z-index: 100; 
+            backdrop-filter: blur(8px); 
+        }
+
+        .logo { 
+            font-family: 'Cinzel', serif; 
+            font-size: 1.4rem; 
+            font-weight: 700; 
+            color: #ffffff; 
+            text-decoration: none; 
+            letter-spacing: 1px; 
+        }
+
+        nav { display: flex; align-items: center; gap: 24px; }
+        
+        nav a { 
+            color: var(--text-muted); 
+            text-decoration: none; 
+            font-size: 0.95rem; 
+            font-weight: 500; 
+            transition: color 0.2s; 
+        }
+
+        nav a:hover { color: #ffffff; }
+
+        .btn-nav { 
+            background-color: var(--accent); 
+            color: #ffffff !important; 
+            padding: 10px 18px; 
+            border-radius: 6px; 
+            font-weight: 600 !important; 
+            transition: background 0.2s; 
+        }
+
+        .btn-nav:hover { background-color: var(--accent-hover); }
+
+        /* Form Container Area */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+
+        .wrap { 
+            width: 100%;
+            max-width: 680px; 
+            background: var(--card-bg); 
+            border: 1px solid var(--border); 
+            border-radius: 12px; 
+            padding: 40px; 
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); 
+        }
+
+        h1 { 
+            font-family: 'Cinzel', serif; 
+            font-size: 2.2rem; 
+            margin-bottom: 12px; 
+            color: #ffffff;
+            text-align: center;
+        }
+
+        p.sub { 
+            color: var(--text-muted); 
+            font-size: 1rem; 
+            margin-bottom: 32px; 
+            text-align: center;
+        }
+
+        .field { margin-bottom: 24px; }
+        
+        label { 
+            display: block; 
+            font-size: 0.85rem; 
+            font-weight: 600; 
+            text-transform: uppercase; 
+            letter-spacing: 0.05em; 
+            margin-bottom: 8px; 
+            color: var(--text-muted); 
+        }
+
+        input, select, textarea { 
+            width: 100%; 
+            padding: 14px 16px; 
+            background: var(--input-bg); 
+            border: 1px solid var(--border); 
+            border-radius: 6px; 
+            color: var(--text); 
+            font-family: 'Inter', sans-serif; 
+            font-size: 0.95rem; 
+            transition: border-color 0.2s;
+        }
+
+        input:focus, select:focus, textarea:focus { 
+            outline: none; 
+            border-color: var(--accent); 
+        }
+
+        .btn-submit { 
+            width: 100%; 
+            padding: 16px; 
+            background: var(--accent); 
+            color: #ffffff; 
+            border: none; 
+            border-radius: 6px; 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 700; 
+            font-size: 1.05rem; 
+            cursor: pointer; 
+            transition: background 0.2s; 
+            margin-top: 12px;
+        }
+
+        .btn-submit:hover { background: var(--accent-hover); }
+
+        footer { 
+            text-align: center; 
+            padding: 30px 20px; 
+            font-size: 0.85rem; 
+            color: var(--text-muted); 
+            border-top: 1px solid var(--border);
+        }
+
+        @media (max-width: 768px) {
+            header { padding: 16px 20px; flex-direction: column; gap: 16px; }
+            .wrap { padding: 24px; }
+            h1 { font-size: 1.75rem; }
+        }
+    </style>
 </head>
 <body>
 
-<div class="wrap">
-  <h1>Check Legal Case Eligibility</h1>
-  <p class="sub">Complete this 60-second assessment to review your legal matter directly with Attorney Robert Newark.</p>
+    <header>
+        <a href="/" class="logo">NEWARK LAW OFFICES</a>
+        <nav>
+            <a href="/about.html">About</a>
+            <a href="/experience.html">Experience</a>
+            <a href="/texas.html">Texas</a>
+            <a href="/oklahoma.html">Oklahoma</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/case-eligibility.html" class="btn-nav">Check Eligibility →</a>
+        </nav>
+    </header>
 
-  <form action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="aa2c4b03-ba9f-4387-af12-e9b0c7be3f57">
-    <input type="hidden" name="subject" value="New Legal Case Intake - Newark Firm">
-    <!-- Redirect straight to your booking calendar page after submission -->
-    <input type="hidden" name="redirect" value="https://newarkfirm.com/schedule.html">
+    <main>
+        <div class="wrap">
+            <h1>Check Case Eligibility</h1>
+            <p class="sub">Complete this short assessment to review your legal matter directly with Attorney Robert Newark.</p>
 
-    <div class="field">
-      <label for="practice_area">Type of Legal Matter</label>
-      <select id="practice_area" name="practice_area" required>
-        <option value="">Select practice area...</option>
-        <option value="Commercial Lending / Banking Litigation">Commercial Lending / Banking Litigation</option>
-        <option value="Business Contracts / Disputes">Business Contracts / Disputes</option>
-        <option value="Civil Litigation">Civil Litigation</option>
-        <option value="Appellate Law">Appellate Law</option>
-        <option value="Other Legal Matter">Other Legal Matter</option>
-      </select>
-    </div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY_HERE">
+                <input type="hidden" name="subject" value="New Legal Case Audit Submission - Newark Firm">
+                <input type="hidden" name="redirect" value="https://newarkfirm.com/contact.html">
 
-    <div class="field">
-      <label for="timeline">How urgent is this matter?</label>
-      <select id="timeline" name="timeline" required>
-        <option value="">Select timeline...</option>
-        <option value="Immediate (Pending court deadline/lawsuit)">Immediate (Pending court deadline/lawsuit)</option>
-        <option value="Within 30 Days">Within 30 Days</option>
-        <option value="General Consultation / Planning">General Consultation / Planning</option>
-      </select>
-    </div>
+                <div class="field">
+                    <label for="practice_area">Type of Legal Matter</label>
+                    <select id="practice_area" name="practice_area" required>
+                        <option value="">Select practice area...</option>
+                        <option value="Commercial Lending / Banking Litigation">Commercial Lending / Banking Litigation</option>
+                        <option value="Business Contracts / Disputes">Business Contracts / Disputes</option>
+                        <option value="Civil Litigation">Civil Litigation</option>
+                        <option value="Appellate Law">Appellate Law</option>
+                        <option value="Other Legal Matter">Other Legal Matter</option>
+                    </select>
+                </div>
 
-    <div class="field">
-      <label for="name">Your Full Name</label>
-      <input type="text" id="name" name="name" placeholder="John Doe" required>
-    </div>
+                <div class="field">
+                    <label for="timeline">How urgent is this matter?</label>
+                    <select id="timeline" name="timeline" required>
+                        <option value="">Select timeline...</option>
+                        <option value="Immediate (Pending court deadline/lawsuit)">Immediate (Pending court deadline/lawsuit)</option>
+                        <option value="Within 30 Days">Within 30 Days</option>
+                        <option value="General Consultation / Planning">General Consultation / Planning</option>
+                    </select>
+                </div>
 
-    <div class="field">
-      <label for="email">Work / Personal Email</label>
-      <input type="email" id="email" name="email" placeholder="john@company.com" required>
-    </div>
+                <div class="field">
+                    <label for="name">Your Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
 
-    <div class="field">
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" placeholder="(405) 000-0000" required>
-    </div>
+                <div class="field">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                </div>
 
-    <div class="field">
-      <label for="summary">Brief Summary of the Case</label>
-      <textarea id="summary" name="summary" rows="4" placeholder="Describe the key facts, parties involved, or court jurisdiction..."></textarea>
-    </div>
+                <div class="field">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(405) 000-0000" required>
+                </div>
 
-    <button type="submit" class="btn">Submit Case for Review →</button>
-  </form>
+                <div class="field">
+                    <label for="summary">Brief Summary of the Case</label>
+                    <textarea id="summary" name="summary" rows="4" placeholder="Describe the key facts, parties involved, or court jurisdiction..."></textarea>
+                </div>
 
-  <footer>Newark Firm · Confidential Legal Submission</footer>
-</div>
+                <button type="submit" class="btn-submit">Submit Case for Review →</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Newark Law Offices. All Rights Reserved. | Boutique Legal Representation Across TX & OK
+    </footer>
 
 </body>
 </html>
