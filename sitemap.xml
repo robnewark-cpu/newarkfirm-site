@@ -1,39 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://newarkfirm.com/</loc>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://newarkfirm.com/about.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://newarkfirm.com/experience.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://newarkfirm.com/people.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://newarkfirm.com/insights.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://newarkfirm.com/texas.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://newarkfirm.com/oklahoma.html</loc>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://newarkfirm.com/contact.html</loc>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://newarkfirm.com/disclaimer.html</loc>
-    <priority>0.30</priority>
-  </url>
+
+  <url><loc>https://newarkfirm.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://newarkfirm.com/about</loc><priority>0.7</priority></url>
+  <url><loc>https://newarkfirm.com/experience</loc><priority>0.9</priority></url>
+  <url><loc>https://newarkfirm.com/people</loc><priority>0.8</priority></url>
+  <url><loc>https://newarkfirm.com/insights</loc><priority>0.7</priority></url>
+  <url><loc>https://newarkfirm.com/texas</loc><priority>0.9</priority></url>
+  <url><loc>https://newarkfirm.com/oklahoma</loc><priority>0.9</priority></url>
+  <url><loc>https://newarkfirm.com/contact</loc><priority>0.8</priority></url>
+  <url><loc>https://newarkfirm.com/case-eligibility</loc><priority>0.8</priority></url>
+  <url><loc>https://newarkfirm.com/disclaimer</loc><priority>0.2</priority></url>
+
+  <!-- Funnel pages. Do NOT submit these until the duplicate-content rewrite is done;
+       near-identical state variants risk being filtered as doorway pages. -->
+  <url><loc>https://newarkfirm.com/funnels/foreclosure-defense-texas.html</loc><priority>0.8</priority></url>
+  <url><loc>https://newarkfirm.com/funnels/foreclosure-defense-oklahoma.html</loc><priority>0.8</priority></url>
+  <url><loc>https://newarkfirm.com/funnels/wind-hail-damage-claim-texas.html</loc><priority>0.8</priority></url>
+  <url><loc>https://newarkfirm.com/funnels/wind-hail-damage-claim-oklahoma.html</loc><priority>0.8</priority></url>
+  <url><loc>https://newarkfirm.com/funnels/car-accident-injury-texas.html</loc><priority>0.8</priority></url>
+  <url><loc>https://newarkfirm.com/funnels/car-accident-injury-oklahoma.html</loc><priority>0.8</priority></url>
+  <url><loc>https://newarkfirm.com/funnels/ch11-debtor-texas.html</loc><priority>0.8</priority></url>
+  <url><loc>https://newarkfirm.com/funnels/ch11-debtor-oklahoma.html</loc><priority>0.8</priority></url>
+  <url><loc>https://newarkfirm.com/funnels/ch11-creditor-texas.html</loc><priority>0.8</priority></url>
+  <url><loc>https://newarkfirm.com/funnels/ch11-creditor-oklahoma.html</loc><priority>0.8</priority></url>
+
 </urlset>

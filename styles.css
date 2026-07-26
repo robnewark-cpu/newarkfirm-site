@@ -1,0 +1,609 @@
+/* ==========================================================================
+   Newark Law Offices — shared site stylesheet
+   Single source of truth for the brand palette. Edit colors HERE only.
+   ========================================================================== */
+
+:root {
+    /* Brand */
+    --primary:      #14213d;  /* navy — headers, footers, nav */
+    --secondary:    #1f2f55;  /* lighter navy — hover states */
+    --accent:       #c9a96e;  /* gold — buttons, rules, links */
+    --accent-dark:  #a8874a;  /* deeper gold — accent hover */
+
+    /* Surfaces */
+    --bg:           #f8f6f3;  /* page background */
+    --card-bg:      #ffffff;  /* card background */
+    --pillar-bg:    #fafafa;  /* nested panel background */
+
+    /* Type */
+    --text:         #333a45;  /* body copy */
+    --muted:        #64748b;  /* secondary copy */
+    --on-dark:      rgba(255, 255, 255, 0.85);
+
+    /* Lines */
+    --border:       rgba(201, 169, 110, 0.25);
+    --field-border: #d9d3c8;
+
+    /* Type stack */
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* --------------------------------------------------------------------------
+   Base
+   -------------------------------------------------------------------------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a { color: var(--accent-dark); }
+
+:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Header
+   Each page sets its own photo:
+   <header style="--hero-image: url('https://...')">
+   -------------------------------------------------------------------------- */
+
+header {
+    background:
+        linear-gradient(rgba(20, 33, 61, 0.72), rgba(20, 33, 61, 0.72)),
+        var(--hero-image, linear-gradient(135deg, #14213d, #1f2f55))
+        center center / cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 6rem 2rem;
+    border-bottom: 3px solid var(--accent);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.15rem;
+    color: var(--on-dark);
+    margin-top: 1rem;
+}
+
+/* Interior pages run a shorter hero than the home page. */
+header.compact { padding: 4rem 2rem; }
+header.compact h1 { font-size: 2.5rem; }
+
+/* --------------------------------------------------------------------------
+   Navigation
+   -------------------------------------------------------------------------- */
+
+nav {
+    background: var(--primary);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover { color: var(--accent); }
+
+nav a.btn-nav {
+    background: var(--accent);
+    color: var(--primary);
+    font-weight: 700;
+    padding: 0.65rem 1.3rem;
+    border-radius: 6px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+nav a.btn-nav:hover {
+    background: var(--accent-dark);
+    color: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   Layout
+   -------------------------------------------------------------------------- */
+
+main {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+main.narrow { max-width: 700px; }
+
+/* --------------------------------------------------------------------------
+   Cards
+   -------------------------------------------------------------------------- */
+
+.content-card {
+    background: var(--card-bg);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2.5rem;
+    border-top: 4px solid var(--accent);
+}
+
+.content-card h2 {
+    color: var(--primary);
+    margin-top: 0;
+    font-size: 2rem;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.75rem;
+}
+
+/* Form card — narrower, quieter than a content card. */
+.card {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid var(--accent);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: var(--primary);
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.sub {
+    color: var(--muted);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* --------------------------------------------------------------------------
+   Pillars
+   -------------------------------------------------------------------------- */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.pillar {
+    background: var(--pillar-bg);
+    padding: 2rem;
+    border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pillar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.pillar h3 {
+    color: var(--primary);
+    margin: 0 0 0.5rem 0;
+}
+
+.pillar a {
+    color: var(--accent-dark);
+    font-weight: 700;
+}
+
+.pillar a:hover { text-decoration: underline; }
+
+/* --------------------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------------------- */
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.tax-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.8rem 1.6rem;
+    border-radius: 6px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.tax-btn:hover {
+    background: var(--accent-dark);
+    color: #ffffff;
+}
+
+.tax-btn.secondary {
+    background: var(--primary);
+    color: #ffffff;
+}
+
+.tax-btn.secondary:hover { background: var(--secondary); }
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    background: var(--accent);
+    color: var(--primary);
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+.btn-submit:hover {
+    background: var(--accent-dark);
+    color: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   Forms
+   -------------------------------------------------------------------------- */
+
+.field { margin-bottom: 1.5rem; }
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+    color: var(--primary);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background: var(--bg);
+    border: 1px solid var(--field-border);
+    border-radius: 6px;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--border);
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+
+footer {
+    background: var(--primary);
+    color: var(--on-dark);
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 6rem;
+    font-size: 0.9rem;
+}
+
+footer a { color: var(--accent); }
+footer a:hover { color: #ffffff; }
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 640px) {
+    header { padding: 4rem 1.25rem; }
+    header h1 { font-size: 2.1rem; }
+    header.compact h1 { font-size: 1.9rem; }
+    .content-card, .card { padding: 1.75rem; }
+    nav ul { gap: 0.5rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+    .pillar:hover { transform: none; }
+}
+
+/* --------------------------------------------------------------------------
+   Section headings (people.html)
+   -------------------------------------------------------------------------- */
+
+.category-heading {
+    color: var(--primary);
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 0.5rem;
+    margin: 4rem 0 2rem 0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.category-heading:first-child { margin-top: 0; }
+
+/* --------------------------------------------------------------------------
+   Profiles (people.html)
+   -------------------------------------------------------------------------- */
+
+.profile-section {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2.5rem;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    border-left: 5px solid var(--accent);
+    scroll-margin-top: 2rem;
+}
+
+.profile-image-box { text-align: center; flex-shrink: 0; }
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--accent);
+    line-height: 150px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid var(--primary);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info { flex-grow: 1; }
+
+.profile-info h2 {
+    color: var(--primary);
+    margin: 0 0 0.25rem 0;
+    font-size: 1.8rem;
+}
+
+.profile-info .title {
+    color: var(--accent-dark);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.meta-list { list-style: none; padding: 0; margin: 0; }
+.meta-list li { margin-bottom: 0.5rem; font-size: 1rem; }
+.meta-list strong { color: var(--primary); }
+.meta-list a { color: var(--accent-dark); font-weight: 700; }
+
+@media (max-width: 650px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   Articles (insights.html)
+   -------------------------------------------------------------------------- */
+
+.article-card {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2.5rem;
+    border-top: 4px solid var(--accent);
+    transition: transform 0.2s ease;
+}
+
+.article-card:hover { transform: translateY(-2px); }
+
+.article-meta {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.article-card h2 {
+    color: var(--primary);
+    margin: 0 0 1rem 0;
+    font-size: 1.6rem;
+}
+
+.article-card h3 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.5rem 0;
+    border-left: 3px solid var(--accent);
+    padding-left: 0.75rem;
+}
+
+.briefing-item { margin-bottom: 1.25rem; }
+.briefing-item strong { color: var(--primary); }
+
+.read-more {
+    display: inline-block;
+    margin-top: 1.25rem;
+    color: var(--accent-dark);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.read-more:hover { text-decoration: underline; }
+
+/* --------------------------------------------------------------------------
+   Sector list (experience.html)
+   -------------------------------------------------------------------------- */
+
+.sector-list { list-style: none; padding: 0; margin: 0; }
+
+.sector-list li {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--accent);
+}
+
+.sector-list strong {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   FAQ (experience.html)
+   -------------------------------------------------------------------------- */
+
+.faq { margin-bottom: 1.25rem; }
+.faq summary { font-weight: 600; cursor: pointer; color: var(--primary); }
+.faq p { margin-top: 0.75rem; color: var(--text); }
+
+/* --------------------------------------------------------------------------
+   Branch pages (texas.html / oklahoma.html)
+   -------------------------------------------------------------------------- */
+
+main.medium { max-width: 800px; }
+
+.card h3 {
+    margin-top: 0;
+    color: var(--primary);
+    font-size: 1.4rem;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card + .card { margin-top: 2rem; }
+
+/* --------------------------------------------------------------------------
+   Contact page
+   -------------------------------------------------------------------------- */
+
+main.wide { max-width: 1000px; }
+
+.flex-container { display: flex; gap: 2.5rem; flex-wrap: wrap; }
+
+.sidebar-info { flex: 1; min-width: 320px; }
+
+.portal-box {
+    flex: 1.5;
+    min-width: 350px;
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid var(--accent);
+}
+
+.portal-box h2 {
+    margin-top: 0;
+    color: var(--primary);
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.5rem;
+}
+
+.contact-card {
+    background: var(--card-bg);
+    padding: 1.75rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--accent);
+}
+
+.contact-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.contact-card p { margin: 0 0 0.4rem 0; font-size: 0.95rem; }
+.contact-card a { color: var(--accent-dark); text-decoration: none; font-weight: 700; }
+.contact-card a:hover { text-decoration: underline; }
+
+.iframe-container {
+    width: 100%;
+    height: 850px;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+/* --------------------------------------------------------------------------
+   Legal copy (disclaimer.html)
+   -------------------------------------------------------------------------- */
+
+.content-card.legal h2 { font-size: 1.6rem; }
+.content-card.legal p { font-size: 0.95rem; margin-bottom: 1.25rem; }
+
+/* ---------- Advertising / office identification block ---------- */
+.office-block {
+    font-size: 0.8rem;
+    line-height: 1.7;
+    color: var(--on-dark);
+    opacity: 0.85;
+    max-width: 640px;
+    margin: 1.5rem auto 0;
+}
+.office-block strong { color: var(--accent); }
+
+/* ---------- Form failure notice ---------- */
+.form-error {
+    font-size: 0.92rem;
+    color: #7a2020;
+    background: #fdf0f0;
+    border-left: 3px solid #c05252;
+    padding: 0.9rem 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
