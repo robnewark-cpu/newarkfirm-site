@@ -244,6 +244,16 @@ footer {
 footer .disclaimer { max-width: 720px; }
 footer a { color: var(--slate); }
 
+.footer-credit {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #14213d;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-credit a { color: #c9a96e; }
+.footer-credit a:hover { color: #ffffff; }
+
 /* ---------- Submission failure notice ---------- */
 .form-error {
   font-family: var(--font-mono);

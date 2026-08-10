@@ -324,6 +324,22 @@ footer {
 footer a { color: var(--accent); }
 footer a:hover { color: #ffffff; }
 
+.footer-credit {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #14213d;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.footer-credit a {
+    color: #c9a96e;
+}
+
+.footer-credit a:hover {
+    color: #ffffff;
+}
+
 /* --------------------------------------------------------------------------
    Responsive
    -------------------------------------------------------------------------- */
