@@ -1,22 +1,3 @@
 User-agent: *
 Allow: /
-
-# AI answer engines — allowed deliberately. These crawlers feed the assistants
-# that increasingly answer legal questions directly. Blocking them removes the
-# firm from those answers.
-User-agent: GPTBot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
 Sitemap: https://newarkfirm.com/sitemap.xml

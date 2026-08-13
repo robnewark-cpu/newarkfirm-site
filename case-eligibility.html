@@ -1,109 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Check Case Eligibility | Newark Law Offices</title>
-<meta name="description" content="Submit your legal matter directly to Attorney Robert Newark for a confidential case evaluation.">
-<link rel="canonical" href="https://newarkfirm.com/case-eligibility">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Newark Law Offices">
-<meta property="og:title" content="Check Case Eligibility | Newark Law Offices">
-<meta property="og:description" content="Submit your legal matter directly to Attorney Robert Newark for a confidential case evaluation.">
-<meta property="og:url" content="https://newarkfirm.com/case-eligibility">
-<meta name="twitter:card" content="summary">
-<link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Case Eligibility | Newark Law Offices</title>
+  <meta name="description" content="Submit your matter to Newark Law Offices for a case eligibility review.">
+  <link rel="canonical" href="https://newarkfirm.com/case-eligibility.html">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="compact" style="--hero-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?fm=jpg&amp;q=80&amp;w=2000&amp;auto=format&amp;fit=crop')">
-    <h1>Newark Law Offices</h1>
-    <p>Check Your Case Eligibility</p>
-</header>
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/experience">Experience</a></li>
-        <li><a href="/people">Our People</a></li>
-        <li><a href="/insights">Insights</a></li>
-        <li><a href="https://modmediations.com/" target="_blank" rel="noopener">Mediation</a></li>
-        <li><a href="/texas">Texas Branch</a></li>
-        <li><a href="/oklahoma">Oklahoma Branch</a></li>
-        <li><a href="/contact">Contact Hub</a></li>
-        <li><a href="/case-eligibility" class="btn-nav">Check Eligibility →</a></li>
-    </ul>
-</nav>
-<main class="narrow">
-    <div class="card">
-        <h2>Check Case Eligibility</h2>
-        <p class="sub">Complete this short assessment to review your legal matter directly with Attorney Robert Newark.</p>
-        <form id="leadForm" data-source="case-eligibility">
-
-            <div class="field">
-                <label for="practice_area">Type of Legal Matter</label>
-                <select id="practice_area" name="practice_area" required>
-                    <option value="">Select practice area...</option>
-                    <option value="Commercial Lending / Banking Litigation">Commercial Lending / Banking Litigation</option>
-                    <option value="Business Contracts / Disputes">Business Contracts / Disputes</option>
-                    <option value="Civil Litigation">Civil Litigation</option>
-                    <option value="Appellate Law">Appellate Law</option>
-                    <option value="Other Legal Matter">Other Legal Matter</option>
-                </select>
-            </div>
-
-            <div class="field">
-                <label for="timeline">How urgent is this matter?</label>
-                <select id="timeline" name="timeline" required>
-                    <option value="">Select timeline...</option>
-                    <option value="Immediate (Pending court deadline/lawsuit)">Immediate (Pending court deadline/lawsuit)</option>
-                    <option value="Within 30 Days">Within 30 Days</option>
-                    <option value="General Consultation / Planning">General Consultation / Planning</option>
-                </select>
-            </div>
-
-            <div class="field">
-                <label for="name">Your Full Name</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required>
-            </div>
-
-            <div class="field">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="john@company.com" required>
-            </div>
-
-            <div class="field">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="(405) 000-0000" required>
-            </div>
-
-            <div class="field">
-                <label for="summary">Brief Summary of the Case</label>
-                <textarea id="summary" name="summary" rows="4" placeholder="Describe the key facts, parties involved, or court jurisdiction..."></textarea>
-            </div>
-
-            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
-            <button type="submit" class="btn-submit">Submit for Review</button>
-        </form>
-        <div class="form-success" id="formSuccess">Received. Our office will contact you within one business day.</div>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Newark Law Offices
+        <small>Texas &amp; Oklahoma</small>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="people.html">Our People</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="texas.html">Texas Branch</a></li>
+        <li><a href="oklahoma.html">Oklahoma Branch</a></li>
+        <li><a href="contact.html">Contact Hub</a></li>
+        <li><a href="mediation.html">Mediation</a></li>
+        </ul>
+      </nav>
+      <a class="cta-pill" href="case-eligibility.html">Check Eligibility &rarr;</a>
     </div>
-</main>
-<footer>
-    <p>&copy; 2026 Newark Law Offices. All Rights Reserved. | <a href="/disclaimer">Disclaimer</a></p>
-    <p class="office-block">
-      Newark Law Offices / A Newark Firm, LLC &middot; Responsible attorney: Robert C. Newark, III<br>
-      <strong>Primary practice location:</strong> 1341 W. Mockingbird Ln, Suite 600W, Dallas, TX 75247<br>
-      Oklahoma office: 1019 Waterwood Pkwy, Suite C, Edmond, OK 73034 &middot; 866-230-7236<br>
-      Attorney advertising. Prior results do not guarantee a similar outcome.
-    </p>
-</footer>
-<script
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Check Case Eligibility</h1>
+        <p class="lede">Tell us about your matter. A member of our team will follow up to discuss next steps.</p>
+      </div>
+    </section>
+    <section class="alt">
+      <div class="container">
+        <div id="eligibility-success" class="success-msg">Thank you &mdash; your case review request has been sent. Our team will follow up shortly.</div>
+        <form class="stack" id="eligibility-form" action="https://formsubmit.co/potentialclient@newarkfirm.com" method="POST">
+          <input type="hidden" name="_subject" value="New case eligibility submission &mdash; newarkfirm.com">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <div><label for="name">Full name</label><input type="text" id="name" name="Name" required></div>
+          <div><label for="email">Email</label><input type="email" id="email" name="Email" required></div>
+          <div><label for="phone">Phone</label><input type="tel" id="phone" name="Phone" required></div>
+          <div><label for="state">State</label>
+            <select id="state" name="State" required>
+              <option value="">Select a state</option>
+              <option>Texas</option>
+              <option>Oklahoma</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div><label for="matter">Type of matter</label>
+            <select id="matter" name="Matter type" required>
+              <option value="">Select a matter type</option>
+              <option>Corporate litigation defense</option>
+              <option>Financial institution advisory</option>
+              <option>Complex civil litigation</option>
+              <option>Corporate transaction</option>
+              <option>Foreclosure defense</option>
+              <option>Chapter 11 (creditor)</option>
+              <option>Chapter 11 (debtor)</option>
+              <option>Car accident injury</option>
+              <option>Wind &amp; hail insurance claim</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div><label for="details">Brief description</label><textarea id="details" name="Details" required></textarea></div>
+          <button class="btn btn-gold" type="submit">Submit for Review</button>
+          <p class="form-note">Submitting this form does not create an attorney-client relationship.</p>
+        </form>
+      </div>
+    </section>
+    <script>
+      document.getElementById('eligibility-form').addEventListener('submit', function () {
+        setTimeout(function () {
+          document.getElementById('eligibility-success').style.display = 'block';
+        }, 300);
+      });
+    </script>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <h4>Newark Law Offices</h4>
+          <p>A Newark Firm, LLC<br>Responsible attorney: Robert C. Newark, III</p>
+          <p>Attorney advertising. Prior results do not guarantee a similar outcome.</p>
+        </div>
+        <div>
+          <h4>Texas Office</h4>
+          <p>1341 W. Mockingbird Ln, Ste 600W<br>Dallas, TX 75247<br>972-332-5733</p>
+        </div>
+        <div>
+          <h4>Oklahoma Office</h4>
+          <p>1019 Waterwood Pkwy, Ste C<br>Edmond, OK 73034<br>405-727-0269</p>
+          <p>Toll free: 866-230-7236</p>
+        </div>
+      </div>
+      <div class="legal">
+        <p>&copy; 2026 Newark Law Offices. All Rights Reserved. | <a href="disclaimer.html">Disclaimer</a></p>
+        <p>Licensed in Texas and Oklahoma state courts; admitted to federal courts in Colorado, New Mexico, and Arkansas.</p>
+      <p style="font-size:0.68rem; color:#5f6584; line-height:1.9; margin-top:18px;"><a href="funnels/corporate-litigation-defense.html">Corporate litigation defense</a> &middot; <a href="funnels/financial-institution-advisory.html">Financial institution advisory</a> &middot; <a href="funnels/complex-civil-litigation-dispute-resolution.html">Complex civil litigation & dispute resolution</a> &middot; <a href="funnels/texas-oklahoma-cross-border-corporate-transactions.html">Texas-Oklahoma corporate transactions</a> &middot; <a href="funnels/foreclosure-defense-texas.html">Foreclosure defense (Texas)</a> &middot; <a href="funnels/foreclosure-defense-oklahoma.html">Foreclosure defense (Oklahoma)</a> &middot; <a href="funnels/ch11-creditor-texas.html">Chapter 11 creditor representation (Texas)</a> &middot; <a href="funnels/ch11-debtor-texas.html">Chapter 11 debtor reorganization (Texas)</a> &middot; <a href="funnels/ch11-debtor-oklahoma.html">Chapter 11 debtor reorganization (Oklahoma)</a> &middot; <a href="funnels/car-accident-injury-texas.html">Car accident injury claims (Texas)</a> &middot; <a href="funnels/car-accident-injury-oklahoma.html">Car accident injury claims (Oklahoma)</a> &middot; <a href="funnels/wind-hail-damage-claim-texas.html">Wind & hail insurance claims (Texas)</a> &middot; <a href="funnels/wind-hail-damage-claim-oklahoma.html">Wind & hail insurance claims (Oklahoma)</a></p>
+      </div>
+    </div>
+  </footer>
+  <script
   src="https://site-chatbot-assets.pages.dev/widget.js"
-  data-worker-url="https://site-chatbots.robert-bb6.workers.dev"
+  data-backend="https://site-chatbots.robert-bb6.workers.dev"
   data-site="newarkfirm"
-  data-name="Newark Law Offices"
-  data-accent="#14213d"
-  data-greeting="Hi, I'm here to help point you to the right person at the firm. What brings you by today?"
-></script>
-<script src="/lead.js"></script>
+  async
+  defer></script>
 </body>
 </html>
