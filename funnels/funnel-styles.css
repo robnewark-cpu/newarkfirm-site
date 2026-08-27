@@ -50,6 +50,7 @@ p.dek { font-size: 1.05rem; color: var(--muted); max-width: 640px; margin-bottom
 section.body-copy { padding: 8px 0 36px; }
 section.body-copy h2 { font-family: var(--serif); font-size: 1.35rem; margin: 28px 0 10px; }
 section.body-copy p { color: var(--ink); max-width: 700px; }
+section.body-copy a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
 section.body-copy ul { max-width: 700px; }
 
 .fee-note {

@@ -19,3 +19,5 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
+Sitemap: https://newarkfirm.com/sitemap.xml
+

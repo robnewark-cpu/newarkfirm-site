@@ -1,4 +1,8 @@
-# Content hub: Blog is now Insights
+# Clean aliases
+/personal-injury /personal-injury.html 301
+/injury /personal-injury.html 301
+/local-counsel /local-counsel.html 301
+
 /blog /insights.html 301
 /blog.html /insights.html 301
 /blog/ /insights.html 301

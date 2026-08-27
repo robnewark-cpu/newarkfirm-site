@@ -2,11 +2,12 @@
 
 > Boutique legal representation and strategic advocacy serving corporate and individual clients throughout Texas and Oklahoma.
 
-Newark Law Offices (legal entity: A Newark Firm, LLC) provides litigation, corporate advocacy, bankruptcy, foreclosure defense, and insurance-claim counsel with offices in Dallas, Texas and Edmond, Oklahoma.
+Newark Law Offices (legal entity: A Newark Firm, LLC) provides litigation, corporate advocacy, bankruptcy, foreclosure defense, personal-injury (car-accident), and insurance-claim counsel with offices in Dallas, Texas and Edmond, Oklahoma.
 
-- Responsible attorney: Robert C. Newark, III
-- Licensed in Texas and Oklahoma state courts
-- Admitted to federal courts in Texas, Oklahoma, Colorado, New Mexico, and Arkansas
+- Responsible attorney: Robert C. Newark, III (Texas and Oklahoma state courts; federal courts in Texas, Oklahoma, Colorado, New Mexico, and Arkansas)
+- Attorney Tyler Wilson: licensed in Oklahoma, Alaska, Wisconsin, and South Dakota state courts
+- Alaska, Wisconsin, and South Dakota originating matters are accepted on a referral basis
+- Local counsel: case-by-case in licensed courts — https://newarkfirm.com/local-counsel.html
 - Phone: 866-230-7236 | Dallas: 972-332-5733 | Edmond: 405-727-0269
 - Case review: https://newarkfirm.com/case-eligibility.html
 - Chat widget and lead forms post to the firm’s Cloudflare Worker; they do not create an attorney-client relationship
@@ -19,6 +20,8 @@ Newark Law Offices (legal entity: A Newark Firm, LLC) provides litigation, corpo
 - [Experience](https://newarkfirm.com/experience.html)
 - [Our People](https://newarkfirm.com/people.html)
 - [Insights](https://newarkfirm.com/insights.html)
+- [Personal injury](https://newarkfirm.com/personal-injury.html)
+- [Local counsel](https://newarkfirm.com/local-counsel.html)
 - [Texas office](https://newarkfirm.com/texas.html)
 - [Oklahoma office](https://newarkfirm.com/oklahoma.html)
 - [Contact](https://newarkfirm.com/contact.html)
@@ -26,6 +29,8 @@ Newark Law Offices (legal entity: A Newark Firm, LLC) provides litigation, corpo
 
 ## Insights (practice notes and briefings)
 
+- [Local counsel in licensed courts](https://newarkfirm.com/insights/local-counsel-licensed-courts.html): case-by-case appearances; referral-basis AK/WI/SD
+- [After a car crash in Texas or Oklahoma](https://newarkfirm.com/insights/after-a-car-crash-texas-oklahoma.html): first 72 hours, recorded statements, Texas vs Oklahoma
 - [Foreclosure timelines in Texas and Oklahoma](https://newarkfirm.com/insights/foreclosure-timelines-texas-oklahoma.html): Texas non-judicial vs Oklahoma judicial calendars
 - [Chapter 11 for small businesses](https://newarkfirm.com/insights/chapter-11-small-business.html): automatic stay and Subchapter V
 - [Chapter 11 from the creditor side](https://newarkfirm.com/insights/chapter-11-creditor-strategy.html): proofs of claim, collateral, plan objections
@@ -44,6 +49,8 @@ Newark Law Offices (legal entity: A Newark Firm, LLC) provides litigation, corpo
 - [Chapter 11 creditor — Texas](https://newarkfirm.com/ch11-creditor-texas.html)
 - [Chapter 11 debtor — Texas](https://newarkfirm.com/ch11-debtor-texas.html)
 - [Chapter 11 debtor — Oklahoma](https://newarkfirm.com/ch11-debtor-oklahoma.html)
+- [Local counsel](https://newarkfirm.com/local-counsel.html)
+- [Personal injury — car accident claims](https://newarkfirm.com/personal-injury.html)
 - [Car accident injury — Texas](https://newarkfirm.com/funnels/car-accident-injury-texas.html)
 - [Car accident injury — Oklahoma](https://newarkfirm.com/funnels/car-accident-injury-oklahoma.html)
 - [Wind & hail claims — Texas](https://newarkfirm.com/wind-hail-damage-claim-texas.html)
