@@ -169,7 +169,8 @@ a.link {
   padding: 30px;
 }
 .office-card h3 { font-family: var(--serif); color: var(--navy); margin-top: 0; }
-.office-card address { font-style: normal; color: var(--muted); margin-bottom: 14px; line-height: 1.7; }
+.office-card ul { padding-left: 1.2rem; color: var(--muted); margin: 8px 0 12px; }
+.office-card li { margin-bottom: 4px; }
 
 /* Forms */
 form.stack { display: flex; flex-direction: column; gap: 14px; max-width: 560px; }
