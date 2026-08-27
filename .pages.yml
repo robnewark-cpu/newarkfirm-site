@@ -5,7 +5,7 @@ media:
 
 content:
   - name: insights
-    label: Daily Insights Blog
+    label: Insights library
     type: collection
     path: insights/
     format: html
