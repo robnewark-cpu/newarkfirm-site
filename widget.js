@@ -16,7 +16,7 @@
  */
 (function () {
   const scriptTag = document.currentScript;
-  const WORKER_URL = scriptTag.dataset.workerUrl;
+  const WORKER_URL = scriptTag.dataset.workerUrl || scriptTag.dataset.backend;
   const SITE = scriptTag.dataset.site;
   const NAME = scriptTag.dataset.name || "Chat";
   const ACCENT = scriptTag.dataset.accent || "#1a1a2e";

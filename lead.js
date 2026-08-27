@@ -7,7 +7,6 @@
 (function () {
   'use strict';
 
-  // TODO: set this to the live Worker route before deploying.
   var ENDPOINT = 'https://site-chatbots.robert-bb6.workers.dev/lead';
 
   var form = document.getElementById('leadForm');
@@ -16,8 +15,8 @@
 
   var source = form.getAttribute('data-source') || 'unknown';
   var button = form.querySelector('button[type="submit"]');
+  var originalLabel = button ? button.textContent : 'Submit for Review';
 
-  // Failure message element, created once and reused.
   var failure = document.createElement('div');
   failure.className = 'form-error';
   failure.setAttribute('role', 'alert');
@@ -32,6 +31,14 @@
     failure.style.display = 'block';
   }
 
+  function pick(data, keys) {
+    for (var i = 0; i < keys.length; i++) {
+      var value = data[keys[i]];
+      if (value && String(value).trim()) return String(value).trim();
+    }
+    return '';
+  }
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
@@ -42,12 +49,25 @@
       button.textContent = 'Submitting\u2026';
     }
 
-    // Honeypot — bots fill this, humans never see it
-    var hp = form.querySelector('input[name="website"]');
     var data = {};
     new FormData(form).forEach(function (value, key) {
       data[key] = value;
     });
+
+    // Honeypot — bots fill this, humans never see it. Fail closed without sending.
+    if (data.website) {
+      success.style.display = 'block';
+      form.style.display = 'none';
+      if (button) {
+        button.disabled = false;
+        button.textContent = originalLabel;
+      }
+      return;
+    }
+
+    data.name = pick(data, ['name', 'Name', 'full_name', 'fullName']);
+    data.email = pick(data, ['email', 'Email']);
+    data.phone = pick(data, ['phone', 'Phone']);
     data.source = source;
     data.page = window.location.pathname;
     data.submitted_at = new Date().toISOString();
@@ -68,7 +88,7 @@
       .then(function () {
         if (button) {
           button.disabled = false;
-          button.textContent = 'Submit for Review';
+          button.textContent = originalLabel;
         }
       });
   });

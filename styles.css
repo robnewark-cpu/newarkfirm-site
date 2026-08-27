@@ -180,7 +180,8 @@ input, select, textarea {
 }
 textarea { min-height: 120px; resize: vertical; }
 .form-note { font-size: 0.78rem; color: var(--muted); }
-.success-msg {
+.success-msg,
+.form-success {
   display: none;
   background: #eef6ee;
   border: 1px solid #bfe0bf;
@@ -189,6 +190,21 @@ textarea { min-height: 120px; resize: vertical; }
   border-radius: var(--radius);
   font-weight: 600;
 }
+.form-error {
+  background: #f8ecec;
+  border: 1px solid #e3b6b6;
+  color: #7a2e2e;
+  padding: 16px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  margin-top: 12px;
+}
+.form-error a { color: #7a2e2e; text-decoration: underline; }
+.article-body { max-width: 760px; }
+.article-body h2 { font-family: var(--serif); color: var(--navy); font-size: 1.35rem; margin: 28px 0 10px; }
+.article-body p, .article-body li { color: var(--muted); }
+.article-body ul { padding-left: 1.2rem; }
+.article-meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 8px; }
 
 /* Footer */
 footer.site-footer {

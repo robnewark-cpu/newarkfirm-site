@@ -51,19 +51,17 @@
 
     <div class="review-form">
       <h2>Request a Free Case Review</h2>
-      <div id="success-texas-oklahoma-cross-border-corporate-transactions" class="success-msg">Thank you &mdash; your case review request has been sent. Our team will follow up shortly.</div>
-      <form class="stack" id="form-texas-oklahoma-cross-border-corporate-transactions" action="https://formsubmit.co/potentialclient@newarkfirm.com" method="POST">
-        <input type="hidden" name="_subject" value="New funnel lead: Texas&ndash;Oklahoma Corporate Transactions &mdash; newarkfirm.com">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="Matter type" value="Corporate transaction">
-        <div><label for="name-texas-oklahoma-cross-border-corporate-transactions">Full name</label><input type="text" id="name-texas-oklahoma-cross-border-corporate-transactions" name="Name" required></div>
-        <div><label for="email-texas-oklahoma-cross-border-corporate-transactions">Email</label><input type="email" id="email-texas-oklahoma-cross-border-corporate-transactions" name="Email" required></div>
-        <div><label for="phone-texas-oklahoma-cross-border-corporate-transactions">Phone</label><input type="tel" id="phone-texas-oklahoma-cross-border-corporate-transactions" name="Phone" required></div>
-        <div><label for="details-texas-oklahoma-cross-border-corporate-transactions">Brief description of your matter</label><textarea id="details-texas-oklahoma-cross-border-corporate-transactions" name="Details" required></textarea></div>
+      <form class="stack" id="leadForm" data-source="texas-oklahoma-cross-border-corporate-transactions">
+        <input type="hidden" name="matter" value="Corporate transaction">
+        <div><label for="name">Full name</label><input type="text" id="name" name="name" required></div>
+        <div><label for="email">Email</label><input type="email" id="email" name="email" required></div>
+        <div><label for="phone">Phone</label><input type="tel" id="phone" name="phone" required></div>
+        <div><label for="details">Brief description of your matter</label><textarea id="details" name="details" required></textarea></div>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
         <button type="submit">Submit for Free Case Review</button>
         <p class="form-note">Submitting this form does not create an attorney-client relationship.</p>
       </form>
+      <div class="success-msg" id="formSuccess">Thank you &mdash; your case review request has been sent. Our team will follow up shortly.</div>
     </div>
   </main>
 
@@ -77,10 +75,14 @@
       <p><a href="../index.html" style="color:inherit;">&larr; Back to newarkfirm.com</a> &middot; <a href="../experience.html" style="color:inherit;">Our experience</a> &middot; <a href="../contact.html" style="color:inherit;">Contact</a></p>
     </div>
   </footer>
+  <script src="/lead.js"></script>
   <script
   src="https://site-chatbot-assets.pages.dev/widget.js"
-  data-backend="https://site-chatbots.robert-bb6.workers.dev"
+  data-worker-url="https://site-chatbots.robert-bb6.workers.dev"
   data-site="newarkfirm"
+  data-name="Newark Law Offices"
+  data-accent="#0F1B2E"
+  data-greeting="Hi — I can help point you to the right person here. What brings you by today?"
   async
   defer></script>
 </body>

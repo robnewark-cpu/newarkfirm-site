@@ -2,17 +2,44 @@
 
 > Boutique legal representation and strategic advocacy serving corporate and individual clients throughout Texas and Oklahoma.
 
-Newark Law Offices (legal entity: A Newark Firm, LLC) provides litigation, corporate advocacy, and strategic counsel with offices in Dallas, Texas and Edmond, Oklahoma.
+Newark Law Offices (legal entity: A Newark Firm, LLC) provides litigation, corporate advocacy, bankruptcy, foreclosure defense, and insurance-claim counsel with offices in Dallas, Texas and Edmond, Oklahoma.
 
-## Pages
+- Responsible attorney: Robert C. Newark, III
+- Licensed in Texas and Oklahoma state courts
+- Admitted to federal courts in Texas, Oklahoma, Colorado, New Mexico, and Arkansas
+- Phone: 866-230-7236 | Dallas: 972-332-5733 | Edmond: 405-727-0269
+- Case review: https://newarkfirm.com/case-eligibility.html
+- Chat widget and lead forms post to the firm’s Cloudflare Worker; they do not create an attorney-client relationship
 
-- [Home](https://newarkfirm.com/): Firm overview and practice areas
-- [About](https://newarkfirm.com/about.html): Firm background and mission
-- [Experience](https://newarkfirm.com/experience.html): Case experience and practice history
-- [Our People](https://newarkfirm.com/people.html): Attorney and staff profiles
-- [Insights](https://newarkfirm.com/insights.html): Legal insights and articles
-- [Contact](https://newarkfirm.com/contact.html): Contact information for Texas and Oklahoma offices
+## Core pages
+
+- [Home](https://newarkfirm.com/): Firm overview
+- [About](https://newarkfirm.com/about.html)
+- [Experience](https://newarkfirm.com/experience.html)
+- [Our People](https://newarkfirm.com/people.html)
+- [Insights](https://newarkfirm.com/insights.html)
+- [Blog](https://newarkfirm.com/blog.html)
+- [Texas office](https://newarkfirm.com/texas.html)
+- [Oklahoma office](https://newarkfirm.com/oklahoma.html)
+- [Contact](https://newarkfirm.com/contact.html)
+- [Check case eligibility](https://newarkfirm.com/case-eligibility.html)
+
+## Practice-area funnels
+
+- [Corporate litigation defense](https://newarkfirm.com/funnels/corporate-litigation-defense.html)
+- [Financial institution advisory](https://newarkfirm.com/funnels/financial-institution-advisory.html)
+- [Complex civil litigation](https://newarkfirm.com/funnels/complex-civil-litigation-dispute-resolution.html)
+- [Texas-Oklahoma corporate transactions](https://newarkfirm.com/funnels/texas-oklahoma-cross-border-corporate-transactions.html)
+- [Foreclosure defense — Texas](https://newarkfirm.com/funnels/foreclosure-defense-texas.html)
+- [Foreclosure defense — Oklahoma](https://newarkfirm.com/funnels/foreclosure-defense-oklahoma.html)
+- [Chapter 11 creditor — Texas](https://newarkfirm.com/funnels/ch11-creditor-texas.html)
+- [Chapter 11 debtor — Texas](https://newarkfirm.com/funnels/ch11-debtor-texas.html)
+- [Chapter 11 debtor — Oklahoma](https://newarkfirm.com/funnels/ch11-debtor-oklahoma.html)
+- [Car accident injury — Texas](https://newarkfirm.com/funnels/car-accident-injury-texas.html)
+- [Car accident injury — Oklahoma](https://newarkfirm.com/funnels/car-accident-injury-oklahoma.html)
+- [Wind & hail claims — Texas](https://newarkfirm.com/funnels/wind-hail-damage-claim-texas.html)
+- [Wind & hail claims — Oklahoma](https://newarkfirm.com/funnels/wind-hail-damage-claim-oklahoma.html)
 
 ## Related
 
-- [MOD Mediations](https://modmediations.com/): Affiliated mediation and arbitration services, directed by the same principal
+- [MOD Mediations](https://modmediations.com/): Affiliated mediation and arbitration services

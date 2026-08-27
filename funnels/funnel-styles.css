@@ -79,8 +79,12 @@ section.body-copy ul { max-width: 700px; }
 }
 .review-form button:hover { background: var(--brass); }
 .success-msg {
-  display: none; background: #eef6ee; border: 1px solid #bfe0bf; color: #235a23; padding: 14px 16px; font-size: 0.9rem; margin-bottom: 16px;
+  display: none; background: #eef6ee; border: 1px solid #bfe0bf; color: #235a23; padding: 14px 16px; font-size: 0.9rem; margin: 16px 0;
 }
+.form-error {
+  background: #f8ecec; border: 1px solid #e3b6b6; color: #7a2e2e; padding: 14px 16px; font-size: 0.9rem; margin: 16px 0;
+}
+.form-error a { color: #7a2e2e; }
 .form-note { font-size: 0.75rem; color: var(--muted); }
 
 footer.funnel-footer {
