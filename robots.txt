@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /*.md
+Sitemap: https://newarkfirm.com/sitemap.xml
 
 # AI crawlers
 User-agent: GPTBot
