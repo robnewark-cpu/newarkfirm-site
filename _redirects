@@ -1,0 +1,29 @@
+# Content hub: Blog is now Insights
+/blog /insights.html 301
+/blog.html /insights.html 301
+/blog/ /insights.html 301
+/blog/foreclosure-timelines-texas-oklahoma.html /insights/foreclosure-timelines-texas-oklahoma.html 301
+/blog/chapter-11-small-business.html /insights/chapter-11-small-business.html 301
+/blog/wind-hail-claim-denials.html /insights/wind-hail-claim-denials.html 301
+
+# Retired WordPress paths still appearing in search results
+/dallas /texas.html 301
+/dallas/ /texas.html 301
+/edmond-office /oklahoma.html 301
+/edmond-office/ /oklahoma.html 301
+/about-us /about.html 301
+/about-us/ /about.html 301
+/our-team /people.html 301
+/our-team/ /people.html 301
+/contact-us /contact.html 301
+/contact-us/ /contact.html 301
+/disclaimer /disclaimer.html 301
+/people /people.html 301
+/texas /texas.html 301
+/oklahoma /oklahoma.html 301
+
+# Off-brand leftover posts → current content hub
+/navigating-dog-ownership-in-divorce-understanding-your-rights-and-responsibilities /insights.html 301
+/navigating-dog-ownership-in-divorce-understanding-your-rights-and-responsibilities/ /insights.html 301
+/navigating-homeownership-in-divorce-protecting-your-home-and-avoiding-foreclosure /insights/foreclosure-timelines-texas-oklahoma.html 301
+/navigating-homeownership-in-divorce-protecting-your-home-and-avoiding-foreclosure/ /insights/foreclosure-timelines-texas-oklahoma.html 301
