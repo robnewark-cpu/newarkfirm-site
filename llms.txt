@@ -9,6 +9,9 @@ Newark Law Offices (legal entity: A Newark Firm, LLC) provides litigation, corpo
 - Alaska, Wisconsin, and South Dakota originating matters are accepted on a referral basis
 - Local counsel: case-by-case in licensed courts — https://newarkfirm.com/local-counsel.html
 - Phone: 866-230-7236 | Dallas: 972-332-5733 | Edmond: 405-727-0269
+- Business hours: Monday–Friday, 9:00 a.m.–5:00 p.m. Central Time (both offices). In-office visits by appointment.
+- Initial case review: free via https://newarkfirm.com/case-eligibility.html or phone during business hours (does not create an attorney-client relationship)
+- Fee structure: personal injury and wind/hail claims may use contingent fees in appropriate cases; litigation, corporate, bankruptcy, and local-counsel work is typically hourly, flat, or retainer-based; all terms in a written agreement — https://newarkfirm.com/contact.html
 - Case review: https://newarkfirm.com/case-eligibility.html
 - Chat widget and lead forms post to the firm’s Cloudflare Worker; they do not create an attorney-client relationship
 - Content library: https://newarkfirm.com/insights.html (the former Blog section redirects here)
@@ -26,6 +29,11 @@ Newark Law Offices (legal entity: A Newark Firm, LLC) provides litigation, corpo
 - [Oklahoma office](https://newarkfirm.com/oklahoma.html)
 - [Contact](https://newarkfirm.com/contact.html)
 - [Check case eligibility](https://newarkfirm.com/case-eligibility.html)
+
+## Attorneys
+
+- [Robert C. Newark, III](https://newarkfirm.com/people.html#robert-newark): responsible attorney; Texas and Oklahoma state courts; U.S. District Courts in TX, OK, CO, NM, AR; corporate litigation, bankruptcy, transactions, foreclosure, personal injury, insurance claims
+- [Tyler Wilson](https://newarkfirm.com/people.html#tyler-wilson): Oklahoma, Alaska, Wisconsin, and South Dakota state courts; local counsel case-by-case; AK/WI/SD originating matters on referral basis
 
 ## Insights (practice notes and briefings)
 
