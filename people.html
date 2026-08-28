@@ -16,23 +16,42 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Person",
+        "@type": "Attorney",
+        "@id": "https://newarkfirm.com/people.html#robert-newark",
         "name": "Robert C. Newark, III",
         "jobTitle": "Responsible Attorney",
         "email": "robert@newarkfirm.com",
+        "telephone": "+1-972-332-5733",
         "image": "https://newarkfirm.com/rob-headshot.jpg",
+        "url": "https://newarkfirm.com/people.html#robert-newark",
         "worksFor": {"@type": "LegalService", "name": "Newark Law Offices", "url": "https://newarkfirm.com/"},
-        "address": {"@type": "PostalAddress", "addressLocality": "Dallas", "addressRegion": "TX"},
+        "address": {"@type": "PostalAddress", "streetAddress": "1341 W. Mockingbird Ln, Ste 600W", "addressLocality": "Dallas", "addressRegion": "TX", "postalCode": "75247", "addressCountry": "US"},
+        "knowsAbout": ["Commercial litigation", "Chapter 11 bankruptcy", "Corporate transactions", "Foreclosure defense", "Personal injury", "Wind and hail insurance claims", "Financial institution advisory"],
+        "hasCredential": [
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Bar admission", "recognizedBy": {"@type": "Organization", "name": "State Bar of Texas"}},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Bar admission", "recognizedBy": {"@type": "Organization", "name": "Oklahoma Bar Association"}},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Federal court admission", "recognizedBy": {"@type": "Organization", "name": "U.S. District Courts (Texas, Oklahoma, Colorado, New Mexico, Arkansas)"}}
+        ],
         "sameAs": ["https://www.linkedin.com/in/robert-newark-52575614"]
       },
       {
-        "@type": "Person",
+        "@type": "Attorney",
+        "@id": "https://newarkfirm.com/people.html#tyler-wilson",
         "name": "Tyler Wilson",
         "jobTitle": "Attorney",
         "email": "tyler@newarkfirm.com",
+        "telephone": "+1-405-727-0269",
         "image": "https://newarkfirm.com/tyler-headshot.jpg",
+        "url": "https://newarkfirm.com/people.html#tyler-wilson",
         "worksFor": {"@type": "LegalService", "name": "Newark Law Offices", "url": "https://newarkfirm.com/"},
-        "knowsAbout": ["Oklahoma", "Alaska", "Wisconsin", "South Dakota"]
+        "address": {"@type": "PostalAddress", "streetAddress": "1019 Waterwood Pkwy, Ste C", "addressLocality": "Edmond", "addressRegion": "OK", "postalCode": "73034", "addressCountry": "US"},
+        "knowsAbout": ["Local counsel", "Oklahoma litigation", "Cross-border corporate matters"],
+        "hasCredential": [
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Bar admission", "recognizedBy": {"@type": "Organization", "name": "Oklahoma Bar Association"}},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Bar admission", "recognizedBy": {"@type": "Organization", "name": "Alaska Bar Association"}},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Bar admission", "recognizedBy": {"@type": "Organization", "name": "State Bar of Wisconsin"}},
+          {"@type": "EducationalOccupationalCredential", "credentialCategory": "Bar admission", "recognizedBy": {"@type": "Organization", "name": "State Bar of South Dakota"}}
+        ]
       }
     ]
   }
@@ -70,16 +89,43 @@
     <section class="alt">
       <div class="container">
         <div class="grid-2">
-          <div class="card">
+          <div class="card" id="robert-newark">
             <img class="person-photo" src="rob-headshot.jpg" width="640" height="800" alt="Robert C. Newark, III, responsible attorney at Newark Law Offices">
             <h3>Robert C. Newark, III</h3>
-            <p>Responsible attorney. Licensed in Texas and Oklahoma state courts; admitted to federal courts in Texas, Oklahoma, Colorado, New Mexico, and Arkansas. Directs the firm’s litigation, bankruptcy, and transactional matters.</p>
-            <p><a class="link" href="mailto:robert@newarkfirm.com">robert@newarkfirm.com</a></p>
+            <p><strong>Responsible attorney</strong> &middot; Dallas, Texas</p>
+            <p>Robert C. Newark, III directs the firm’s litigation, bankruptcy, and transactional matters from the Dallas office. He represents corporate clients, financial institutions, and individuals across commercial disputes, Chapter 11 reorganizations, foreclosure defense, personal injury, and insurance-claim litigation throughout Texas and Oklahoma.</p>
+            <h4>Licenses &amp; admissions</h4>
+            <ul>
+              <li>Texas and Oklahoma state courts</li>
+              <li>U.S. District Courts in Texas, Oklahoma, Colorado, New Mexico, and Arkansas</li>
+            </ul>
+            <p>Colorado, New Mexico, and Arkansas references are federal-court admissions, not state-bar licenses in those states.</p>
+            <h4>Practice focus</h4>
+            <ul>
+              <li>Corporate litigation and dispute resolution</li>
+              <li>Chapter 11 debtor and creditor representation</li>
+              <li>Financial institution advisory and lender-side litigation</li>
+              <li>Texas-Oklahoma cross-border corporate transactions</li>
+              <li>Foreclosure defense, personal injury, and wind/hail insurance claims</li>
+            </ul>
+            <p><a class="link" href="mailto:robert@newarkfirm.com">robert@newarkfirm.com</a> &middot; <a class="link" href="https://www.linkedin.com/in/robert-newark-52575614" rel="noopener">LinkedIn</a></p>
           </div>
-          <div class="card">
+          <div class="card" id="tyler-wilson">
             <img class="person-photo" src="tyler-headshot.jpg" width="640" height="800" alt="Tyler Wilson, attorney at Newark Law Offices">
             <h3>Tyler Wilson</h3>
-            <p>Licensed in Alaska, Oklahoma, Wisconsin, and South Dakota state courts. Alaska, Wisconsin, and South Dakota originating matters are accepted on a referral basis. Also available for <a class="link" href="local-counsel.html">local counsel</a> in those licensed courts, case-by-case, and as coordinated on Oklahoma files.</p>
+            <p><strong>Attorney</strong> &middot; Edmond, Oklahoma</p>
+            <p>Tyler Wilson handles Oklahoma files and coordinated multi-state matters from the Edmond office. He is available for <a class="link" href="local-counsel.html">local-counsel</a> engagements in the states and courts where he is licensed — hearings, depositions, filings, and on-the-ground coordination on a case-by-case basis.</p>
+            <h4>Licenses</h4>
+            <ul>
+              <li>Oklahoma, Alaska, Wisconsin, and South Dakota state courts</li>
+            </ul>
+            <p>Alaska, Wisconsin, and South Dakota originating matters are accepted on a <strong>referral basis</strong>, not as a general consumer intake market. Local-counsel appearances in those licensed courts are still considered one matter at a time.</p>
+            <h4>Practice focus</h4>
+            <ul>
+              <li>Local counsel in licensed state courts</li>
+              <li>Oklahoma litigation and file coordination</li>
+              <li>Cross-border corporate and transactional support</li>
+            </ul>
             <p><a class="link" href="mailto:tyler@newarkfirm.com">tyler@newarkfirm.com</a></p>
           </div>
           <div class="card">
