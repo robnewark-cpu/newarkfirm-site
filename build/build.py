@@ -31,8 +31,13 @@ import content_counties  # noqa: E402
 import content_resources  # noqa: E402
 import content_business_crimigration  # noqa: E402
 import content_framework_pages  # noqa: E402
+import render_article  # noqa: E402
+import content_insights_1  # noqa: E402
+import content_insights_2  # noqa: E402
 
 TODAY = datetime.date.today().isoformat()
+
+ARTICLES = content_insights_1.ARTICLES + content_insights_2.ARTICLES
 
 # Cluster modules -> list of PageSpec
 CLUSTERS = {
@@ -97,6 +102,9 @@ def build_pages():
     # directly rather than via a PageSpec.
     for slug, html in content_framework_pages.all_pages():
         generated.append(write(f"{slug}.html", html))
+    # Insights/blog articles render into /insights/.
+    for art in ARTICLES:
+        generated.append(write(f"insights/{art.slug}.html", render_article.render(art)))
     return generated
 
 
