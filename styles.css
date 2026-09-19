@@ -419,3 +419,54 @@ footer.site-footer .legal p { margin: 4px 0; }
 .definition-block .def-body { color: var(--muted); font-size: 0.94rem; }
 
 .related-links { font-size: 0.9rem; color: var(--muted); margin-top: 22px; }
+
+/* ============================================================
+   Tranche 4 — reviews, case results, locations, resources
+   ============================================================ */
+.loc-list {
+  columns: 3;
+  column-gap: 24px;
+  padding-left: 1.1rem;
+  margin: 8px 0 20px;
+}
+@media (max-width: 700px) { .loc-list { columns: 2; } }
+@media (max-width: 460px) { .loc-list { columns: 1; } }
+.loc-list li { margin-bottom: 6px; break-inside: avoid; }
+
+.empty-state {
+  background: #fbf9f5;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  color: var(--muted);
+}
+.empty-state p { margin: 0 0 10px; }
+.empty-state p:last-child { margin-bottom: 0; }
+
+.review-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin: 0 0 16px;
+}
+.review-card p { margin: 6px 0 10px; color: var(--ink); }
+.review-card cite { color: var(--muted); font-size: 0.88rem; font-style: normal; }
+.review-stars { color: var(--gold); letter-spacing: 2px; }
+
+.result-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  margin: 0 0 16px;
+}
+.result-card .result-practice {
+  font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--gold); font-weight: 700;
+}
+.result-card h3 { font-family: var(--serif); color: var(--navy); margin: 6px 0 8px; }
+.result-card .result-disc { font-size: 0.8rem; color: var(--muted); margin: 10px 0 0; }
+
+.authority-placeholder { margin: 22px 0; }

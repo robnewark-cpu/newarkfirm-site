@@ -1,0 +1,13 @@
+{
+  "_comment": "APPROVED reviews only. Nothing here publishes automatically — an item renders on the site ONLY when status='published' AND approved=true, which is a deliberate human edit + commit + build. Never add fabricated, incentivized, or unverified reviews. Workflow: draft -> internal_review -> legal_review -> approved -> published -> archived.",
+  "_schema": {
+    "author": "string (client first name or initials, with consent)",
+    "rating": "integer 1-5 (must reflect the actual review)",
+    "text": "string (the client's own words, verbatim, with consent)",
+    "practice": "string (e.g. 'Bankruptcy') optional",
+    "source": "string (e.g. 'Google') optional",
+    "status": "draft | internal_review | legal_review | approved | published | archived",
+    "approved": "boolean — must be true AND status='published' to render"
+  },
+  "items": []
+}

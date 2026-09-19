@@ -27,8 +27,9 @@ NAV_ITEMS = [
     ("Criminal Defense", "/criminal-defense-lawyer.html"),
     ("Immigration", "/immigration-lawyer.html"),
     ("Locations", "/locations.html"),
+    ("Reviews", "/reviews.html"),
+    ("Resources", "/resources.html"),
     ("About", "/about.html"),
-    ("Insights", "/insights.html"),
     ("Contact", "/contact.html"),
 ]
 

@@ -1,0 +1,11 @@
+{
+  "_comment": "APPROVED case results only. Nothing here publishes automatically — an item renders ONLY when status='published' AND approved=true. Never fabricate outcomes, settlements, verdicts, or success rates. Each result must be verifiable and is published with a 'prior results do not guarantee a similar outcome' disclaimer. Workflow: draft -> internal_review -> legal_review -> approved -> published -> archived.",
+  "_schema": {
+    "practice": "string (Bankruptcy | Personal Injury | Criminal Defense | Immigration)",
+    "headline": "string (factual, no superlatives, no client-identifying detail without consent)",
+    "summary": "string (what the matter involved and the outcome, factually stated)",
+    "status": "draft | internal_review | legal_review | approved | published | archived",
+    "approved": "boolean — must be true AND status='published' to render"
+  },
+  "items": []
+}
