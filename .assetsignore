@@ -1,0 +1,10 @@
+# Files excluded from the Cloudflare static asset upload.
+# The build/ generator is repo tooling, not deployable site content, and its
+# presence in the served root triggers Cloudflare build detection. Exclude it
+# and Python artifacts so only the generated HTML + assets ship.
+build/
+**/__pycache__/
+*.py
+*.pyc
+.kiro/
+remove_tax_banner.py

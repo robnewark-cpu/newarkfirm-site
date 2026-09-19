@@ -2,7 +2,7 @@
 
 > Boutique legal representation and strategic advocacy serving corporate and individual clients throughout Texas and Oklahoma.
 
-Newark Law Offices (legal entity: A Newark Firm, LLC) provides litigation, corporate advocacy, bankruptcy, foreclosure defense, personal-injury (car-accident), and insurance-claim counsel with offices in Dallas, Texas and Edmond, Oklahoma.
+Newark Law Offices (legal entity: A Newark Firm, LLC) helps people across Texas and Oklahoma with consumer bankruptcy (Chapter 7 and Chapter 13), personal injury, criminal defense, and immigration & removal defense, alongside select corporate, litigation, foreclosure-defense, and insurance-claim work. Offices in Dallas, Texas and Edmond, Oklahoma.
 
 - Responsible attorney: Robert C. Newark, III (Texas and Oklahoma state courts; federal courts in Texas, Oklahoma, Colorado, New Mexico, and Arkansas)
 - Attorney Tyler Wilson: licensed in Oklahoma, Alaska, Wisconsin, and South Dakota state courts
@@ -19,16 +19,36 @@ Newark Law Offices (legal entity: A Newark Firm, LLC) provides litigation, corpo
 ## Core pages
 
 - [Home](https://newarkfirm.com/)
+- [Bankruptcy lawyer](https://newarkfirm.com/bankruptcy-lawyer.html)
+- [Personal injury](https://newarkfirm.com/personal-injury.html)
+- [Criminal defense lawyer](https://newarkfirm.com/criminal-defense-lawyer.html)
+- [Immigration & removal defense lawyer](https://newarkfirm.com/immigration-lawyer.html)
+- [Locations](https://newarkfirm.com/locations.html)
 - [About](https://newarkfirm.com/about.html)
 - [Experience](https://newarkfirm.com/experience.html)
 - [Our People](https://newarkfirm.com/people.html)
 - [Insights](https://newarkfirm.com/insights.html)
-- [Personal injury](https://newarkfirm.com/personal-injury.html)
-- [Local counsel](https://newarkfirm.com/local-counsel.html)
-- [Texas office](https://newarkfirm.com/texas.html)
-- [Oklahoma office](https://newarkfirm.com/oklahoma.html)
 - [Contact](https://newarkfirm.com/contact.html)
 - [Check case eligibility](https://newarkfirm.com/case-eligibility.html)
+
+## Consumer bankruptcy (Chapter 7 & Chapter 13)
+
+Newark Law Offices helps Texas and Oklahoma consumers stop collection pressure and get a fresh start. Filing triggers an automatic stay that halts most lawsuits, wage garnishment, foreclosure sales, and repossessions.
+
+- [Bankruptcy lawyer (hub)](https://newarkfirm.com/bankruptcy-lawyer.html)
+- [Chapter 7 bankruptcy](https://newarkfirm.com/chapter-7-bankruptcy.html): liquidation; discharges most unsecured debt; means test; ~3–4 months
+- [Chapter 13 bankruptcy](https://newarkfirm.com/chapter-13-bankruptcy.html): 3–5 year repayment plan; catch up a mortgage or car
+- [Stop foreclosure](https://newarkfirm.com/stop-foreclosure.html): automatic stay stops a scheduled sale (TX non-judicial vs OK judicial)
+- [Stop wage garnishment](https://newarkfirm.com/stop-wage-garnishment.html): Texas bars most consumer wage garnishment; bankruptcy stops levies
+- [Debt collection defense](https://newarkfirm.com/debt-collection-defense.html): answer deadlines, standing, statute of limitations
+- [Repossession defense](https://newarkfirm.com/repossession-defense.html): stop repossession; discharge deficiency balances
+- [Bankruptcy costs](https://newarkfirm.com/bankruptcy-costs.html): court filing fee + attorney fees; Chapter 13 fees via the plan
+- [Bankruptcy timeline](https://newarkfirm.com/bankruptcy-timeline.html): filing, 341 meeting, discharge
+- [Bankruptcy FAQ](https://newarkfirm.com/bankruptcy-faq.html)
+- [Bankruptcy vs debt settlement](https://newarkfirm.com/bankruptcy-vs-debt-settlement.html)
+- [Life after bankruptcy](https://newarkfirm.com/life-after-bankruptcy.html): rebuilding credit
+- [Bankruptcy and lawsuits](https://newarkfirm.com/bankruptcy-and-lawsuits.html)
+- [Bankruptcy and judgments](https://newarkfirm.com/bankruptcy-and-judgments.html): discharge + judgment-lien avoidance
 
 ## Attorneys
 
