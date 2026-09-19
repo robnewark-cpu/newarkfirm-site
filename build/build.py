@@ -22,6 +22,7 @@ sys.path.insert(0, HERE)
 import render_practice  # noqa: E402
 import content_bankruptcy  # noqa: E402
 import content_hubs  # noqa: E402
+import content_pi  # noqa: E402
 
 TODAY = datetime.date.today().isoformat()
 
@@ -29,6 +30,7 @@ TODAY = datetime.date.today().isoformat()
 CLUSTERS = {
     "bankruptcy": content_bankruptcy.PAGES,
     "hubs": content_hubs.PAGES,
+    "pi": content_pi.PAGES,
 }
 
 # Existing hand-authored pages that stay in the sitemap.
