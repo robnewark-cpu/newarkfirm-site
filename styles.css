@@ -220,7 +220,7 @@ dl.faq dd { margin: 6px 0 0; }
   width: 100%;
   height: 280px;
   object-fit: cover;
-  object-position: top;
+  object-position: center 25%;
   border-radius: var(--radius);
   margin-bottom: 14px;
   background: #e8e4da;
