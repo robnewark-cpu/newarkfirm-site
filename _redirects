@@ -2,6 +2,16 @@
 /personal-injury /personal-injury.html 301
 /injury /personal-injury.html 301
 /local-counsel /local-counsel.html 301
+/bankruptcy /bankruptcy-lawyer.html 301
+/bankruptcy-lawyer /bankruptcy-lawyer.html 301
+/criminal-defense /criminal-defense-lawyer.html 301
+/immigration /immigration-lawyer.html 301
+/removal-defense /immigration-lawyer.html 301
+/locations /locations.html 301
+/houston /houston.html 301
+/oklahoma-city /oklahoma-city.html 301
+/okc /oklahoma-city.html 301
+/san-antonio /san-antonio.html 301
 
 /blog /insights.html 301
 /blog.html /insights.html 301
@@ -11,8 +21,8 @@
 /blog/wind-hail-claim-denials.html /insights/wind-hail-claim-denials.html 301
 
 # Retired WordPress paths still appearing in search results
-/dallas /texas.html 301
-/dallas/ /texas.html 301
+/dallas /dallas.html 301
+/dallas/ /dallas.html 301
 /edmond-office /oklahoma.html 301
 /edmond-office/ /oklahoma.html 301
 /about-us /about.html 301

@@ -35,21 +35,21 @@ PAGES.append(PageSpec(
     chat_greeting="Arrested or charged in Texas or Oklahoma? Do not talk to police before counsel. Tell me what happened and I can point you to immediate help.",
     knows_about=["criminal defense", "DUI DWI defense", "drug charges", "assault charges",
                  "expungement", "record sealing"],
-    related=[("Bankruptcy", "/bankruptcy-lawyer.html"),
-             ("Personal injury", "/personal-injury.html"),
-             ("Immigration", "/immigration-lawyer.html"),
-             ("Contact", "/contact.html")],
+    related=[("DUI / DWI defense", "/dui-dwi-defense.html"),
+             ("Drug charges", "/drug-charges.html"),
+             ("Expungement", "/expungement.html"),
+             ("Criminal defense FAQ", "/criminal-defense-faq.html")],
     body_html=f"""            <h2>The first 24 hours matter most</h2>
 {ans("What should I do right after an arrest?", "Do not answer questions or explain your side to police without a lawyer — you have the right to remain silent and the right to counsel, and using them is not an admission of guilt. Do not consent to searches. Write down everything you remember. Contact a criminal defense lawyer as soon as possible, because early steps (bond, preserving evidence, contacting witnesses) shape the whole case.")}
 
             <h2>Matters we defend</h2>
             <ul>
-              <li>DUI / DWI and related license issues</li>
-              <li>Drug possession and distribution charges</li>
-              <li>Assault and domestic violence matters</li>
-              <li>Theft and property charges</li>
-              <li>Protective orders and probation violations</li>
-              <li>Expungement and record sealing</li>
+              <li><a class="link" href="/dui-dwi-defense.html">DUI / DWI</a> and related license issues</li>
+              <li><a class="link" href="/drug-charges.html">Drug possession and distribution charges</a></li>
+              <li><a class="link" href="/assault-charges.html">Assault</a> and <a class="link" href="/domestic-violence-defense.html">domestic violence</a> matters</li>
+              <li><a class="link" href="/theft-charges.html">Theft and property charges</a></li>
+              <li><a class="link" href="/protective-orders.html">Protective orders</a> and <a class="link" href="/probation-violations.html">probation violations</a></li>
+              <li><a class="link" href="/expungement.html">Expungement</a> and <a class="link" href="/record-sealing.html">record sealing</a></li>
             </ul>
 
             <h2>Where your case is handled</h2>
@@ -80,20 +80,20 @@ PAGES.append(PageSpec(
     chat_greeting="Facing removal, detention, or an immigration deadline? Tell me your situation and any court date and I can point you to help.",
     knows_about=["immigration lawyer", "removal defense", "deportation defense",
                  "adjustment of status", "bond hearings", "motions to reopen"],
-    related=[("Bankruptcy", "/bankruptcy-lawyer.html"),
-             ("Criminal defense", "/criminal-defense-lawyer.html"),
-             ("Personal injury", "/personal-injury.html"),
-             ("Contact", "/contact.html")],
+    related=[("Removal defense", "/removal-defense.html"),
+             ("Deportation defense", "/deportation-defense.html"),
+             ("Adjustment of status", "/adjustment-of-status.html"),
+             ("Immigration FAQ", "/immigration-faq.html")],
     body_html=f"""            <h2>Removal defense starts with the deadline</h2>
 {ans("What happens in deportation (removal) proceedings?", "Removal proceedings take place in immigration court before an immigration judge. The government must prove the person is removable; the person can present defenses and apply for relief such as cancellation of removal, asylum, adjustment of status, or waivers. There are master calendar hearings (scheduling and pleadings) and an individual merits hearing. Missing a hearing usually results in an automatic removal order, so the court date controls everything.")}
 
             <h2>How we help</h2>
             <ul>
-              <li>Removal and deportation defense in immigration court</li>
-              <li>Bond hearings to seek release from detention</li>
-              <li>Adjustment of status and family immigration</li>
-              <li>Consular processing, waivers, and motions to reopen</li>
-              <li>ICE detainers and holds</li>
+              <li><a class="link" href="/removal-defense.html">Removal</a> and <a class="link" href="/deportation-defense.html">deportation defense</a> in immigration court</li>
+              <li><a class="link" href="/bond-hearings.html">Bond hearings</a> to seek release from detention</li>
+              <li><a class="link" href="/adjustment-of-status.html">Adjustment of status</a> and <a class="link" href="/family-immigration.html">family immigration</a></li>
+              <li><a class="link" href="/consular-processing.html">Consular processing</a>, <a class="link" href="/waivers.html">waivers</a>, and <a class="link" href="/motions-to-reopen.html">motions to reopen</a></li>
+              <li><a class="link" href="/ice-detainers.html">ICE detainers</a> and holds</li>
             </ul>
 
             <h2>Immigration court and where it sits</h2>
