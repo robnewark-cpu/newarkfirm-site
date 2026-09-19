@@ -70,7 +70,10 @@ PAGES.append(PageSpec(
             </ul>
 
             <h2>Where your case is handled</h2>
-            <p>Consumer cases are filed in the U.S. Bankruptcy Court for the district where you live — the Northern District of Texas (Dallas) and the Western District of Oklahoma (Oklahoma City) cover most of our clients. Robert C. Newark, III is licensed in Texas and Oklahoma and admitted to the federal courts where these cases are filed.</p>"""
+            <p>Consumer cases are filed in the U.S. Bankruptcy Court for the district where you live — the Northern District of Texas (Dallas) and the Western District of Oklahoma (Oklahoma City) cover most of our clients. Robert C. Newark, III is licensed in Texas and Oklahoma and admitted to the federal courts where these cases are filed.</p>
+
+            <h2>Business or creditor, not consumer?</h2>
+            <p>This hub is for individuals. If you are a <strong>business</strong> considering reorganization, or a <strong>creditor</strong> protecting a claim in someone else's bankruptcy, see <a class="link" href="/business-creditor-bankruptcy.html">business &amp; creditor bankruptcy</a> (Chapter 11, Subchapter V, proofs of claim, plan objections, relief from stay).</p>"""
 ))
 
 # 2. Chapter 7

@@ -209,3 +209,40 @@ def definition_block(term, definition_html):
           <span class="def-term">{term}</span>
           <div class="def-body">{definition_html}</div>
         </div>"""
+
+
+# ---- Video infrastructure (PHASE: video + VideoObject schema) ----
+def video_embed(video):
+    """Render a responsive video embed + return (html, VideoObject_schema_or_None).
+
+    `video` is a dict: {title, description, url (YouTube/hosted), thumbnail,
+    upload_date}. Returns ('', None) when no real video URL is supplied, so the
+    slot is inert until a genuine video exists (no placeholder/fake video ships).
+    """
+    if not video or not video.get("url"):
+        return "", None
+    import json as _json
+    title = video["title"]
+    embed = video["url"]
+    thumb = video.get("thumbnail", f"{SITE}/rob-headshot.jpg")
+    schema = _json.dumps({
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": title,
+        "description": video.get("description", title),
+        "thumbnailUrl": thumb,
+        "uploadDate": video.get("upload_date", ""),
+        "contentUrl": embed,
+        "embedUrl": embed,
+        "publisher": {"@type": "Organization", "name": FIRM,
+                      "logo": {"@type": "ImageObject", "url": f"{SITE}/rob-headshot.jpg"}},
+    }, indent=2, ensure_ascii=False)
+    html = f"""            <div class="video-embed">
+              <div class="video-frame">
+                <iframe src="{embed}" title="{title}" loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <p class="video-caption">{title}</p>
+            </div>"""
+    return html, schema

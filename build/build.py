@@ -29,6 +29,7 @@ import content_immigration  # noqa: E402
 import content_cities  # noqa: E402
 import content_counties  # noqa: E402
 import content_resources  # noqa: E402
+import content_business_crimigration  # noqa: E402
 import content_framework_pages  # noqa: E402
 
 TODAY = datetime.date.today().isoformat()
@@ -44,6 +45,7 @@ CLUSTERS = {
     "cities": content_cities.PAGES,
     "counties": content_counties.PAGES,
     "resources": content_resources.PAGES,
+    "business_crimigration": content_business_crimigration.PAGES,
 }
 
 # Existing hand-authored pages that stay in the sitemap.
@@ -55,6 +57,10 @@ EXISTING_PAGES = [
     "foreclosure-defense-texas.html", "foreclosure-defense-oklahoma.html",
     "ch11-creditor-texas.html", "ch11-debtor-texas.html",
     "ch11-debtor-oklahoma.html", "ch11-creditor-oklahoma.html",
+    "ch11-creditor-arkansas.html", "ch11-creditor-colorado.html",
+    "ch11-creditor-new-mexico.html",
+    "ch11-debtor-arkansas.html", "ch11-debtor-colorado.html",
+    "ch11-debtor-new-mexico.html",
     "wind-hail-damage-claim-texas.html", "wind-hail-damage-claim-oklahoma.html",
     "insights/local-counsel-licensed-courts.html",
     "insights/after-a-car-crash-texas-oklahoma.html",
