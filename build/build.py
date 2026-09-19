@@ -24,6 +24,8 @@ import content_bankruptcy  # noqa: E402
 import content_hubs  # noqa: E402
 import content_pi  # noqa: E402
 import content_locations  # noqa: E402
+import content_criminal  # noqa: E402
+import content_immigration  # noqa: E402
 
 TODAY = datetime.date.today().isoformat()
 
@@ -33,6 +35,8 @@ CLUSTERS = {
     "hubs": content_hubs.PAGES,
     "pi": content_pi.PAGES,
     "locations": content_locations.PAGES,
+    "criminal": content_criminal.PAGES,
+    "immigration": content_immigration.PAGES,
 }
 
 # Existing hand-authored pages that stay in the sitemap.
