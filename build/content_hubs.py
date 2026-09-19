@@ -128,21 +128,57 @@ PAGES.append(PageSpec(
     related=[("Texas office", "/texas.html"), ("Oklahoma office", "/oklahoma.html"),
              ("Contact", "/contact.html")],
     body_html="""            <h2>Two offices, statewide reach</h2>
-            <p>Our Dallas and Edmond offices anchor practices across both states. City-specific pages with local court information and directions are being added; in the meantime, tell us your city and matter and we will connect you with the right office.</p>
+            <p>Our Dallas and Edmond offices anchor practices across both states. Choose your city or county for local court information and directions, or tell us your matter and we will connect you with the right office.</p>
             <div class="grid-2">
               <div class="office-card">
                 <h3>Texas — Dallas</h3>
                 <address>1341 W. Mockingbird Ln, Ste 600W<br>Dallas, TX 75247<br><a class="link" href="tel:+19723325733">972-332-5733</a></address>
-                <p>Serving Dallas, Fort Worth, Arlington, Plano, Irving, Garland, Denton, and statewide Texas.</p>
+                <p>Serving the Metroplex and statewide Texas.</p>
                 <a class="link" href="/texas.html">Texas office</a>
               </div>
               <div class="office-card">
                 <h3>Oklahoma — Edmond</h3>
                 <address>1019 Waterwood Pkwy, Ste C<br>Edmond, OK 73034<br><a class="link" href="tel:+14057270269">405-727-0269</a></address>
-                <p>Serving Oklahoma City, Edmond, Norman, Moore, and statewide Oklahoma.</p>
+                <p>Serving the OKC metro and statewide Oklahoma.</p>
                 <a class="link" href="/oklahoma.html">Oklahoma office</a>
               </div>
-            </div>""",
+            </div>
+
+            <h2>Texas cities</h2>
+            <ul class="loc-list">
+              <li><a class="link" href="/dallas.html">Dallas</a></li>
+              <li><a class="link" href="/fort-worth.html">Fort Worth</a></li>
+              <li><a class="link" href="/arlington.html">Arlington</a></li>
+              <li><a class="link" href="/plano.html">Plano</a></li>
+              <li><a class="link" href="/irving.html">Irving</a></li>
+              <li><a class="link" href="/garland.html">Garland</a></li>
+              <li><a class="link" href="/denton.html">Denton</a></li>
+              <li><a class="link" href="/houston.html">Houston</a></li>
+              <li><a class="link" href="/san-antonio.html">San Antonio</a></li>
+            </ul>
+            <h2>Texas counties</h2>
+            <ul class="loc-list">
+              <li><a class="link" href="/dallas-county.html">Dallas County</a></li>
+              <li><a class="link" href="/tarrant-county.html">Tarrant County</a></li>
+              <li><a class="link" href="/collin-county.html">Collin County</a></li>
+              <li><a class="link" href="/harris-county.html">Harris County</a></li>
+              <li><a class="link" href="/bexar-county.html">Bexar County</a></li>
+              <li><a class="link" href="/travis-county.html">Travis County</a></li>
+            </ul>
+            <h2>Oklahoma cities</h2>
+            <ul class="loc-list">
+              <li><a class="link" href="/oklahoma-city.html">Oklahoma City</a></li>
+              <li><a class="link" href="/oklahoma.html">Edmond</a> <em>(our Oklahoma office)</em></li>
+              <li><a class="link" href="/norman.html">Norman</a></li>
+              <li><a class="link" href="/moore.html">Moore</a></li>
+              <li><a class="link" href="/lawton.html">Lawton</a></li>
+            </ul>
+            <h2>Oklahoma counties</h2>
+            <ul class="loc-list">
+              <li><a class="link" href="/oklahoma-county.html">Oklahoma County</a></li>
+              <li><a class="link" href="/cleveland-county.html">Cleveland County</a></li>
+              <li><a class="link" href="/comanche-county.html">Comanche County</a></li>
+            </ul>""",
     faqs=[
         ("Do you only take cases in Dallas and Edmond?",
          "No. Those are our offices, but we serve clients across Texas and Oklahoma. Many matters are handled by phone and video, and we appear in courts throughout both states."),

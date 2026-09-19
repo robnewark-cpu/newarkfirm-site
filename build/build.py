@@ -26,6 +26,8 @@ import content_pi  # noqa: E402
 import content_locations  # noqa: E402
 import content_criminal  # noqa: E402
 import content_immigration  # noqa: E402
+import content_cities  # noqa: E402
+import content_counties  # noqa: E402
 
 TODAY = datetime.date.today().isoformat()
 
@@ -37,6 +39,8 @@ CLUSTERS = {
     "locations": content_locations.PAGES,
     "criminal": content_criminal.PAGES,
     "immigration": content_immigration.PAGES,
+    "cities": content_cities.PAGES,
+    "counties": content_counties.PAGES,
 }
 
 # Existing hand-authored pages that stay in the sitemap.
