@@ -64,7 +64,11 @@ def head(title, description, canonical, *, schema_blocks=None, og_image=None,
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{description}">
   <meta name="twitter:image" content="{og_image}">
-  <link rel="alternate" type="text/plain" href="{SITE}/llms.txt" title="LLM summary">{schema_html}
+  <link rel="alternate" type="text/plain" href="{SITE}/llms.txt" title="LLM summary">
+  <!-- Google Search Console: paste your verification content when verifying by HTML tag.
+       (Domain-property DNS verification needs no tag; leave this as-is if you used DNS.) -->
+  <!-- <meta name="google-site-verification" content="PASTE_TOKEN_HERE"> -->
+  <script src="/analytics-config.js"></script>{schema_html}
 </head>
 <body{(' data-practice="' + practice + '"') if practice else ''}>"""
 
