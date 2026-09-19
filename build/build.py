@@ -26,6 +26,10 @@ import content_pi  # noqa: E402
 import content_locations  # noqa: E402
 import content_criminal  # noqa: E402
 import content_immigration  # noqa: E402
+import content_cities  # noqa: E402
+import content_counties  # noqa: E402
+import content_resources  # noqa: E402
+import content_framework_pages  # noqa: E402
 
 TODAY = datetime.date.today().isoformat()
 
@@ -37,6 +41,9 @@ CLUSTERS = {
     "locations": content_locations.PAGES,
     "criminal": content_criminal.PAGES,
     "immigration": content_immigration.PAGES,
+    "cities": content_cities.PAGES,
+    "counties": content_counties.PAGES,
+    "resources": content_resources.PAGES,
 }
 
 # Existing hand-authored pages that stay in the sitemap.
@@ -80,6 +87,10 @@ def build_pages():
         for spec in pages:
             html = render_practice.render(spec)
             generated.append(write(f"{spec.slug}.html", html))
+    # Framework pages (reviews, case-results, attorney authority) render
+    # directly rather than via a PageSpec.
+    for slug, html in content_framework_pages.all_pages():
+        generated.append(write(f"{slug}.html", html))
     return generated
 
 
