@@ -37,10 +37,19 @@ class PageSpec:
 def render(spec: PageSpec) -> str:
     url = f"{P.SITE}/{spec.slug}.html"
 
-    schema_blocks = [
-        S.legal_service(
+    geo = getattr(spec, "geo", None)
+    if geo is not None:
+        primary_schema = S.local_business(
+            f"{P.FIRM} — {getattr(spec, 'city', spec.breadcrumb_name)}", url,
+            getattr(spec, "city", ""), getattr(spec, "region", "TX"),
+            spec.description, geo=geo)
+    else:
+        primary_schema = S.legal_service(
             f"{P.FIRM} — {spec.breadcrumb_name or spec.h1}", url,
-            spec.description, knows_about=spec.knows_about or None),
+            spec.description, knows_about=spec.knows_about or None)
+
+    schema_blocks = [
+        primary_schema,
         S.breadcrumbs([
             ("Home", f"{P.SITE}/"),
             (spec.cluster, f"{P.SITE}{spec.cluster_hub}"),
