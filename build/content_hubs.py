@@ -52,6 +52,9 @@ PAGES.append(PageSpec(
               <li><a class="link" href="/expungement.html">Expungement</a> and <a class="link" href="/record-sealing.html">record sealing</a></li>
             </ul>
 
+            <h2>Non-citizen? A criminal charge is also an immigration case</h2>
+            <p>If you are not a U.S. citizen, a plea or conviction can trigger deportation or bar immigration relief — even for a minor charge. Because the firm handles both criminal defense and immigration, see <a class="link" href="/crimigration-immigration-consequences.html">crimigration</a> before entering any plea.</p>
+
             <h2>Where your case is handled</h2>
             <p>State charges are handled in the county where they are filed. The firm appears in Texas and Oklahoma courts and coordinates with licensed local counsel where the rules require it. Robert C. Newark, III is licensed in Texas and Oklahoma.</p>""",
     faqs=[
@@ -95,6 +98,9 @@ PAGES.append(PageSpec(
               <li><a class="link" href="/consular-processing.html">Consular processing</a>, <a class="link" href="/waivers.html">waivers</a>, and <a class="link" href="/motions-to-reopen.html">motions to reopen</a></li>
               <li><a class="link" href="/ice-detainers.html">ICE detainers</a> and holds</li>
             </ul>
+
+            <h2>Facing criminal charges too?</h2>
+            <p>A criminal charge can wreck an immigration case if it is not handled with the immigration consequences in mind. The firm handles both — see <a class="link" href="/crimigration-immigration-consequences.html">crimigration</a>.</p>
 
             <h2>Immigration court and where it sits</h2>
             <p>Immigration courts are federal and operate nationwide; representation before them is not limited by state bar licensure. The firm coordinates with the immigration court and detention facility handling your matter and will tell you plainly what relief may be available.</p>""",

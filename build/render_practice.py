@@ -32,6 +32,7 @@ class PageSpec:
     chat_greeting: str = None
     related: list = field(default_factory=list)     # (label, href) internal links
     knows_about: list = field(default_factory=list)
+    video: dict = None                               # optional {title,url,...}
 
 
 def render(spec: PageSpec) -> str:
@@ -58,6 +59,10 @@ def render(spec: PageSpec) -> str:
     ]
     if spec.faqs:
         schema_blocks.append(S.faq_page(spec.faqs))
+
+    video_html, video_schema = P.video_embed(spec.video)
+    if video_schema:
+        schema_blocks.append(video_schema)
 
     pills = "".join(f"<span>{m}</span>" for m in spec.meta_tags)
 
@@ -106,6 +111,7 @@ def render(spec: PageSpec) -> str:
         <div class="practice-layout">
           <div class="practice-copy">
 {spec.body_html}
+{video_html}
             <div class="fee-callout">{fee_disc}</div>
 {faq_html}{related_html}
           </div>
