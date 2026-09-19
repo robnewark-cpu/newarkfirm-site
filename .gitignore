@@ -4,3 +4,7 @@
 .env*
 !.env.example
 .DS_Store
+.kiro/
+build/__pycache__/
+__pycache__/
+*.pyc
