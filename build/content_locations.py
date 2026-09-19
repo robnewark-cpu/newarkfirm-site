@@ -33,7 +33,7 @@ PAGES.append(LocationSpec(
     slug="dallas",
     title="Dallas Lawyer | Bankruptcy, Injury, Criminal, Immigration | Newark Law Offices",
     description="Dallas attorneys for bankruptcy, personal injury, criminal defense, and immigration. Office at 1341 W. Mockingbird Ln. Free consultation. Call 866-230-7236.",
-    h1="Dallas attorneys — bankruptcy, injury, criminal defense, immigration",
+    h1="Dallas attorneys — bankruptcy, personal injury, criminal defense, immigration",
     lede="Newark Law Offices' Texas office sits in Dallas at 1341 W. Mockingbird Ln, serving Dallas County and the wider Metroplex. Whether it is debt, a crash, an arrest, or a removal notice, help starts with a free consultation.",
     meta_tags=["Dallas, TX", "Dallas County", "Metroplex"],
     breadcrumb_name="Dallas", cluster="Locations", cluster_hub="/locations.html",
@@ -74,7 +74,7 @@ PAGES.append(LocationSpec(
     slug="houston",
     title="Houston Lawyer | Bankruptcy, Injury, Criminal, Immigration | Newark Law Offices",
     description="Houston-area attorneys for bankruptcy, personal injury, criminal defense, and immigration. Statewide Texas practice. Free consultation. Call 866-230-7236.",
-    h1="Houston attorneys — bankruptcy, injury, criminal defense, immigration",
+    h1="Houston attorneys — bankruptcy, personal injury, criminal defense, immigration",
     lede="Newark Law Offices serves Houston and Harris County clients across bankruptcy, personal injury, criminal defense, and immigration. Many matters are handled by phone and video, with appearances in Houston's courts as needed. Free consultation.",
     meta_tags=["Houston, TX", "Harris County", "Statewide Texas"],
     breadcrumb_name="Houston", cluster="Locations", cluster_hub="/locations.html",
@@ -86,7 +86,7 @@ PAGES.append(LocationSpec(
     related=[("Bankruptcy", "/bankruptcy-lawyer.html"), ("Personal injury", "/personal-injury.html"),
              ("Immigration", "/immigration-lawyer.html"), ("Locations", "/locations.html")],
     body_html=f"""            <h2>Serving Houston and Harris County</h2>
-            <p>Houston is the largest legal market in Texas, and the firm serves clients here statewide — handling <a class="link" href="/bankruptcy-lawyer.html">bankruptcy</a>, <a class="link" href="/personal-injury.html">injury</a>, <a class="link" href="/criminal-defense-lawyer.html">criminal defense</a>, and <a class="link" href="/immigration-lawyer.html">immigration</a> matters. Much of the work is handled by phone and video, with in-person appearances in Houston courts when a case requires it.</p>
+            <p>Houston is the largest legal market in Texas, and the firm serves clients here statewide — handling <a class="link" href="/bankruptcy-lawyer.html">bankruptcy</a>, <a class="link" href="/personal-injury.html">personal injury</a>, <a class="link" href="/criminal-defense-lawyer.html">criminal defense</a>, and <a class="link" href="/immigration-lawyer.html">immigration</a> matters. Much of the work is handled by phone and video, with in-person appearances in Houston courts when a case requires it.</p>
 {ans("Where are Houston cases heard?", "Harris County civil and family cases are heard at the Harris County Civil Courthouse (201 Caroline St); criminal cases at the Harris County Criminal Justice Center (1201 Franklin St). Consumer bankruptcies are filed in the U.S. Bankruptcy Court for the Southern District of Texas (Houston Division), 515 Rusk St. Houston also has a federal immigration court. The right courthouse depends on the case type.")}
             <h2>Local courts</h2>
             <ul>
@@ -113,7 +113,7 @@ PAGES.append(LocationSpec(
     slug="oklahoma-city",
     title="Oklahoma City Lawyer | Bankruptcy, Injury, Criminal, Immigration | Newark Law Offices",
     description="Oklahoma City attorneys for bankruptcy, personal injury, criminal defense, and immigration. Edmond office nearby. Free consultation. Call 866-230-7236.",
-    h1="Oklahoma City attorneys — bankruptcy, injury, criminal defense, immigration",
+    h1="Oklahoma City attorneys — bankruptcy, personal injury, criminal defense, immigration",
     lede="Newark Law Offices serves Oklahoma City and Oklahoma County from its Edmond office just north of the metro. From debt relief to injury, criminal, and immigration matters, help starts with a free consultation.",
     meta_tags=["Oklahoma City, OK", "Oklahoma County", "Metro OKC"],
     breadcrumb_name="Oklahoma City", cluster="Locations", cluster_hub="/locations.html",
@@ -125,7 +125,7 @@ PAGES.append(LocationSpec(
     related=[("Bankruptcy", "/bankruptcy-lawyer.html"), ("Personal injury", "/personal-injury.html"),
              ("Criminal defense", "/criminal-defense-lawyer.html"), ("Oklahoma office", "/oklahoma.html")],
     body_html=f"""            <h2>Serving Oklahoma City and Oklahoma County</h2>
-            <p>Our Oklahoma office is in Edmond, minutes north of Oklahoma City via I-35 and the Broadway Extension, serving the whole OKC metro. We handle <a class="link" href="/bankruptcy-lawyer.html">bankruptcy</a>, <a class="link" href="/personal-injury.html">injury</a>, <a class="link" href="/criminal-defense-lawyer.html">criminal defense</a>, and <a class="link" href="/immigration-lawyer.html">immigration</a> matters for OKC-area clients.</p>
+            <p>Our Oklahoma office is in Edmond, minutes north of Oklahoma City via I-35 and the Broadway Extension, serving the whole OKC metro. We handle <a class="link" href="/bankruptcy-lawyer.html">bankruptcy</a>, <a class="link" href="/personal-injury.html">personal injury</a>, <a class="link" href="/criminal-defense-lawyer.html">criminal defense</a>, and <a class="link" href="/immigration-lawyer.html">immigration</a> matters for OKC-area clients.</p>
 {ans("Where are Oklahoma City cases heard?", "Oklahoma County civil, family, and criminal cases are heard at the Oklahoma County Courthouse (321 Park Ave, Oklahoma City). Consumer bankruptcies are filed in the U.S. Bankruptcy Court for the Western District of Oklahoma (215 Dean A. McGee Ave). Oklahoma foreclosures are judicial and proceed through the district court. Which court applies depends on the type of case.")}
             <h2>Local courts</h2>
             <ul>
@@ -154,7 +154,7 @@ PAGES.append(LocationSpec(
     slug="san-antonio",
     title="San Antonio Lawyer | Bankruptcy, Injury, Criminal, Immigration | Newark Law Offices",
     description="San Antonio-area attorneys for bankruptcy, personal injury, criminal defense, and immigration. Statewide Texas practice. Free consultation. Call 866-230-7236.",
-    h1="San Antonio attorneys — bankruptcy, injury, criminal defense, immigration",
+    h1="San Antonio attorneys — bankruptcy, personal injury, criminal defense, immigration",
     lede="Newark Law Offices serves San Antonio and Bexar County clients across bankruptcy, personal injury, criminal defense, and immigration, with phone and video consultations and appearances in San Antonio courts as needed. Free consultation.",
     meta_tags=["San Antonio, TX", "Bexar County", "Statewide Texas"],
     breadcrumb_name="San Antonio", cluster="Locations", cluster_hub="/locations.html",
@@ -166,7 +166,7 @@ PAGES.append(LocationSpec(
     related=[("Bankruptcy", "/bankruptcy-lawyer.html"), ("Personal injury", "/personal-injury.html"),
              ("Immigration", "/immigration-lawyer.html"), ("Locations", "/locations.html")],
     body_html=f"""            <h2>Serving San Antonio and Bexar County</h2>
-            <p>The firm serves San Antonio and Bexar County across <a class="link" href="/bankruptcy-lawyer.html">bankruptcy</a>, <a class="link" href="/personal-injury.html">injury</a>, <a class="link" href="/criminal-defense-lawyer.html">criminal defense</a>, and <a class="link" href="/immigration-lawyer.html">immigration</a> matters. Consultations are by phone and video, with in-person appearances in San Antonio courts when a case requires it.</p>
+            <p>The firm serves San Antonio and Bexar County across <a class="link" href="/bankruptcy-lawyer.html">bankruptcy</a>, <a class="link" href="/personal-injury.html">personal injury</a>, <a class="link" href="/criminal-defense-lawyer.html">criminal defense</a>, and <a class="link" href="/immigration-lawyer.html">immigration</a> matters. Consultations are by phone and video, with in-person appearances in San Antonio courts when a case requires it.</p>
 {ans("Where are San Antonio cases heard?", "Bexar County civil and family cases are heard at the Bexar County Courthouse and the Cadena-Reeves Justice Center (300 Dolorosa St); criminal cases at the Justice Center as well. Consumer bankruptcies are filed in the U.S. Bankruptcy Court for the Western District of Texas (San Antonio Division), 615 E. Houston St. San Antonio has a federal immigration court. The right court depends on the case type.")}
             <h2>Local courts</h2>
             <ul>

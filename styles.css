@@ -470,3 +470,26 @@ footer.site-footer .legal p { margin: 4px 0; }
 .result-card .result-disc { font-size: 0.8rem; color: var(--muted); margin: 10px 0 0; }
 
 .authority-placeholder { margin: 22px 0; }
+
+/* ============================================================
+   Accessibility fixes (Lighthouse: contrast + link affordance)
+   ============================================================ */
+/* The footer link-farm on legacy pages used #5f6584 on navy (2.8:1, fails AA).
+   Force it to the AA-passing footer tone and give links an underline so they
+   are distinguishable without relying on color alone. */
+footer.site-footer .legal p a,
+footer.site-footer .legal a[href] {
+  color: #cfd3e2;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+footer.site-footer .legal p[style] {
+  color: #a7ade0 !important;
+}
+/* Inline content links keep their gold underline (already distinguishable),
+   but ensure plain <a> inside body copy is underlined too. */
+.practice-copy a:not(.link):not(.btn),
+.article-body a:not(.link):not(.btn) {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

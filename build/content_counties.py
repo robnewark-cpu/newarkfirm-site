@@ -38,7 +38,7 @@ def county(slug, name, region, geo, seat, cities, courts_answer, bankruptcy_cour
         city=name, region=region, geo=geo, slug=slug,
         title=f"{name} Lawyer | Bankruptcy, Injury, Criminal, Immigration | Newark Law Offices",
         description=f"{name}, {region} attorneys for bankruptcy, personal injury, criminal defense, and immigration. Local court information. Free consultation. Call 866-230-7236.",
-        h1=f"{name} attorneys — bankruptcy, injury, criminal defense, immigration",
+        h1=f"{name} attorneys — bankruptcy, personal injury, criminal defense, immigration",
         lede=lede, meta_tags=[name, region, "Local courts"],
         breadcrumb_name=name, cluster="Locations", cluster_hub="/locations.html",
         source=f"loc-{slug}", matter=f"General — {name}",
