@@ -1,7 +1,17 @@
 User-agent: *
 Allow: /
 Disallow: /*.md
-Sitemap: https://newarkfirm.com/sitemap.xml
+Disallow: /*.py
+Disallow: /build/
+Disallow: /docs/
+Disallow: /originals/
+Disallow: /wrangler.jsonc
+Disallow: /desk
+Disallow: /aegisos
+Disallow: /calendar
+Disallow: /newark-desk
+Disallow: /voice
+Disallow: /thank-you
 
 # AI crawlers
 User-agent: GPTBot
@@ -20,4 +30,4 @@ User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://newarkfirm.com/sitemap.xml
-
+Sitemap: https://newarkfirm.com/sitemaps/index.xml

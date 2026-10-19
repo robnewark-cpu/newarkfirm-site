@@ -52,7 +52,7 @@ def head(title, description, canonical, *, schema_blocks=None, og_image=None,
   <title>{title}</title>
   <meta name="description" content="{description}">
   <link rel="canonical" href="{canonical}">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/styles.css?v=lh1">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description}">
   <meta property="og:url" content="{canonical}">
@@ -68,7 +68,7 @@ def head(title, description, canonical, *, schema_blocks=None, og_image=None,
   <!-- Google Search Console: paste your verification content when verifying by HTML tag.
        (Domain-property DNS verification needs no tag; leave this as-is if you used DNS.) -->
   <!-- <meta name="google-site-verification" content="PASTE_TOKEN_HERE"> -->
-  <script src="/analytics-config.js"></script>{schema_html}
+  <script src="/analytics-config.js?v=lh1"></script>{schema_html}
 </head>
 <body{(' data-practice="' + practice + '"') if practice else ''}>"""
 
@@ -115,16 +115,16 @@ def footer():
     <div class="container">
       <div class="foot-grid">
         <div>
-          <h4>{FIRM}</h4>
+          <h2 class="footer-heading">{FIRM}</h2>
           <p>{LEGAL_NAME}<br>Responsible attorney: Robert C. Newark, III</p>
           <p>Attorney advertising. Prior results do not guarantee a similar outcome.</p>
         </div>
         <div>
-          <h4>Texas Office</h4>
+          <h2 class="footer-heading">Texas Office</h2>
           <p>1341 W. Mockingbird Ln, Ste 600W<br>Dallas, TX 75247<br>972-332-5733</p>
         </div>
         <div>
-          <h4>Oklahoma Office</h4>
+          <h2 class="footer-heading">Oklahoma Office</h2>
           <p>1019 Waterwood Pkwy, Ste C<br>Edmond, OK 73034<br>405-727-0269</p>
           <p>Toll free: 866-230-7236</p>
         </div>
@@ -144,16 +144,27 @@ def scripts(chat_greeting=None):
         "Hi — I can help point you to the right person here. What brings you by today?"
     )
     return f"""  <script src="/lead.js"></script>
-  <script src="/analytics-events.js" defer></script>
-  <script
-  src="https://site-chatbot-assets.pages.dev/widget.js"
-  data-worker-url="https://site-chatbots.robert-bb6.workers.dev"
-  data-site="newarkfirm"
-  data-name="{FIRM}"
-  data-accent="#14213D"
-  data-greeting="{greeting}"
-  async
-  defer></script>
+  <script src="/analytics-events.js?v=lh1" defer></script>
+  <script>
+  (function () {{
+    function loadWidget() {{
+      if (document.getElementById("site-chatbot-widget")) return;
+      var s = document.createElement("script");
+      s.id = "site-chatbot-widget";
+      s.src = "/vendor/widget.js";
+      s.async = true;
+      s.defer = true;
+      s.setAttribute("data-worker-url", 'https://site-chatbots.robert-bb6.workers.dev');
+      s.setAttribute("data-site", 'newarkfirm');
+      s.setAttribute("data-name", '{FIRM}');
+      s.setAttribute("data-accent", '#14213D');
+      s.setAttribute("data-greeting", '{greeting}');
+      document.body.appendChild(s);
+    }}
+    if ("requestIdleCallback" in window) requestIdleCallback(loadWidget, {{ timeout: 2500 }});
+    else window.addEventListener("load", function () {{ setTimeout(loadWidget, 1); }});
+  }})();
+</script>
 </body>
 </html>"""
 

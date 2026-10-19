@@ -107,6 +107,14 @@ PAGES.append(city(
 
 # --- Oklahoma cities (OKC metro, near Edmond office) ---
 PAGES.append(city(
+    "edmond", "Edmond", "Oklahoma County", "OK", (35.6528, -97.4781),
+    "oklahoma-county",
+    "Edmond is in Oklahoma County; district court civil, family, and felony and misdemeanor criminal cases are heard at the Oklahoma County Courthouse (320 Robert S. Kerr Ave, Oklahoma City), and city traffic and ordinance citations go to Edmond Municipal Court. Consumer and business bankruptcies are filed in the U.S. Bankruptcy Court for the Western District of Oklahoma in Oklahoma City.",
+    "Our Oklahoma office is in Edmond, at 1019 Waterwood Pkwy, Ste C — Edmond clients can meet with us in person by appointment.",
+    "Our Oklahoma office is here in Edmond at 1019 Waterwood Pkwy, Ste C (405-727-0269), open Monday–Friday, 9:00 a.m.–5:00 p.m. Central, with in-office meetings by appointment.",
+    "Oklahoma matters are handled by Robert C. Newark, III (licensed in Oklahoma and Texas) and Tyler Wilson (licensed in Oklahoma).",
+    True))
+PAGES.append(city(
     "norman", "Norman", "Cleveland County", "TX".replace("TX", "OK"), (35.2226, -97.4395),
     "cleveland-county",
     "Norman is the seat of Cleveland County; civil, family, and criminal cases are heard at the Cleveland County Courthouse (200 S. Peters Ave, Norman). Consumer bankruptcies are filed in the U.S. Bankruptcy Court for the Western District of Oklahoma in Oklahoma City.",
