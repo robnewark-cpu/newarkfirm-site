@@ -27,7 +27,7 @@ def pi(slug, title, desc, h1, lede, tags, bc, body, faqs, source, matter,
         meta_tags=tags, breadcrumb_name=bc, cluster="Personal Injury",
         cluster_hub=HUB, source=source, matter=matter,
         rail_heading="Free case evaluation",
-        rail_lede="Tell us the date, the state, injuries, and what the insurer has said. No fee unless you recover, in appropriate cases.",
+        rail_lede="Tell us the date, the state, injuries, and what the insurer has said. No attorney's fee unless you recover, in appropriate cases. Case expenses are advanced by the firm and reimbursed from any recovery; if there is no recovery, you remain responsible for expenses advanced.",
         chat_greeting="Hurt in an accident in Texas or Oklahoma? Tell me what happened and I can point you to a free case evaluation.",
         knows_about=knows, related=related, body_html=body, faqs=faqs)
 
@@ -39,7 +39,7 @@ PAGES.append(pi(
     "Personal injury lawyer for Texas and Oklahoma — car, truck, motorcycle, wrongful death, premises liability. Free case evaluation. Call 866-230-7236.",
     "Personal injury lawyer for Texas and Oklahoma",
     "From car and truck wrecks to premises liability and wrongful death, Newark Law Offices reviews how a claim actually works, what coverage applies, and whether an insurer's offer matches the loss. Offices in Dallas and Edmond. Free case evaluation.",
-    ["Personal injury", "Dallas & Edmond", "No fee unless you recover"],
+    ["Personal injury", "Dallas & Edmond", "No attorney's fee unless you recover"],
     "Personal Injury Lawyer",
     f"""            <h2>How a personal injury claim works</h2>
 {ans("How does a personal injury claim work?", "A personal injury claim seeks compensation from the at-fault party (usually through their insurer) for losses caused by negligence — medical bills, lost income, and pain and suffering. The steps are: get medical treatment and document it, identify every applicable insurance policy, establish liability, and value the full loss before settling. Both Texas and Oklahoma follow at-fault rules and comparative negligence, and most injury suits have a two-year limitations window that specific facts can change.")}
