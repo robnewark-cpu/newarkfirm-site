@@ -142,14 +142,26 @@
 
 <script src="/lead.js" data-source="ch11-debtor-co"></script>
 
-<script
-  src="https://site-chatbot-assets.pages.dev/widget.js"
-  data-worker-url="https://site-chatbots.robert-bb6.workers.dev"
-  data-site="newarkfirm"
-  data-name="Newark Law Offices"
-  data-accent="#14213D"
-  data-greeting="Hi — I can answer questions about the firm or point you to the right person. What brings you by today?"
-></script>
+<script>
+  (function () {
+    function loadWidget() {
+      if (document.getElementById("site-chatbot-widget")) return;
+      var s = document.createElement("script");
+      s.id = "site-chatbot-widget";
+      s.src = "/vendor/widget.js";
+      s.async = true;
+      s.defer = true;
+      s.setAttribute("data-worker-url", 'https://site-chatbots.robert-bb6.workers.dev');
+      s.setAttribute("data-site", 'newarkfirm');
+      s.setAttribute("data-name", 'Newark Law Offices');
+      s.setAttribute("data-accent", '#14213D');
+      s.setAttribute("data-greeting", 'Hi — I can answer questions about the firm or point you to the right person. What brings you by today?');
+      document.body.appendChild(s);
+    }
+    if ("requestIdleCallback" in window) requestIdleCallback(loadWidget, { timeout: 2500 });
+    else window.addEventListener("load", function () { setTimeout(loadWidget, 1); });
+  })();
+</script>
 
 </body>
 </html>

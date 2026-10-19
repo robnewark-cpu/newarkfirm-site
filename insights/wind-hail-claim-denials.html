@@ -6,7 +6,7 @@
   <title>Wind and Hail Claim Denials: What Property Owners Should Know | Newark Law Offices</title>
   <meta name="description" content="Texas and Oklahoma storm claims are often underpaid or denied for wear-and-tear, cause-of-loss, or delay. Policy deadlines, estimates, and photos still control the file.">
   <link rel="canonical" href="https://newarkfirm.com/insights/wind-hail-claim-denials.html">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles.css?v=lh1">
   <meta property="og:title" content="Wind and Hail Claim Denials: What Property Owners Should Know | Newark Law Offices">
   <meta property="og:description" content="Texas and Oklahoma storm claims are often underpaid or denied for wear-and-tear, cause-of-loss, or delay. Policy deadlines, estimates, and photos still control the file.">
   <meta property="og:url" content="https://newarkfirm.com/insights/wind-hail-claim-denials.html">
@@ -168,16 +168,16 @@
     <div class="container">
       <div class="foot-grid">
         <div>
-          <h4>Newark Law Offices</h4>
+          <h2 class="footer-heading">Newark Law Offices</h2>
           <p>A Newark Firm, LLC<br>Responsible attorney: Robert C. Newark, III</p>
           <p>Attorney advertising. Prior results do not guarantee a similar outcome.</p>
         </div>
         <div>
-          <h4>Texas Office</h4>
+          <h2 class="footer-heading">Texas Office</h2>
           <p>1341 W. Mockingbird Ln, Ste 600W<br>Dallas, TX 75247<br>972-332-5733</p>
         </div>
         <div>
-          <h4>Oklahoma Office</h4>
+          <h2 class="footer-heading">Oklahoma Office</h2>
           <p>1019 Waterwood Pkwy, Ste C<br>Edmond, OK 73034<br>405-727-0269</p>
           <p>Toll free: 866-230-7236</p>
         </div>
@@ -188,14 +188,25 @@
       </div>
     </div>
   </footer>
-  <script
-  src="https://site-chatbot-assets.pages.dev/widget.js"
-  data-worker-url="https://site-chatbots.robert-bb6.workers.dev"
-  data-site="newarkfirm"
-  data-name="Newark Law Offices"
-  data-accent="#0F1B2E"
-  data-greeting="Hi — I can help point you to the right person here. What brings you by today?"
-  async
-  defer></script>
+  <script>
+  (function () {
+    function loadWidget() {
+      if (document.getElementById("site-chatbot-widget")) return;
+      var s = document.createElement("script");
+      s.id = "site-chatbot-widget";
+      s.src = "/vendor/widget.js";
+      s.async = true;
+      s.defer = true;
+      s.setAttribute("data-worker-url", 'https://site-chatbots.robert-bb6.workers.dev');
+      s.setAttribute("data-site", 'newarkfirm');
+      s.setAttribute("data-name", 'Newark Law Offices');
+      s.setAttribute("data-accent", '#0F1B2E');
+      s.setAttribute("data-greeting", 'Hi — I can help point you to the right person here. What brings you by today?');
+      document.body.appendChild(s);
+    }
+    if ("requestIdleCallback" in window) requestIdleCallback(loadWidget, { timeout: 2500 });
+    else window.addEventListener("load", function () { setTimeout(loadWidget, 1); });
+  })();
+</script>
 </body>
 </html>

@@ -6,7 +6,7 @@
   <title>Local Counsel in Licensed Courts: What We Will and Will Not Do | Newark Law Offices</title>
   <meta name="description" content="When Newark Law Offices will act as local counsel, which licenses actually apply, and why Alaska, Wisconsin, and South Dakota originating work is referral-basis only.">
   <link rel="canonical" href="https://newarkfirm.com/insights/local-counsel-licensed-courts.html">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles.css?v=lh1">
   <meta property="og:title" content="Local Counsel in Licensed Courts | Newark Law Offices">
   <meta property="og:description" content="Case-by-case local counsel in licensed courts — and what referral-basis states mean in practice.">
   <meta property="og:url" content="https://newarkfirm.com/insights/local-counsel-licensed-courts.html">
@@ -129,16 +129,16 @@
     <div class="container">
       <div class="foot-grid">
         <div>
-          <h4>Newark Law Offices</h4>
+          <h2 class="footer-heading">Newark Law Offices</h2>
           <p>A Newark Firm, LLC<br>Responsible attorney: Robert C. Newark, III</p>
           <p>Attorney advertising. Prior results do not guarantee a similar outcome.</p>
         </div>
         <div>
-          <h4>Texas Office</h4>
+          <h2 class="footer-heading">Texas Office</h2>
           <p>1341 W. Mockingbird Ln, Ste 600W<br>Dallas, TX 75247<br>972-332-5733</p>
         </div>
         <div>
-          <h4>Oklahoma Office</h4>
+          <h2 class="footer-heading">Oklahoma Office</h2>
           <p>1019 Waterwood Pkwy, Ste C<br>Edmond, OK 73034<br>405-727-0269</p>
           <p>Toll free: 866-230-7236</p>
         </div>
@@ -149,14 +149,25 @@
       </div>
     </div>
   </footer>
-  <script
-  src="https://site-chatbot-assets.pages.dev/widget.js"
-  data-worker-url="https://site-chatbots.robert-bb6.workers.dev"
-  data-site="newarkfirm"
-  data-name="Newark Law Offices"
-  data-accent="#0F1B2E"
-  data-greeting="Need local counsel in a licensed court? Share the court and the date."
-  async
-  defer></script>
+  <script>
+  (function () {
+    function loadWidget() {
+      if (document.getElementById("site-chatbot-widget")) return;
+      var s = document.createElement("script");
+      s.id = "site-chatbot-widget";
+      s.src = "/vendor/widget.js";
+      s.async = true;
+      s.defer = true;
+      s.setAttribute("data-worker-url", 'https://site-chatbots.robert-bb6.workers.dev');
+      s.setAttribute("data-site", 'newarkfirm');
+      s.setAttribute("data-name", 'Newark Law Offices');
+      s.setAttribute("data-accent", '#0F1B2E');
+      s.setAttribute("data-greeting", 'Need local counsel in a licensed court? Share the court and the date.');
+      document.body.appendChild(s);
+    }
+    if ("requestIdleCallback" in window) requestIdleCallback(loadWidget, { timeout: 2500 });
+    else window.addEventListener("load", function () { setTimeout(loadWidget, 1); });
+  })();
+</script>
 </body>
 </html>
