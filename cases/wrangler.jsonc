@@ -1,0 +1,25 @@
+{
+  "name": "cases-newarkfirm",
+  "compatibility_date": "2026-08-27",
+  "main": "src/index.ts",
+  "observability": { "enabled": true },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cases-db",
+      "database_id": "cases-db-placeholder"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "QUEUE_KV",
+      "id": "queue-kv-placeholder"
+    }
+  ],
+  "vars": {
+    "COURTLISTENER_BASE": "https://www.courtlistener.com/api/rest/v4"
+  },
+  "routes": [
+    { "pattern": "cases.newarkfirm.com/*", "zone_name": "newarkfirm.com" }
+  ]
+}

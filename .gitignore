@@ -9,3 +9,4 @@ build/__pycache__/
 __pycache__/
 *.pyc
 aegis-website/
+cases/node_modules/
